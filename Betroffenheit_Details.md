@@ -1,0 +1,66 @@
+# Betroffenheit – Treffer pro Layer und Gemeinde
+
+Methode: identify auf api3.geo.admin.ch, Treffer lokal mit der um 5 m nach innen gepufferten Gemeindefläche (swissBOUNDARIES3D) verschnitten. Pro Abfrage max. 50 Objekte.
+
+| Nr | Layer | Gemeinde | Ergebnis | Treffer |
+| -- | ----- | -------- | -------- | ------- |
+| 1 | ch.bafu.bundesinventare-bln | Münchenstein | ja | Gempenplateau |
+| 1 | ch.bafu.bundesinventare-bln | Wil (SG) | ja | Thurlandschaft zwischen Lichtensteig und Schwarzenbach |
+| 1 | ch.bafu.bundesinventare-bln | Seelisberg | ja | Vierwaldstättersee mit Kernwald, Bürgenstock und Rigi |
+| 2 | ch.bafu.bundesinventare-moorlandschaften | Münchenstein | nein |  |
+| 2 | ch.bafu.bundesinventare-moorlandschaften | Wil (SG) | nein |  |
+| 2 | ch.bafu.bundesinventare-moorlandschaften | Seelisberg | ja | Oberbauen/Scheidegg |
+| 3 | ch.bafu.bundesinventare-hochmoore | Münchenstein | nein |  |
+| 3 | ch.bafu.bundesinventare-hochmoore | Wil (SG) | nein |  |
+| 3 | ch.bafu.bundesinventare-hochmoore | Seelisberg | nein |  |
+| 4 | ch.bafu.bundesinventare-flachmoore | Münchenstein | nein |  |
+| 4 | ch.bafu.bundesinventare-flachmoore | Wil (SG) | ja | Gärtensberg/Oberholz |
+| 4 | ch.bafu.bundesinventare-flachmoore | Seelisberg | nein |  |
+| 5 | ch.bafu.bundesinventare-auen | Münchenstein | nein |  |
+| 5 | ch.bafu.bundesinventare-auen | Wil (SG) | ja | Thurauen Wil - Weieren |
+| 5 | ch.bafu.bundesinventare-auen | Seelisberg | nein |  |
+| 6 | ch.bafu.bundesinventare-amphibien | Münchenstein | nein |  |
+| 6 | ch.bafu.bundesinventare-amphibien | Wil (SG) | ja | Hasenlooweiher |
+| 6 | ch.bafu.bundesinventare-amphibien | Seelisberg | nein |  |
+| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Münchenstein | ja | Brügglingen, Zwölf Jucharte |
+| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Wil (SG) | nein |  |
+| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Seelisberg | ja | Bol, Haltenen, Hinter Bergli, Läger, Weid |
+| 8 | ch.bafu.bundesinventare-jagdbanngebiete | Münchenstein | nein |  |
+| 8 | ch.bafu.bundesinventare-jagdbanngebiete | Wil (SG) | nein |  |
+| 8 | ch.bafu.bundesinventare-jagdbanngebiete | Seelisberg | nein |  |
+| 11 | ch.bafu.waldreservate | Münchenstein | ja | Ermitage - Chilchholz, Rütihard - Rothallen |
+| 11 | ch.bafu.waldreservate | Wil (SG) | ja | Thurauen Wil |
+| 11 | ch.bafu.waldreservate | Seelisberg | ja | Rütliwald |
+| 13 | ch.are.bauzonen | Münchenstein | ja | Basel, Münchenstein |
+| 13 | ch.are.bauzonen | Wil (SG) | ja | Wil (SG) |
+| 13 | ch.are.bauzonen | Seelisberg | ja | Seelisberg |
+| 14 | ch.bfe.solarenergie-eignung-daecher | Münchenstein | ja | 10271395, 10271546, 10276344, 10276403, 10276408, 10276483, 10276649, 10276811, 10276891, 10276954, 10277178, 10277297, 10280762, 10284254, 10284480 … (+35) |
+| 14 | ch.bfe.solarenergie-eignung-daecher | Wil (SG) | ja | 16574078, 16575849, 16576441, 16578559, 16578602, 16579248, 16579373, 16582068, 16582212, 16582799, 16587217, 16587541, 16587868, 16588009, 16588468 … (+35) |
+| 14 | ch.bfe.solarenergie-eignung-daecher | Seelisberg | ja | 14984593, 14984594, 14984597, 14984599, 14984600, 14984602, 14984604, 14984608, 14984609, 14984610, 14984612, 14984613, 14984615, 14984617, 14984618 … (+35) |
+| 15 | ch.bfe.solarenergie-eignung-fassaden | Münchenstein | ja | 19853912, 19854459, 19860102, 19860450, 19865445, 19866287, 19866833, 19866851, 19875010, 19875175, 19875379, 19875387, 19882575, 19882876, 19883120 … (+35) |
+| 15 | ch.bfe.solarenergie-eignung-fassaden | Wil (SG) | ja | 32663114, 32683283, 32692973, 32699236, 32699309, 32710145, 32711222, 32711693, 32711737, 32717402, 32717827, 32718678, 32724183, 32724852, 32724939 … (+35) |
+| 15 | ch.bfe.solarenergie-eignung-fassaden | Seelisberg | ja | 29282860, 29287188, 29298574, 29298613, 29298616, 37966603, 37966972, 37967055, 37967187, 37967202, 37967360, 37967480, 37967613, 37967653, 37967792 … (+35) |
+| 16 | ch.bfs.gebaeude_wohnungs_register | Münchenstein | ja | Aliothstrasse 32d, Binningerstrasse 3, Bruckfeldstrasse 4a, Buchenstrasse 60, Concordiastrasse 8.1, Dammstrasse 52, Dillackerstrasse 17a, Emil Frey-Strasse 164, Emil Frey-Strasse 33, Emil Frey-Strasse 82, Erlenstrasse 10, Forlisrain 15, Gartenstrasse 9a, Grienstrasse 1, Gruthweg 106a … (+35) |
+| 16 | ch.bfs.gebaeude_wohnungs_register | Wil (SG) | ja | AMP-Strasse 25, Bildfeldstrasse 1a.1, Bildfeldstrasse 4, Braunauerstrasse 7.1, Buebenloostrasse 3, Burgstallstrasse 13, Erlenstrasse 2, Feldeggstrasse 6, Flawilerstrasse 4, Florapark 2.1, Fuchslochstrasse 968.1, Fürstenaugasse 8, Gallusstrasse 49, Grabenstrasse 23, Grubenstrasse 10 … (+35) |
+| 16 | ch.bfs.gebaeude_wohnungs_register | Seelisberg | ja | Bergweg 19.2, Beroldingen 1.3, Bitzistrasse 19, Bitzistrasse 4, Bitzistrasse 9, Buechistrasse 15.1, Buechistrasse 21b, Dorfstrasse 18.4, Dorfstrasse 22.1, Dorfstrasse 28.1, Dorfstrasse 39.1, Dorfstrasse 41, Dorfstrasse 63, Dorfstrasse 67.1, Dorfstrasse 69 … (+35) |
+| 18 | ch.are.gueteklassen_oev | Münchenstein | ja | A - sehr gute Erschliessung, B - gute Erschliessung, C - mittelmässige Erschliessung, D - geringe Erschliessung |
+| 18 | ch.are.gueteklassen_oev | Wil (SG) | ja | A - sehr gute Erschliessung, B - gute Erschliessung, C - mittelmässige Erschliessung, D - geringe Erschliessung |
+| 18 | ch.are.gueteklassen_oev | Seelisberg | ja | D - geringe Erschliessung |
+| 21 | ch.bafu.gefahren-baugrundklassen | Münchenstein | ja | B, E |
+| 21 | ch.bafu.gefahren-baugrundklassen | Wil (SG) | nein |  |
+| 21 | ch.bafu.gefahren-baugrundklassen | Seelisberg | ja | A |
+| 22 | ch.bafu.laerm-strassenlaerm_tag | Münchenstein | nicht abfragbar (Rasterlayer) |  |
+| 22 | ch.bafu.laerm-strassenlaerm_tag | Wil (SG) | nicht abfragbar (Rasterlayer) |  |
+| 22 | ch.bafu.laerm-strassenlaerm_tag | Seelisberg | nicht abfragbar (Rasterlayer) |  |
+| 23 | ch.bafu.laerm-bahnlaerm_tag | Münchenstein | nicht abfragbar (Rasterlayer) |  |
+| 23 | ch.bafu.laerm-bahnlaerm_tag | Wil (SG) | nicht abfragbar (Rasterlayer) |  |
+| 23 | ch.bafu.laerm-bahnlaerm_tag | Seelisberg | nicht abfragbar (Rasterlayer) |  |
+| 26 | ch.bak.bundesinventar-schuetzenswerte-ortsbilder | Münchenstein | ja | Brüglingen (Münchenstein), Münchenstein |
+| 26 | ch.bak.bundesinventar-schuetzenswerte-ortsbilder | Wil (SG) | ja | Wil |
+| 26 | ch.bak.bundesinventar-schuetzenswerte-ortsbilder | Seelisberg | nein |  |
+| 27 | ch.astra.ivs-nat | Münchenstein | ja | 100820 |
+| 27 | ch.astra.ivs-nat | Wil (SG) | ja | 100392, 100393, 102210, 102211, 102212, 97189 |
+| 27 | ch.astra.ivs-nat | Seelisberg | ja | 103349, 103350, 103351, 103358, 103359, 96374, 96375, 96376, 96377, 96378, 96379, 96380, 96381, 96382, 96383 … (+9) |
+| 28 | ch.babs.kulturgueter | Münchenstein | ja | Bruckgut mit Park, Gartenbad St. Jakob, Plakatsammlung der Schule für Gestaltung Basel, Schaulager, Villa Merian, Wirtschaftsgebäude und Park, Orangerie, Mühle, ganzer Gebäudekomplex Unterbrüglingen |
+| 28 | ch.babs.kulturgueter | Wil (SG) | ja | Baronenhaus, Herrensitz Rudenzburg, Hof, Wallfahrtskirche Maria-Hilf, Dreibrunnen |
+| 28 | ch.babs.kulturgueter | Seelisberg | ja | Rütlihaus auf der Rütliwiese, Schillerstein, Wirtshaus zur Treib, Wohnhaus, Buechholz |
