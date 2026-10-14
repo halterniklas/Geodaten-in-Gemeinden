@@ -1,0 +1,110 @@
+{
+ "crawl": [
+  {
+   "key": "MUE-JR2025",
+   "url": "https://www.muenchenstein.ch/publikationen/621658",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /publikationen/621658 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f5a4e0>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "MUE-JR2024",
+   "url": "https://www.muenchenstein.ch/publikationen/556069",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /publikationen/556069 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f5ae40>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "MUE-GV-Dez2025",
+   "url": "https://www.muenchenstein.ch/sitzung/5729137",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /sitzung/5729137 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f5b170>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "MUE-Publikationen",
+   "url": "https://www.muenchenstein.ch/publikationen",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /publikationen (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f8c620>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "MUE-Reglemente",
+   "url": "https://www.muenchenstein.ch/reglemente",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /reglemente (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f8c200>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "MUE-Bauverwaltung",
+   "url": "https://www.muenchenstein.ch/bauverwaltung",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /bauverwaltung (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f8ce30>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "MUE-Ortsplanung",
+   "url": "https://www.muenchenstein.ch/ortsplanung",
+   "error": "HTTPSConnectionPool(host='www.muenchenstein.ch', port=443): Max retries exceeded with url: /ortsplanung (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.muenchenstein.ch', port=443) at 0x7fda08f8e600>, 'Connection to www.muenchenstein.ch timed out. (connect timeout=60)'))"
+  },
+  {
+   "key": "BL-Gemeindefinanzen-2023",
+   "url": "https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/webartikel-vom-18-09-2024-gemeindefinanzen-2023",
+   "status": 403,
+   "final": "https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/webartikel-vom-18-09-2024-gemeindefinanzen-2023",
+   "links": [],
+   "n_links": 0,
+   "text": " Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue (function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'OtHr8vt1qnwzIwY2qpfK0gLGgYqLDBtXwJMhdQH7JeA-1791989784-1.2.1.1-Wq0ETPULOB4DDyxRoNoTx3sap3DwXZ5rhxgEqx8YrW.QoiKgo1Zek8rvOOEpOqnk',cITimeS: '1791989784',cN: 'LrxrNrTNQtr93l46rVJ8bw',cRay: 'a4a76e398acdcd08',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/politik-und-behorden/direktionen/finanz-und-kirchendirektion/daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/webartikel-vom-18-09-2024-gemeindefinanzen-2023?__cf_chl_tk=goy83m3dTyV.Rcw78Gnysl8JWoyd41chj1wGK2pcpHE-1791989784-1.0.1.1-bmykWg_dagpOpPV6fiOakiNGmWTjoCDpNk5ZbLLmM_Q\",cvId: '3',cZone: 'www.baselland.ch',fa:\"/politik-und-behorden/direktionen/finanz-und-kirchendirektion/daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/webartikel-vom-18-09-2024-gemeindefinanzen-2023?__cf_chl_f_tk=goy83m3dTyV.Rcw78Gnysl8JWoyd41chj1wGK2pcpHE-1791989784-1.0.1.1-bmykWg_dagpOpPV6fiOakiNGmWTjoCDpNk5ZbLLmM_Q\",md: 'E",
+   "kennzahlen": []
+  },
+  {
+   "key": "BL-Gemeindefinanzen",
+   "url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
+   "status": 403,
+   "final": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
+   "links": [],
+   "n_links": 0,
+   "text": " Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width Enable JavaScript and cookies to continue (function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'tvP._Q7cxnb.py7IH8r.o6NZxr1Ns1gr86oVQ9Bgclg-1791989784-1.2.1.1-WuDHuNk60.E4MFdEVJcBhF5I39UeExuvQqQLK6FZtx4LiXYNiRDbj321Cn_CX8ss',cITimeS: '1791989784',cN: 'oOqEdqii7UJIouEc2dQ7Qs',cRay: 'a4a76e3989a99785',cTplC:0,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:\"/politik-und-behorden/gemeinden/gemeindefinanzen?__cf_chl_tk=XmQNAoy6ra61wrBPA.F_6qardj4vSyaRDSuQbzA9sOw-1791989784-1.0.1.1-oex8wqUlPSEUpi8y4Iesy2_TuKfs69nu3VBKhvwgyxM\",cvId: '3',cZone: 'www.baselland.ch',fa:\"/politik-und-behorden/gemeinden/gemeindefinanzen?__cf_chl_f_tk=XmQNAoy6ra61wrBPA.F_6qardj4vSyaRDSuQbzA9sOw-1791989784-1.0.1.1-oex8wqUlPSEUpi8y4Iesy2_TuKfs69nu3VBKhvwgyxM\",md: 'FfUccxdD4GgutNti1az_fFsErD55.6kks1WmDTAXjlQ-1791989784-1.2.1.1-T99sWnSgcGoffNEXFQL4tQveTyyB1zrQXcdetWW4AbyoVpRP7ZFAcL9gItcjpmw04u7ZKlLCUU4YN0eHjl0xx25gDbOHjGrSsk3gfJBFM3Py0BWZLbpWSgAcARM6qf4whtFthFw3RU4eEtt0EgnmLpRCBB.Ts5KYyS1pi3LdVwIiyTwyAWidQrKak550Iehp9GohCdUfFDGfDFCWXiySTcqOP4c2JCvu0W8oOwIvsl",
+   "kennzahlen": []
+  }
+ ],
+ "lexwork": [
+  {
+   "ref": "SGS 400.11",
+   "url": "https://bl.clex.ch/app/de/texts_of_law/400.11",
+   "title": "Verordnung zum Raumplanungs- und Baugesetz",
+   "abbr": "RBV",
+   "dates": "vom 27.10.1998, in Kraft seit: 01.01.1999"
+  },
+  {
+   "ref": "SGS 149.72",
+   "url": "https://bl.clex.ch/app/de/texts_of_law/149.72",
+   "title": "Interkantonale Vereinbarung über die Harmonisierung der Baubegriffe",
+   "abbr": "IVHB",
+   "dates": "vom 23.04.2009, in Kraft seit: 02.08.2010"
+  },
+  {
+   "ref": "SGS 420",
+   "url": "https://bl.clex.ch/app/de/texts_of_law/420",
+   "title": "Einführungsgesetz zur interkantonalen Vereinbarung über das öffentliche Beschaffungswesen",
+   "abbr": "EG IVöB",
+   "dates": "vom 05.05.2022, in Kraft seit: 01.01.2024"
+  },
+  {
+   "ref": "sGS 731.11",
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/731.11",
+   "title": "Verordnung zum Planungs- und Baugesetz",
+   "abbr": "PBV",
+   "dates": "vom 27.06.2017, in Vollzug seit: 01.10.2017"
+  },
+  {
+   "ref": "sGS 841.11",
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/841.11",
+   "title": "Verordnung über das öffentliche Beschaffungswesen",
+   "abbr": "VöB",
+   "dates": "vom 25.04.2023, in Vollzug seit: 01.06.2023"
+  },
+  {
+   "ref": "RB 40.1115",
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/40.1115",
+   "title": "Reglement zum Planungs- und Baugesetz",
+   "abbr": "RPBG",
+   "dates": "vom 06.12.2011, in Kraft seit: 01.01.2012"
+  },
+  {
+   "ref": "RB 40.1117",
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/40.1117",
+   "title": "Interkantonale Vereinbarung über die Harmonisierung der Baubegriffe",
+   "abbr": "IVHB",
+   "dates": "vom 22.09.2005, in Kraft seit: 01.01.2012"
+  }
+ ]
+}
