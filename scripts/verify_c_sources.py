@@ -314,7 +314,7 @@ class Http:
 # --------------------------------------------------------------------------------------
 def analyse_content(body: bytes, content_type: str) -> dict:
     ct = (content_type or "").split(";")[0].strip().lower()
-    info = {"dateityp": "", "titel": "", "text": "", "soft404": False, "pdf_seiten": None}
+    info = {"dateityp": "", "titel": "", "text": "", "soft404": False, "pdf_seiten": None, "seiten": []}
     if body[:5] == b"%PDF-" or ct == "application/pdf":
         info["dateityp"] = "PDF"
         try:
@@ -327,13 +327,14 @@ def analyse_content(body: bytes, content_type: str) -> dict:
                 meta_title = (reader.metadata or {}).get("/Title") or ""
             except Exception:
                 pass
-            texts = []
-            for page in reader.pages[:15]:
+            pages = []
+            for page in reader.pages[:300]:  # alle Seiten für Belegstellen, die ersten 15 für die Identität
                 try:
-                    texts.append(page.extract_text() or "")
+                    pages.append(page.extract_text() or "")
                 except Exception:
-                    pass
-            text = "\n".join(texts)
+                    pages.append("")
+            info["seiten"] = pages
+            text = "\n".join(pages[:15])
             first_line = next((l.strip() for l in text.splitlines() if len(l.strip()) > 8), "")
             info["titel"] = (str(meta_title).strip() or first_line)[:200]
             info["text"] = text[:200000]
@@ -370,12 +371,18 @@ def analyse_content(body: bytes, content_type: str) -> dict:
 def match_keywords(text: str, title: str, expected: list, places: list[str]) -> dict:
     """expected: Liste von Gruppen; jede Gruppe ist ein String oder eine Liste von Alternativen."""
     hay = norm(title) + " \n " + norm(text)
+    hay_compact = re.sub(r"\s+", "", hay)  # PDF-Texte ohne Leerzeichen (z. B. «Protokoll derEinwohnergemeinde…»)
+
+    def has(term):
+        t = norm(term)
+        return t in hay or re.sub(r"\s+", "", t) in hay_compact
+
     found, missing = [], []
     for group in expected or []:
         alts = group if isinstance(group, list) else [group]
-        hit = next((a for a in alts if norm(a) in hay), None)
+        hit = next((a for a in alts if has(a)), None)
         (found if hit else missing).append(hit or " / ".join(alts))
-    place_hits = [p for p in places if norm(p) in hay]
+    place_hits = [p for p in places if has(p)]
     place_ok = (not places) or bool(place_hits)
     return {"found": found, "missing": missing, "place_ok": place_ok, "place_hits": place_hits,
             "n_expected": len(expected or [])}
@@ -461,11 +468,22 @@ def lexwork_lookup(http: Http, url: str) -> dict | None:
 # --------------------------------------------------------------------------------------
 # Linkprüfung
 # --------------------------------------------------------------------------------------
-def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
+def find_pages(pages: list[str], terms: list[str]) -> str:
+    """Seitenzahlen, auf denen Belegbegriffe vorkommen (PDF), z. B. «Baurecht: S. 5, 12»."""
+    out = []
+    for term in terms:
+        t = norm(term)
+        hits = [str(i + 1) for i, pg in enumerate(pages)
+                if t in norm(pg) or re.sub(r"\s+", "", t) in re.sub(r"\s+", "", norm(pg))]
+        out.append(f"{term}: " + (("S. " + ", ".join(hits[:12]) + (" …" if len(hits) > 12 else "")) if hits else "nicht gefunden"))
+    return "; ".join(out)
+
+
+def check_url(http: Http, url: str, expected: list, places: list[str], belege: list[str] | None = None) -> dict:
     res = OrderedDict(
         url=url, final_url="", http="", methode="", linkstatus="", fehler="", dateityp="", titel="",
         jahre="", inhalt="Offen", inhalt_detail="", soft404=False, stabilitaet=link_stability(url),
-        geprueft=dt.datetime.now().strftime("%Y-%m-%d %H:%M"), redirect_kette="", ausser_kraft="", textauszug="",
+        geprueft=dt.datetime.now().strftime("%Y-%m-%d %H:%M"), redirect_kette="", ausser_kraft="", textauszug="", belegstellen="",
     )
     ok, why = url_syntax_ok(url)
     if not ok:
@@ -532,6 +550,8 @@ def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
 
     res["jahre"] = ", ".join(str(y) for y in extract_years(res["titel"] + " " + text[:30000]))
     res["textauszug"] = re.sub(r"\s+", " ", info["text"])[:400]
+    if belege:
+        res["belegstellen"] = find_pages(info["seiten"] or [text], belege) + ("" if info["seiten"] else " (Webseite, ohne Seitenzahl)")
     if info["soft404"]:
         if re.search(r"403|access denied|zugriff verweigert|an error has occur", norm(res["titel"])):
             res.update(linkstatus="Nicht prüfbar", fehler="Fehlerseite «Zugriff verweigert» mit HTTP 200; keine Umgehung versucht")
@@ -575,7 +595,7 @@ def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
 DIM_PATTERNS = {
     "C1": r"jahresrechnung|rechnung[ _-]?20\d\d|budget|voranschlag|finanzplan|aufgaben[- ]und[- ]finanzplan|investitions|finanzbericht|finanzausgleich|finanzhaushalt|finanzkennzahl|finanzstatistik|steuerfuss",
     "C2": r"liegenschaft|immobilien|bodenpolitik|bodenstrategie|baurecht|grundst|areal|landkauf|landverkauf|landerwerb|verkauf.*parzelle",
-    "C3": r"gemeindeordnung|rechtssammlung|erlasse|systematische sammlung|organisationsreglement|zweckverband|leistungsvereinbarung|eignerstrategie|beteiligung|interkommunal|zusammenarbeit|regio |agglomeration|gemeindeverband",
+    "C3": r"gemeindeordnung|rechtssammlung|reglement|verordnung|erlasse|systematische sammlung|organisationsreglement|zweckverband|leistungsvereinbarung|eignerstrategie|beteiligung|interkommunal|zusammenarbeit|regio |agglomeration|gemeindeverband",
     "C4": r"organigramm|geschaeftsbericht|verwaltungsbericht|personalreglement|stellenplan|digitalisierung|beschaffung|submission|organisationsentwicklung|amtsbericht",
     "C5": r"gemeindeversammlung|protokoll|botschaft|legislatur|leitbild|mitwirkung|abstimmung|parlament|einwohnerrat|gemeindekommission|erlaeuterung|vernehmlassung|gemeindestrategie",
 }
@@ -792,6 +812,8 @@ def derive_fields(rows: list[dict], results: dict[str, dict]) -> None:
         elif not rec.get("begruendung"):
             raise SystemExit(f"{rec['id']}: Tragfähigkeit ohne Bewertungsbegründung")
         rec.setdefault("pruefnachweis", "Belegt Existenz und Zugänglichkeit der Quelle; inhaltliche Aussagen erst nach Auswertung.")
+        if res.get("belegstellen"):
+            rec["pruefnachweis"] = f"{rec['pruefnachweis']} Fundstellen im Dokument (automatisch): {res['belegstellen']}."
         if not rec.get("anfrage"):
             rec["anfrage"] = "Ja" if rec.get("ebene") == "Gemeinde" and rec.get("dim") in ("C2", "C3", "C4") else "Nein"
         if not rec.get("zustaendig"):
@@ -1198,7 +1220,7 @@ def write_reports(rows, results, cands, anfragen, stats, cur, discovery_log):
     REPORT_DIR.mkdir(exist_ok=True)
     fields = ["ID", "Ebene", "Kanton", "Gemeinde", "C-Dimension", "Dokumenttitel", "Ursprüngliche URL", "Geprüfte URL",
               "Finale URL", "HTTP-Status", "Prüfmethode", "Ergebnis (Linkstatus)", "Fehler", "Dateityp", "Erkannter Titel",
-              "Inhaltsprüfung", "Inhaltsprüfung – Nachweis", "Erkannte Jahresangaben", "Linkstabilität", "Weiterleitungskette", "Prüfdatum"]
+              "Inhaltsprüfung", "Inhaltsprüfung – Nachweis", "Erkannte Jahresangaben", "Belegstellen", "Linkstabilität", "Weiterleitungskette", "Prüfdatum"]
     with open(REPORT_DIR / "link_validation.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(fields)
@@ -1207,7 +1229,7 @@ def write_reports(rows, results, cands, anfragen, stats, cur, discovery_log):
             w.writerow([rec["id"], rec.get("ebene"), rec.get("kanton"), rec.get("gemeinde"), rec.get("dim"), rec.get("titel"),
                         rec.get("_alte_url") or rec.get("url"), rec.get("url"), res.get("final_url", ""), res.get("http", ""),
                         res.get("methode", ""), rec.get("linkstatus"), res.get("fehler", ""), res.get("dateityp", ""),
-                        res.get("titel", ""), rec.get("inhalt"), rec.get("inhalt_detail"), res.get("jahre", ""),
+                        res.get("titel", ""), rec.get("inhalt"), rec.get("inhalt_detail"), res.get("jahre", ""), res.get("belegstellen", ""),
                         rec.get("linkstabilitaet"), res.get("redirect_kette", ""), res.get("geprueft", "")])
     # Alte (ersetzte) URLs separat prüfen und dokumentieren
     with open(REPORT_DIR / "link_validation.json", "w", encoding="utf-8") as f:
@@ -1265,7 +1287,15 @@ def write_markdown_report(rows, results, cands, anfragen, stats, cur, discovery_
             L.append(f"| {r['id']} | {r.get('gemeinde') if r.get('ebene') == 'Gemeinde' else r.get('kanton') if r.get('ebene') == 'Kanton' else 'Bund'} | "
                      f"{r.get('titel')} | [{r['linkstatus']}]({r['url']}) | {r['inhalt']} |")
         L.append("")
-    L.append("## 4 Abdeckung je Gemeinde und Dimension\n")
+    verw = cur.get("verworfene_kandidaten", [])
+    L.append(f"### Geprüfte, aber nicht aufgenommene Kandidaten ({len(verw)})\n")
+    if verw:
+        L.append("| Kandidat | URL | Grund |\n|---|---|---|")
+        for v in verw:
+            L.append(f"| {v['titel']} | {v['url']} | {v['grund']} |")
+    else:
+        L.append("Keine.")
+    L.append("\n## 4 Abdeckung je Gemeinde und Dimension\n")
     L.append("Zellen: bestätigte Dokumente / Zeilen gesamt (nur Gemeindeebene).\n")
     L.append("| Gemeinde | C1 | C2 | C3 | C4 | C5 |\n|---|---|---|---|---|---|")
     for gem in GEMEINDEN:
@@ -1332,11 +1362,11 @@ def main():
         rec["url"] = clean_url(rec.get("url") or "")
 
     # zu prüfende URLs: aktuelle Links, ersetzte Alt-Links, Fundstellen
-    jobs: OrderedDict[str, tuple[list, list]] = OrderedDict()
+    jobs: OrderedDict[str, tuple[list, list, list]] = OrderedDict()
     for rec in rows:
-        jobs.setdefault(rec["url"], (rec.get("erwartet") or [], places_for(rec)))
+        jobs.setdefault(rec["url"], (rec.get("erwartet") or [], places_for(rec), rec.get("belege") or []))
         if rec.get("_alte_url"):
-            jobs.setdefault(rec["_alte_url"], ([], places_for(rec)))
+            jobs.setdefault(rec["_alte_url"], ([], places_for(rec), []))
     results: dict[str, dict] = {}
     log_lines: list[str] = []
 
@@ -1362,9 +1392,9 @@ def main():
         log(f"Prüfe {len(jobs)} URLs mit {WORKERS} Threads …")
 
         def run(item):
-            url, (exp, pl) = item
+            url, (exp, pl, bel) = item
             try:
-                res = check_url(http, url, exp, pl)
+                res = check_url(http, url, exp, pl, bel)
             except Exception as exc:  # unerwartete Fehler nicht den ganzen Lauf abbrechen lassen
                 res = {"url": url, "linkstatus": "Nicht prüfbar", "fehler": f"Prüfskript: {type(exc).__name__}: {exc}"[:300],
                        "geprueft": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "inhalt": "Offen"}

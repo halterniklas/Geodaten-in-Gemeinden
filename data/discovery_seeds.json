@@ -135,6 +135,18 @@
    "url": "https://www.efv.admin.ch/de/finanzstatistik-daten",
    "gemeinde": "",
    "kanton": "Bund"
+  },
+  {
+   "url": "https://www.seelisberg.ch/politik/rechtssammlung",
+   "gemeinde": "Seelisberg",
+   "kanton": "Uri"
+  },
+  {
+   "url": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/rechtssammlung-1",
+   "gemeinde": "Wil",
+   "kanton": "St. Gallen",
+   "tiefe": 2,
+   "max_unterseiten": 40
   }
  ],
  "sitemaps": [

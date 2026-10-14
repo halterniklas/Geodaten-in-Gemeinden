@@ -1,5 +1,57 @@
 {
  "stand": "2026-10-14",
+ "verworfene_kandidaten": [
+  {
+   "titel": "Gemeindefinanzen BL nach Rechnungsteil (opendata.swiss, Ressource und Datensatzseite)",
+   "url": "https://opendata.swiss/en/dataset/gemeindefinanzen-nach-rechnungsteil-funktion-kontenart-und-jahr-ab-2014",
+   "grund": "Lauf 1 und 2: Fehlerseite «Error 403» – Existenz nicht belegbar; BL-C1-01 (statistik.bl.ch) deckt den Inhalt ab."
+  },
+  {
+   "titel": "Stadt Wil: PO 101 «Für eine neue Bodenpolitik» – Stellungnahme",
+   "url": "https://www.stadtwil.ch/_docn/1058128/PO_101_Fuer_eine_neue_Bodenpolitik_Stellungnahme.pdf",
+   "grund": "HTTP 404 (CMS-Umstellung); kein Ersatzlink gefunden."
+  },
+  {
+   "titel": "Stadt Wil: Gemeindeordnung (alter Link)",
+   "url": "https://stadtwil.ch/_doc/1267121",
+   "grund": "HTTP 404; Ersatz über Rechtssammlung der Stadt (WIL-C3-01 ff.)."
+  },
+  {
+   "titel": "Stadt Wil: TBW-Reglement 2020 (alter Link)",
+   "url": "https://www.stadtwil.ch/_docn/2747618/012_BA_Erlass_neuesTBW-Reglement.pdf",
+   "grund": "HTTP 404; Ersatz über Rechtssammlung der Stadt."
+  },
+  {
+   "titel": "Stadt Wil: Beteiligungsreglement (alter Link)",
+   "url": "https://www.stadtwil.ch/_doc/2079992",
+   "grund": "HTTP 404; Ersatz über Rechtssammlung der Stadt."
+  },
+  {
+   "titel": "Stadt Wil: Geschäftsbericht 2024 (alter Link)",
+   "url": "https://www.stadtwil.ch/_doc/5663965",
+   "grund": "HTTP 404; ersetzt durch Geschäftsbericht 2025 (WIL-C4-01)."
+  },
+  {
+   "titel": "Stadt Wil: Nachtrag IV Bericht (alter Link)",
+   "url": "https://stadtwil.ch/_doc/4801870",
+   "grund": "HTTP 404; ersetzt durch Abstimmungsseite (WIL-C2-01)."
+  },
+  {
+   "titel": "Stadt Wil: Jahresrechnung 2023 / Rechnung 2024 (alte Links)",
+   "url": "https://www.stadtwil.ch/_docn/5050942/Jahresrechnung_2023.pdf ; https://www.stadtwil.ch/_doc/5592973",
+   "grund": "HTTP 404; ersetzt durch /storage-Links (WIL-C1-03/04)."
+  },
+  {
+   "titel": "EFV: FS-Methodenband (PDF)",
+   "url": "https://www.efv.admin.ch/dam/efv/en/dokumente/finanzstatistik/methoden/FS-Methodenband.pdf.download.pdf/FS-Methodenband.pdf",
+   "grund": "HTTP 502; ersetzt durch Methodenseite (CH-C1-03)."
+  },
+  {
+   "titel": "Sekundärquellen (Presse: Bote der Urschweiz, SRF)",
+   "url": "–",
+   "grund": "Nicht aufgenommen, da Primärquellen verfügbar (Quellenpriorisierung)."
+  }
+ ],
  "bestehende_zeilen": {
   "CH-C1-01": {
    "erwartet": [
@@ -283,8 +335,13 @@
      "Sonnenberg"
     ],
     [
-     "Baurecht"
+     "Nutzungsplanung"
     ]
+   ],
+   "belege": [
+    "Baurecht",
+    "775",
+    "Erwerb"
    ],
    "confidence": "Mittel",
    "fundstelle": "https://www.seelisberg.ch/",
@@ -351,6 +408,10 @@
     [
      "Baurecht"
     ]
+   ],
+   "belege": [
+    "Baurecht",
+    "Landpolitik"
    ],
    "confidence": "Mittel",
    "hinweis": "Historisches Dokument (2015); aktuelle Liegenschaftsstrategie nicht öffentlich gefunden.",
@@ -424,54 +485,67 @@
    ]
   },
   "WIL-C2-01": {
-   "url": "https://stadtwil.ch/_doc/4801870",
-   "titel": "Nachtrag IV zur Gemeindeordnung: Finanzbefugnisse für Liegenschaftsgeschäfte im Finanzvermögen (Bericht Stadtrat 24.10.2023)",
-   "doktyp": "Bericht und Antrag",
-   "dokstatus": "Direktes Dokument",
-   "rechtsstatus": "Vorlage (Beschluss/Referendum prüfen)",
-   "bezugsjahr": "2023",
-   "relevanz": "Kompetenzordnung für aktive Bodenpolitik (Kauf/Verkauf im Finanzvermögen)",
+   "url": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/abstimmungen-und-wahlen/vergangene-abstimmungen/2024-vergangene-abstimmungen-und-wahlen/24-11-2024-eidgenoessische-kantonale-und-kommunale-abstimmungen-sowie-2-wahlgang-kommunale-erneuerungswahlen/nachtrag-iv-zur-gemeindeordnung",
+   "titel": "Nachtrag IV zur Gemeindeordnung (Finanzbefugnisse Liegenschaftsgeschäfte im Finanzvermögen) – kommunale Abstimmung 24.11.2024",
+   "doktyp": "Abstimmungsseite / Resultat",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Volksentscheid (Ergebnis auf Seite prüfen)",
+   "bezugsjahr": "2024",
+   "relevanz": "Kompetenzordnung für aktive Bodenpolitik (Kauf/Verkauf im Finanzvermögen) und Volksentscheid dazu",
    "erwartet": [
     [
-     "Nachtrag"
-    ],
-    [
-     "Liegenschaft"
+     "Nachtrag IV"
     ]
    ],
    "confidence": "Mittel",
-   "hinweis": "Ob der Nachtrag angenommen wurde, ist nicht belegt.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "weitere_dim": "C5",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/abstimmungen-und-wahlen/vorlagen/kommunale-vorlagen/22-11-2024-nachtrag-iv-zur-gemeindeordnung",
+   "hinweis": "Zuerst gefundener Bericht (stadtwil.ch/_doc/4801870) liefert HTTP 404 (CMS-Umstellung).",
    "grund": "Geschäftsregister-Startseite durch direktes Dokument zur Bodenpolitik ersetzt."
   },
   "WIL-C3-01": {
-   "url": "https://www.stadtwil.ch/_doc/2079992",
-   "titel": "Reglement über die Steuerung und Beaufsichtigung von Organisationen mit städtischer Beteiligung (Beteiligungsreglement)",
-   "doktyp": "Reglement",
-   "dokstatus": "Direktes Dokument",
-   "rechtsstatus": "Kommunales Recht (verbindlich)",
-   "bezugsjahr": "2020",
+   "url": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/rechtssammlung-1",
+   "titel": "Stadt Wil: Rechtssammlung (Gemeindeordnung, Beteiligungsreglement, TBW-Reglement u. a.)",
+   "doktyp": "Rechtssammlung",
+   "dokstatus": "Übersichtsseite",
+   "rechtsstatus": "Kommunales Recht (Sammlung)",
    "erwartet": [
     [
-     "Beteiligung"
+     "Rechtssammlung"
     ]
    ],
    "confidence": "Mittel",
-   "grund": "Geschäftsregister-Startseite durch Beteiligungsreglement ersetzt."
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "hinweis": "Direktlinks zu Einzelerlassen siehe weitere C3-Zeilen; Suchtreffer /_doc/… liefern HTTP 404.",
+   "grund": "Geschäftsregister-Startseite durch Rechtssammlung der Stadt ersetzt."
   },
   "WIL-C4-01": {
-   "url": "https://www.stadtwil.ch/_doc/5663965",
-   "titel": "Geschäftsbericht der Stadt Wil 2024",
+   "url": "https://www.stadtwil.ch/storage/ee8bae2cd080dda0bc77e69f99046109dc3e161b3498b17df7581cfe441bc612",
+   "titel": "Geschäftsbericht der Stadt Wil 2025",
    "doktyp": "Geschäftsbericht",
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Rechenschaftsbericht",
-   "bezugsjahr": "2024",
+   "bezugsjahr": "2025",
+   "weitere_dim": "C3, C5",
    "erwartet": [
     [
      "Geschäftsbericht"
+    ],
+    [
+     "2025"
     ]
    ],
-   "confidence": "Mittel",
-   "grund": "Startseite durch Geschäftsbericht ersetzt."
+   "confidence": "Hoch",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/geschaeftsberichte",
+   "belege": [
+    "Organigramm",
+    "Stellen",
+    "Personal"
+   ],
+   "hinweis": "Geschäftsberichte 2008–2024 auf der Fundstelle (Zeitreihe).",
+   "grund": "Startseite durch aktuellen Geschäftsbericht ersetzt."
   },
   "WIL-C5-01": {
    "url": "https://www.stadtwil.ch/storage/55dcd744fbd978ce5601e42dc48a7b53cdfe1082b7fecb9c647e6dadc8abf9c7",
@@ -497,24 +571,27 @@
    "gemeinde": "Alle",
    "dim": "C1",
    "thema": "Finanzstatistik Methode",
-   "titel": "EFV: FS-Methodenband (Finanzstatistik-Modell, HRM2-Zuordnung)",
+   "titel": "EFV: Methoden der Finanzstatistik (FS-Modell, HRM2-Zuordnung)",
    "doktyp": "Methodik",
-   "dokstatus": "Direktes Dokument",
+   "dokstatus": "Webseite",
    "rechtsstatus": "Methodische Grundlage",
    "herausgeber": "Eidgenössische Finanzverwaltung (EFV)",
-   "url": "https://www.efv.admin.ch/dam/efv/en/dokumente/finanzstatistik/methoden/FS-Methodenband.pdf.download.pdf/FS-Methodenband.pdf",
+   "url": "https://www.efv.admin.ch/de/methoden-finanzstatistik",
    "relevanz": "Definitionen der Kennzahlen und HRM2-Abbildung für Vergleichbarkeit",
    "kennzahl": "Kennzahlendefinitionen",
    "vergleich": "Kanton × Grössenklasse",
    "confidence": "Hoch",
    "verbindung": "C1",
    "sprint2": "Vergleichsregeln C1",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "fundstelle": "https://www.efv.admin.ch/de/finanzstatistik-daten",
+   "hinweis": "Früherer PDF-Link zum FS-Methodenband (efv.admin.ch/dam/…) liefert HTTP 502 (Website-Umbau); Methodenseite über EFV-Finanzstatistik ermittelt.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
    "erwartet": [
     [
-     "Finanzstatistik",
-     "financial statistics",
-     "statistique financière"
+     "Methode"
+    ],
+    [
+     "Finanzstatistik"
     ]
    ]
   },
@@ -867,35 +944,6 @@
    ]
   },
   {
-   "id": "BL-C1-04",
-   "ebene": "Kanton",
-   "kanton": "Basel-Landschaft",
-   "gemeinde": "Alle",
-   "dim": "C1",
-   "thema": "Finanzstatistik Gemeinden",
-   "titel": "Gemeindefinanzen nach Rechnungsteil, Funktion, Kontenart und Jahr (ab 2014) – OGD Kanton BL",
-   "doktyp": "Datensatz",
-   "dokstatus": "Direktes Dokument",
-   "rechtsstatus": "Datengrundlage",
-   "herausgeber": "Statistisches Amt Basel-Landschaft",
-   "url": "https://opendata.swiss/en/dataset/gemeindefinanzen-nach-rechnungsteil-funktion-kontenart-und-jahr-ab-2014",
-   "relevanz": "Zeitreihe Gemeindefinanzen, filterbar auf Münchenstein",
-   "kennzahl": "Aufwand/Ertrag nach Funktion",
-   "vergleich": "Kanton × Grössenklasse",
-   "confidence": "Mittel",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
-   "erwartet": [
-    [
-     "Gemeindefinanzen"
-    ]
-   ],
-   "ort": [
-    "Basel-Landschaft",
-    "Basel-Land",
-    "BL"
-   ]
-  },
-  {
    "id": "BL-C1-05",
    "ebene": "Kanton",
    "kanton": "Basel-Landschaft",
@@ -1055,6 +1103,11 @@
     [
      "2026"
     ]
+   ],
+   "belege": [
+    "Steuerfuss",
+    "Finanzplan",
+    "Nettoinvestition"
    ]
   },
   {
@@ -1130,6 +1183,65 @@
    "erwartet": [
     [
      "Nutzungsplanung"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C3-02",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C3",
+   "thema": "Gemeindeordnung",
+   "titel": "Gemeindeordnung der Einwohnergemeinde Seelisberg",
+   "doktyp": "Gemeindeordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Gemeindeordnung.pdf",
+   "relevanz": "Zuständigkeiten Gemeindeversammlung/Gemeinderat, Finanzkompetenzen, Zusammenarbeit",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/rechtssammlung",
+   "hinweis": "Fassungsdatum im Dokument prüfen (zitiert als 27.11.2009).",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "weitere_dim": "C1, C5",
+   "erwartet": [
+    [
+     "Gemeindeordnung"
+    ]
+   ],
+   "belege": [
+    "Zweckverband",
+    "Zusammenarbeit",
+    "Finanzbefugnis",
+    "Kredit"
+   ]
+  },
+  {
+   "id": "SEE-C5-08",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Verfahren Gemeindeversammlung",
+   "titel": "Verordnung über das Verfahren an der Gemeindeversammlung Seelisberg",
+   "doktyp": "Kommunale Verordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_an_der_Gemeindeversammlung.pdf",
+   "relevanz": "Entscheidungsverfahren, Antragsrechte der Stimmberechtigten",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/rechtssammlung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Gemeindeversammlung"
+    ],
+    [
+     "Verfahren"
     ]
    ]
   },
@@ -1337,16 +1449,25 @@
    "herausgeber": "Gemeinde Seelisberg",
    "url": "https://www.seelisberg.ch/files/pdf/Beschlussprotokoll-GV-Mai-2025.pdf",
    "bezugsjahr": "2025",
-   "relevanz": "Beschluss Jahresrechnung 2024",
+   "relevanz": "Beschluss Jahresrechnung 2024 (44 Stimmberechtigte anwesend)",
    "vergleich": "Kein Peer-Vergleich",
    "confidence": "Hoch",
    "fundstelle": "https://www.seelisberg.ch/politik/gemeindeversammlung",
+   "hinweis": "Textextraktion liest den Kopf als «GEMEINDESEEUSBERG» (Schriftbild); Ortsabgleich toleriert diese Lesart.",
    "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
    "weitere_dim": "C1",
    "erwartet": [
     [
      "Beschluss"
+    ],
+    [
+     "28. Mai 2025",
+     "28.Mai2025"
     ]
+   ],
+   "ort": [
+    "Seelisberg",
+    "Seeusberg"
    ]
   },
   {
@@ -1500,6 +1621,9 @@
     [
      "2023"
     ]
+   ],
+   "belege": [
+    "Baurechtszins"
    ]
   },
   {
@@ -1990,32 +2114,6 @@
    ]
   },
   {
-   "id": "WIL-C2-02",
-   "ebene": "Gemeinde",
-   "kanton": "St. Gallen",
-   "gemeinde": "Wil",
-   "dim": "C2",
-   "thema": "Bodenpolitik",
-   "titel": "PO 101 «Für eine neue Bodenpolitik» – Stellungnahme des Stadtrats (Grundsätze Liegenschaftenkonzept)",
-   "doktyp": "Stellungnahme",
-   "dokstatus": "Direktes Dokument",
-   "rechtsstatus": "Politische Stellungnahme (historisch)",
-   "herausgeber": "Stadt Wil",
-   "url": "https://www.stadtwil.ch/_docn/1058128/PO_101_Fuer_eine_neue_Bodenpolitik_Stellungnahme.pdf",
-   "bezugsjahr": "2012",
-   "relevanz": "Grundsätze der städtischen Liegenschaften-/Bodenpolitik",
-   "vergleich": "Kein Peer-Vergleich",
-   "confidence": "Hoch",
-   "hinweis": "Historisch; aktuelle Boden-/Immobilienstrategie prüfen.",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
-   "weitere_dim": "C5",
-   "erwartet": [
-    [
-     "Bodenpolitik"
-    ]
-   ]
-  },
-  {
    "id": "WIL-C2-03",
    "ebene": "Gemeinde",
    "kanton": "St. Gallen",
@@ -2165,56 +2263,6 @@
    "ort": []
   },
   {
-   "id": "WIL-C3-02",
-   "ebene": "Gemeinde",
-   "kanton": "St. Gallen",
-   "gemeinde": "Wil",
-   "dim": "C3",
-   "thema": "Gemeindeordnung",
-   "titel": "Gemeindeordnung der Stadt Wil vom 28.2.2016 (sRS 111.1)",
-   "doktyp": "Gemeindeordnung",
-   "dokstatus": "Direktes Dokument",
-   "rechtsstatus": "Kommunales Recht (verbindlich)",
-   "herausgeber": "Stadt Wil",
-   "url": "https://stadtwil.ch/_doc/1267121",
-   "bezugsjahr": "in Kraft seit 1.1.2017; Nachträge prüfen",
-   "relevanz": "Zuständigkeiten Stadtrat/Stadtparlament, Finanzkompetenzen, Referendum",
-   "vergleich": "Kein Peer-Vergleich",
-   "confidence": "Hoch",
-   "fundstelle": "https://www.stadtwil.ch/publikationen/90704",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
-   "weitere_dim": "C5",
-   "erwartet": [
-    [
-     "Gemeindeordnung"
-    ]
-   ]
-  },
-  {
-   "id": "WIL-C3-03",
-   "ebene": "Gemeinde",
-   "kanton": "St. Gallen",
-   "gemeinde": "Wil",
-   "dim": "C3",
-   "thema": "Beteiligungen",
-   "titel": "Reglement Technische Betriebe Wil (TBW) – Erlass 2020",
-   "doktyp": "Kommunales Reglement",
-   "dokstatus": "Direktes Dokument",
-   "rechtsstatus": "Kommunales Recht (verbindlich)",
-   "herausgeber": "Stadt Wil",
-   "url": "https://www.stadtwil.ch/_docn/2747618/012_BA_Erlass_neuesTBW-Reglement.pdf",
-   "bezugsjahr": "2020",
-   "relevanz": "Trägerschaft/Steuerung der TBW",
-   "vergleich": "Kein Peer-Vergleich",
-   "confidence": "Hoch",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
-   "erwartet": [
-    [
-     "Technische Betriebe"
-    ]
-   ]
-  },
-  {
    "id": "WIL-C3-04",
    "ebene": "Gemeinde",
    "kanton": "St. Gallen",
@@ -2344,9 +2392,9 @@
     "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
    },
    "A-SEE-05": {
-    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie die geltende Gemeindeordnung (27.11.2009), die Verordnung über die Zuständigkeiten im Finanzbereich und eine Liste der Zweckverbände/Leistungsvereinbarungen (z. B. ZAKU, Abwasser Uri, Schule).",
-    "Recherchebefund": "Gemeindeordnung nur zitiert, Volltext nicht online gefunden; Mitgliedschaften in Zweckverbänden nicht belegt.",
-    "Bezug Katalog-ID": "SEE-C3-01",
+    "Präzisierte Frage an die Gemeinde": "Bitte bestätigen Sie die geltende Fassung der Gemeindeordnung und senden Sie die Verordnung über die Zuständigkeiten im Finanzbereich sowie eine Liste der Zweckverbände/Leistungsvereinbarungen (z. B. ZAKU, Abwasser Uri, Schule).",
+    "Recherchebefund": "Gemeindeordnung online (SEE-C3-02, Rechtssammlung der Gemeinde); Mitgliedschaften in Zweckverbänden nicht belegt.",
+    "Bezug Katalog-ID": "SEE-C3-02",
     "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
     "Zuständige Stelle (vermutet)": "Gemeindeschreiberei"
    },
@@ -2426,8 +2474,8 @@
    },
    "A-WIL-03": {
     "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie das Liegenschaftsverzeichnis der Stadt (Finanz- und Verwaltungsvermögen) mit Parzellen-ID zur Verfügung.",
-    "Recherchebefund": "Bodenpolitik-Grundsätze (WIL-C2-02) und Kompetenzordnung (WIL-C2-01) gefunden; kein Verzeichnis.",
-    "Bezug Katalog-ID": "WIL-C2-01, WIL-C2-02",
+    "Recherchebefund": "Bodenpolitik-Dokument (WIL-C2-03) und Kompetenzordnung Nachtrag IV (WIL-C2-01) gefunden; kein Verzeichnis.",
+    "Bezug Katalog-ID": "WIL-C2-01, WIL-C2-03",
     "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
     "Zuständige Stelle (vermutet)": "Liegenschaften / Bauverwaltung Stadt Wil"
    },
@@ -2438,12 +2486,12 @@
    },
    "A-WIL-05": {
     "Präzisierte Frage an die Gemeinde": "Bitte senden Sie die aktuellen Eignerstrategien und Leistungsvereinbarungen (TBW, Thurcom AG, WISPAG) sowie Unterlagen zur Regio Wil.",
-    "Recherchebefund": "Beteiligungsreglement (WIL-C3-01) und TBW-Reglement (WIL-C3-03) gefunden; Regio-Wil-Statuten nicht.",
-    "Bezug Katalog-ID": "WIL-C3-01, WIL-C3-03"
+    "Recherchebefund": "Rechtssammlung der Stadt (WIL-C3-01) und Jahresrechnung TBW (WIL-C1-09) öffentlich; Eignerstrategien und Regio-Wil-Statuten nicht gefunden.",
+    "Bezug Katalog-ID": "WIL-C3-01, WIL-C1-09"
    },
    "A-WIL-06": {
     "Präzisierte Frage an die Gemeinde": "Bitte senden Sie das aktuelle Organigramm der Stadtverwaltung, den Stellenplan der Bereiche Bau/Stadtentwicklung und Angaben zur Projektorganisation (z. B. WILWEST, Ortsplanungsrevision).",
-    "Recherchebefund": "Geschäftsbericht 2024 (WIL-C4-01) gefunden; aktuelles Organigramm nicht.",
+    "Recherchebefund": "Geschäftsberichte bis 2025 öffentlich (WIL-C4-01); separates aktuelles Organigramm nicht gefunden.",
     "Bezug Katalog-ID": "WIL-C4-01",
     "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar"
    },
@@ -2493,9 +2541,9 @@
     "Warum nötig": "Handlungsspielraum aktive Bodenpolitik",
     "Priorität": "Mittel",
     "Status": "Offen",
-    "Recherchebefund": "Strategiedokument nur mit unsicherer Zuordnung gefunden (WIL-C2-03); Abstimmungsergebnis Nachtrag IV nicht belegt.",
+    "Recherchebefund": "Strategiedokument (WIL-C2-03) und Abstimmungsseite Nachtrag IV (WIL-C2-01) gefunden; Geltungsstand bestätigen lassen.",
     "Bezug Katalog-ID": "WIL-C2-01, WIL-C2-03",
-    "Präzisierte Frage an die Gemeinde": "Welche Boden-/Immobilienstrategie gilt aktuell, und ist der Nachtrag IV zur Gemeindeordnung in Kraft?"
+    "Präzisierte Frage an die Gemeinde": "Welche Boden-/Immobilienstrategie gilt aktuell (Fassung, Beschlussdatum), und seit wann gilt Nachtrag IV zur Gemeindeordnung?"
    }
   ]
  },
