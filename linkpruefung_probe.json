@@ -1,0 +1,207 @@
+{
+ "kandidaten": {
+  "BL 791": "200 791 Gesetz über den Denkmal- und Heimatschutz (DHG) aufgehoben=False",
+  "BL 792": "404 ",
+  "BL 793": "200 793 Gesetz über den Schutz und die Erforschung von archäologischen Stätten und Objekten (Archäologiegesetz, ArchG) aufgehoben=False",
+  "BL 794": "404 ",
+  "BL 420": "200 420 Einführungsgesetz zur interkantonalen Vereinbarung über das öffentliche Beschaffungswesen (EG IVöB) aufgehoben=False",
+  "BL 420.1": "404 ",
+  "BL 781": "404 ",
+  "BL 782": "200 782 Gesetz über den Gewässerschutz () aufgehoben=False",
+  "SG 734.1": "200 734.1 Wasserbaugesetz (WBG) aufgehoben=False",
+  "SG 734.11": "200 734.11 Wasserbauverordnung (WBV) aufgehoben=False",
+  "SG 731.1": "200 731.1 Planungs- und Baugesetz (PBG) aufgehoben=False",
+  "UR 10.5101": "200 10.5101 Gesetz über den Natur- und Heimatschutz () aufgehoben=False",
+  "UR 10.5111": "200 10.5111 Reglement über den Schutz der Region Maderanertal und Fellital () aufgehoben=False",
+  "UR 10.5103": "404 ",
+  "UR 40.3101": "404 ",
+  "UR 40.3111": "200 40.3111 Verordnung zum Bundesgesetz über die Jagd und den Schutz wildlebender Säugetiere und Vögel (Jagdverordnung, KJSV) aufgehoben=False",
+  "UR 40.4101": "200 40.4101 Gewässernutzungsgesetz (GNG) aufgehoben=False",
+  "UR 3.3112": "404 ",
+  "UR 3.3113": "404 ",
+  "UR 3.3114": "404 ",
+  "UR 3.3116": "404 ",
+  "UR 3.3117": "404 ",
+  "UR 3.3118": "404 ",
+  "WIL 7.3-1": "200 7.3-1 Immissionsschutzreglement () aufgehoben=False",
+  "WIL 7.3-2": "200 7.3-2 Reglement über den Fonds für Energiespar- und Förderbeiträge (Energiefondsreglement) aufgehoben=False",
+  "WIL 7.4-1": "404 ",
+  "WIL 7.5-1": "404 ",
+  "WIL 7.1-2": "200 7.1-2 Reglement über städtische Beiträge an die Erhaltung und Pflege von Schutzobjekten mit kommunaler Bedeutung (Beitragsreglement) aufgehoben=False",
+  "WIL 7.1-3": "200 7.1-3 Reglement der Stadtbildkommission der Stadt Wil () aufgehoben=False",
+  "WIL 7.2-1": "404 ",
+  "WIL 7.6-1": "200 7.6-1 Reglement über die Benennung von Verkehrsanlagen und die Gebäudeadressierung () aufgehoben=False",
+  "WIL 7.7-1": "200 7.7-1 Reglement über das Parkieren auf öffentlichem Grund (Parkierungsreglement) aufgehoben=False",
+  "WIL 7.8-1": "404 "
+ },
+ "suche": {
+  "BL/api/de/texts_of_law/lightweight_index": {
+   "status": 200,
+   "ctype": "application/json; charset=utf-8",
+   "len": 179773,
+   "head": "{\"42\":[{\"id\":257,\"systematic_number\":\"341\",\"systematic_category_id\":42,\"title\":\"Gesetz über die Motorfahrzeugsteuer\",\"abrogated\":false,\"structured_document_id\":11422},{\"id\":183,\"systematic_number\":\"341.11\",\"systematic_category_id\":42,\"title\":\"Verordnung zum Gesetz über die Motorfahrzeugsteuer\",\"abrogated\":false,\"structured_document_id\":13319},{\"id\":281,\"systematic_number\":\"342\",\"systematic_category_id\":42,\"title\":\"Gesetz über das Halten von Hunden (Hundegesetz)\",\"abrogated\":false,\"structured_document_id\":2008},{\"id\":141,\"systematic_number\":\"342.12\",\"systematic_category_id\":42,\"title\":\"Verordnung über das Halten potenziell gefährlicher Hunde\",\"abrogated\":false,\"structured_document_id\":1706}],\"126\":[{\"id\":771,\"systematic_number\":\"410\",\"systematic_category_id\":126,\"title\":\"Gesetz über die Enteignung\",\"abrogated\":false,\"structured_document_id\":19798},{\"id\":789,\"systematic_number\":\"414.11\",\"systematic_category_id\":126,\"title\":\"Regierungsratsverordnung über einführende Massnahmen über die Raumplanung\",\"abrogated\":false,\"structured_document_id\":1834},{\"id\":1251,\"systematic_number\":\"415\",\"systematic_category_id\":126,\"title\":\"Gesetz über Stand- und Durchgangsplätze für Fahrende\",\"abrogated\":false,\"structured_document_id\":1618}],\"125\":[{\"id\":772,\"systematic_number\":\"454\",\"systematic_category_id\":125,\"title\":\"Gesetz über die Nutzung und den Schutz des Grundwassers (Grundwassergesetz)\",\"abrogated\":false,\"structured_document_id\":15386},{\"id\":770,\"systematic_number\":\"454.1\",\"systematic_cat"
+  },
+  "BL/api/de/texts_of_law": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "BL/api/de/systematic_verzeichnis": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "BL/api/de/systematic_tree": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "BL/api/de/search?query=Abwasser": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "BL/api/de/texts_of_law/search?q=Abwasser": {
+   "status": 404,
+   "ctype": "text/html; charset=utf-8",
+   "len": 0,
+   "head": ""
+  },
+  "BL/api/de/categories": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "SG/api/de/texts_of_law/lightweight_index": {
+   "status": 200,
+   "ctype": "application/json; charset=utf-8",
+   "len": 158602,
+   "head": "{\"90\":[{\"id\":1026,\"systematic_number\":\"451.1\",\"systematic_category_id\":90,\"title\":\"Polizeigesetz (PG)\",\"abrogated\":false,\"structured_document_id\":7913},{\"id\":1027,\"systematic_number\":\"451.11\",\"systematic_category_id\":90,\"title\":\"Polizeiverordnung (PV)\",\"abrogated\":false,\"structured_document_id\":6855},{\"id\":63,\"systematic_number\":\"451.12\",\"systematic_category_id\":90,\"title\":\"Verordnung über die polizeilichen Datenverarbeitungssysteme\",\"abrogated\":false,\"structured_document_id\":8022},{\"id\":30,\"systematic_number\":\"451.13\",\"systematic_category_id\":90,\"title\":\"Privatdetektivverordnung\",\"abrogated\":false,\"structured_document_id\":3194},{\"id\":31,\"systematic_number\":\"451.14\",\"systematic_category_id\":90,\"title\":\"Verordnung über die Ausübung von Bewachungs-, Ordnungs- und Sicherheitsaufgaben\",\"abrogated\":false,\"structured_document_id\":3193},{\"id\":32,\"systematic_number\":\"451.17\",\"systematic_category_id\":90,\"title\":\"Vereinbarung über die Erfüllung polizeilicher Aufgaben auf dem Gebiet der Stadt St.Gallen\",\"abrogated\":false,\"structured_document_id\":4135},{\"id\":1677,\"systematic_number\":\"451.19\",\"systematic_category_id\":90,\"title\":\"Vereinbarung über die interkantonalen Polizeieinsätze (IKAPOL)\",\"abrogated\":false,\"structured_document_id\":7877},{\"id\":33,\"systematic_number\":\"451.2\",\"systematic_category_id\":90,\"title\":\"Grossratsbeschluss über den Beitritt zur interkantonalen Vereinbarung über die polizeiliche Zusammenarbeit\",\"abrogated\":false,\"structured_document_id\":3191},{\"id\":34,\"systematic_n"
+  },
+  "SG/api/de/texts_of_law": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "SG/api/de/systematic_verzeichnis": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "SG/api/de/systematic_tree": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "SG/api/de/search?query=Abwasser": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "SG/api/de/texts_of_law/search?q=Abwasser": {
+   "status": 404,
+   "ctype": "text/html; charset=utf-8",
+   "len": 0,
+   "head": ""
+  },
+  "SG/api/de/categories": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "UR/api/de/texts_of_law/lightweight_index": {
+   "status": 200,
+   "ctype": "application/json; charset=utf-8",
+   "len": 74457,
+   "head": "{\"13\":[{\"id\":1,\"systematic_number\":\"1.1101\",\"systematic_category_id\":13,\"title\":\"Verfassung des Kantons Uri\",\"abrogated\":false,\"structured_document_id\":522},{\"id\":3,\"systematic_number\":\"1.1111\",\"systematic_category_id\":13,\"title\":\"Gemeindegesetz (GEG)\",\"abrogated\":false,\"structured_document_id\":891}],\"52\":[{\"id\":2,\"systematic_number\":\"10.1111\",\"systematic_category_id\":52,\"title\":\"Gesetz über Schule und Bildung (Bildungsgesetz)\",\"abrogated\":false,\"structured_document_id\":149},{\"id\":168,\"systematic_number\":\"10.1115\",\"systematic_category_id\":52,\"title\":\"Verordnung über die Volksschule (Volksschulverordnung)\",\"abrogated\":false,\"structured_document_id\":1001},{\"id\":169,\"systematic_number\":\"10.1117\",\"systematic_category_id\":52,\"title\":\"Reglement über die Einführungsklasse\",\"abrogated\":false,\"structured_document_id\":157},{\"id\":170,\"systematic_number\":\"10.1131\",\"systematic_category_id\":52,\"title\":\"Konkordat über die Schulkoordination\",\"abrogated\":false,\"structured_document_id\":159},{\"id\":171,\"systematic_number\":\"10.1135\",\"systematic_category_id\":52,\"title\":\"Reglement über die Beurteilung im Kindergarten\",\"abrogated\":false,\"structured_document_id\":993},{\"id\":172,\"systematic_number\":\"10.1137\",\"systematic_category_id\":52,\"title\":\"Reglement über die Beurteilung und die Promotion in der Primarstufe\",\"abrogated\":false,\"structured_document_id\":997},{\"id\":382,\"systematic_number\":\"10.1139\",\"systematic_category_id\":52,\"title\":\"Reglement über die Beurteilung und die Promotion auf der Oberstufe\","
+  },
+  "UR/api/de/texts_of_law": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "UR/api/de/systematic_verzeichnis": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "UR/api/de/systematic_tree": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "UR/api/de/search?query=Abwasser": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "UR/api/de/texts_of_law/search?q=Abwasser": {
+   "status": 404,
+   "ctype": "text/html; charset=utf-8",
+   "len": 0,
+   "head": ""
+  },
+  "UR/api/de/categories": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "WIL/api/de/texts_of_law/lightweight_index": {
+   "status": 200,
+   "ctype": "application/json; charset=utf-8",
+   "len": 23551,
+   "head": "{\"17\":[{\"id\":56,\"systematic_number\":\"4.3-1\",\"systematic_category_id\":17,\"title\":\"Tarif der Musikschule\",\"abrogated\":false,\"structured_document_id\":83}],\"20\":[{\"id\":59,\"systematic_number\":\"4.8-1\",\"systematic_category_id\":20,\"title\":\"Richtlinien für Projektbeiträge an Vereine und Organisationen\",\"abrogated\":false,\"structured_document_id\":89}],\"22\":[{\"id\":61,\"systematic_number\":\"5.1-1\",\"systematic_category_id\":22,\"title\":\"Parlamentsbeschluss über die Bildung des Sicherheitsverbundes Region Wil (SVRW)\",\"abrogated\":false,\"structured_document_id\":91},{\"id\":224,\"systematic_number\":\"5.1-2\",\"systematic_category_id\":22,\"title\":\"Vereinbarung über den Sicherheitsverbund Region Wil (SVRW)\",\"abrogated\":false,\"structured_document_id\":93},{\"id\":185,\"systematic_number\":\"5.1-3\",\"systematic_category_id\":22,\"title\":\"Vereinbarung über die Erfüllung gemeindepolizeilicher Aufgaben auf dem Gebiet der Stadt Wil\",\"abrogated\":false,\"structured_document_id\":95},{\"id\":186,\"systematic_number\":\"5.1-4\",\"systematic_category_id\":22,\"title\":\"Polizeireglement\",\"abrogated\":false,\"structured_document_id\":364}],\"28\":[{\"id\":70,\"systematic_number\":\"6.4-1\",\"systematic_category_id\":28,\"title\":\"Gebührentarif der Stadtkanzlei\",\"abrogated\":false,\"structured_document_id\":103},{\"id\":238,\"systematic_number\":\"6.4-2\",\"systematic_category_id\":28,\"title\":\"Gebührentarif des Departements Dienste, Integration und Kultur (DIK) sowie des Departements Gesellschaft und Sicherheit (GS)\",\"abrogated\":false,\"structured_document_id\":392},{"
+  },
+  "WIL/api/de/texts_of_law": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "WIL/api/de/systematic_verzeichnis": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "WIL/api/de/systematic_tree": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "WIL/api/de/search?query=Abwasser": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  },
+  "WIL/api/de/texts_of_law/search?q=Abwasser": {
+   "status": 404,
+   "ctype": "text/html; charset=utf-8",
+   "len": 0,
+   "head": ""
+  },
+  "WIL/api/de/categories": {
+   "status": 404,
+   "ctype": "application/json; charset=UTF-8",
+   "len": 34,
+   "head": "{\"status\":404,\"error\":\"Not Found\"}"
+  }
+ }
+}
