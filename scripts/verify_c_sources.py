@@ -771,7 +771,7 @@ def apply_curation(rows: list[dict], cur: dict) -> list[dict]:
         rec = {k: v for k, v in new.items()}
         rec.setdefault("land", "Schweiz")
         rec.setdefault("tragfaehigkeit", "Noch nicht bewertet")
-        rec.setdefault("aktualitaet", cur.get("stand", TODAY.isoformat()))
+        rec.setdefault("aktualitaet", dt.date.fromisoformat(cur.get("stand", TODAY.isoformat())).strftime("%d.%m.%Y"))
         rec.setdefault("herkunft", f"Webrecherche {cur.get('stand', '')}; Linkprüfung GitHub Actions")
         rec.setdefault("pruefstatus", PRUEFSTATUS[0])
         rec["aenderung"] = f"{cur.get('stand', TODAY.isoformat())}: neu aufgenommen"
@@ -830,7 +830,8 @@ def derive_fields(rows: list[dict], results: dict[str, dict]) -> None:
         if rec["linkstatus"] == "Fehler" and "Link defekt" not in (rec.get("hinweis") or ""):
             rec["hinweis"] = "; ".join(x for x in (rec.get("hinweis"), "Link defekt – Ersatz recherchieren") if x)
         if rec.get("linkstatus") in ("Verifiziert", "Weiterleitung"):
-            rec["aktualitaet"] = (res.get("geprueft") or "")[:10] or rec.get("aktualitaet")
+            d = (res.get("geprueft") or "")[:10]
+            rec["aktualitaet"] = f"{d[8:10]}.{d[5:7]}.{d[0:4]}" if d else rec.get("aktualitaet")
 
 
 # --------------------------------------------------------------------------------------

@@ -106,7 +106,7 @@ upd("SEE-C2-01", url="https://www.seelisberg.ch/files/pdf/ERLUTE1.PDF",
     relevanz="Planungsgrundlage für das Entwicklungsgebiet Sonnenberg. Kein Nachweis kommunalen Grundeigentums oder eines Baurechts: «Baurecht», «775» und «Erwerb» kommen im Dokumenttext nicht vor (automatische Volltextsuche).",
     erwartet=[["Sonnenberg"], ["Nutzungsplanung"]], belege=["Baurecht", "775", "Erwerb", "Halter", "Grundeigentümer"], confidence="Niedrig", fundstelle="https://www.seelisberg.ch/",
     pruefnachweis="Belegt das Planungsverfahren Sonnenberg (Teilrevision NUP/QGP); belegt kein kommunales Grundeigentum.",
-    hinweis="Eine Suchmaschinen-Zusammenfassung nannte einen Erwerb von Parzelle 775 mit Baurecht – im Dokument nicht bestätigt, daher nicht übernommen. Ebenso unbestätigter Sekundärhinweis auf eine Projektbeteiligung der Halter AG: Belegstellen prüfen; allfällige Interessenbindung bei der Auswertung offenlegen. Kein Liegenschaftsverzeichnis öffentlich.",
+    hinweis="Eine Suchmaschinen-Zusammenfassung nannte einen Erwerb von Parzelle 775 mit Baurecht – im Dokument nicht bestätigt, daher nicht übernommen. Der Begriff «Halter» kommt im Dokument mehrfach vor (Seiten siehe Prüfnachweis): Rolle der Halter AG klären und allfällige Interessenbindung bei der Auswertung offenlegen. Kein Liegenschaftsverzeichnis öffentlich.",
     grund="Startseite durch direktes Dokument zu Grundeigentum/Baurecht ersetzt.")
 upd("SEE-C3-01", erwartet=[["Kommission", "Behörden"]])
 upd("SEE-C4-01", erwartet=[["Kommission", "Behörden"]])
@@ -253,10 +253,10 @@ a(src("SEE-C5-08", "C5", "Verfahren Gemeindeversammlung", "Verordnung über das 
       "Gemeinde Seelisberg", "https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_an_der_Gemeindeversammlung.pdf", [["Gemeindeversammlung"], ["Verfahren"]],
       fundstelle="https://www.seelisberg.ch/politik/rechtssammlung", herkunft=DISC, relevanz="Entscheidungsverfahren, Antragsrechte der Stimmberechtigten"))
 a(src("SEE-C4-03", "C4", "Personal", "Verordnung über das Personal der Gemeinde Seelisberg", "Kommunale Verordnung", "Kommunales Recht (verbindlich)", "Gemeinde Seelisberg",
-      "https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Personal.pdf", [["Personal"]], fundstelle="https://www.seelisberg.ch/politik/rechtssammlung", herkunft=DISC,
+      "https://www.seelisberg.ch/files/pdf/Verordnung_u%CC%88ber_das_Personal.pdf", [["Personal"]], fundstelle="https://www.seelisberg.ch/politik/rechtssammlung", herkunft=DISC,
       relevanz="Anstellungsrahmen und Zuständigkeiten im Personalwesen (keine Aussage zu Kapazität)"))
 a(src("SEE-C4-04", "C4", "Behördenorganisation", "Verordnung über das Verfahren in den Behörden der Gemeinde Seelisberg", "Kommunale Verordnung", "Kommunales Recht (verbindlich)", "Gemeinde Seelisberg",
-      "https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_in_den_Beh%C3%B6rden.pdf", [["Verfahren"], ["Behörde"]], fundstelle="https://www.seelisberg.ch/politik/rechtssammlung", herkunft=DISC,
+      "https://www.seelisberg.ch/files/pdf/Verordnung_u%CC%88ber_das_Verfahren_in_den_Beho%CC%88rden.pdf", [["Verfahren"], ["Behörde"]], fundstelle="https://www.seelisberg.ch/politik/rechtssammlung", herkunft=DISC,
       weitere_dim="C3", relevanz="Arbeitsweise und Beschlussfassung von Gemeinderat und Kommissionen"))
 a(src("SEE-C4-02", "C4", "Verwaltungsorganisation", "Gemeinde Seelisberg: Personal der Gemeindeverwaltung", "Webseite", "Information", "Gemeinde Seelisberg",
       "https://www.seelisberg.ch/personal", [["Personal", "Verwaltung"]], dokstatus="Webseite", confidence="Mittel",
@@ -392,7 +392,7 @@ def anf(aid, frage, befund, bezug="", quellenstatus="", zust=""):
 NF, NUR = "Nicht öffentlich auffindbar", "Nur über Gemeindeanfrage erhältlich"
 # Seelisberg A-SEE-01..08 (Reihenfolge der Ausgangsdatei)
 anf("A-SEE-01", "Bitte stellen Sie die Jahresrechnung 2025 (inkl. Anhang und HRM2-Kennzahlen) zur Verfügung und bestätigen Sie, dass die online publizierten Rechnungen 2021–2024 vollständig sind.",
-    "Jahresrechnungen 2020–2024 und Budgets 2020–2026 öffentlich (SEE-C1-03/04/05, weitere im Blatt Recherche-Kandidaten); Jahresrechnung 2025 nicht als PDF gefunden. Kennzahlen bei Finanzkontrolle Uri (UR-C1-03/04, vom Runner nicht erreichbar).", "SEE-C1-03, SEE-C1-04, SEE-C1-05, UR-C1-03", "", "Gemeindeschreiberei / Finanzverwaltung Seelisberg")
+    "Jahresrechnungen 2020–2024 und Budgets 2020–2026 öffentlich (SEE-C1-03/04/05, weitere im Blatt Recherche-Kandidaten); Jahresrechnung 2025 nicht als PDF gefunden. Kennzahlen je Gemeinde bei der Finanzkontrolle Uri (UR-C1-03/04).", "SEE-C1-03, SEE-C1-04, SEE-C1-05, UR-C1-03", "", "Gemeindeschreiberei / Finanzverwaltung Seelisberg")
 anf("A-SEE-02", "Bitte senden Sie den aktuellen Finanzplan 2027–2032 inkl. Investitionsliste und Angaben zu Eventualverpflichtungen (Bürgschaften, Garantien, Baurechtsverpflichtungen).",
     "Finanzplan 2027–2032 in GV-Botschaft Nov. 2025 erwähnt; Investitionsliste und Eventualverpflichtungen nicht öffentlich.", "SEE-C1-02", NUR, "Gemeinderat / Finanzverwaltung")
 anf("A-SEE-03", "Welche Grundstücke (Parzellennummern) besitzt die Einwohnergemeinde im Verwaltungs- und Finanzvermögen? Bitte Liste mit Fläche, Zone und Nutzung.",
@@ -464,7 +464,7 @@ BERICHT = {
         "Planerische Flächenverfügbarkeit (Zonen, Bauland-Datenbanken) ist kein Nachweis kommunalen Grundeigentums. C2 bleibt ohne Liegenschaftsverzeichnisse der Gemeinden unbelegt.",
         "Organigramme und Reglemente belegen Strukturen, nicht Verwaltungskompetenz oder Kapazität (C4).",
         "Leitbilder, Mitwirkungsverfahren und Beschlüsse belegen keine politische Akzeptanz (C5); dazu sind Abstimmungsresultate und qualitative Befunde nötig.",
-        "Seelisberg: Eine Suchmaschinen-Zusammenfassung schrieb dem Erläuterungsbericht Sonnenberg einen Parzellenerwerb mit Baurecht zu; die Volltextsuche fand dies nicht. Solche Aussagen wurden daher nicht übernommen. Ein unbestätigter Sekundärhinweis nennt eine Projektbeteiligung der Halter AG – vor der Auswertung klären und allfällige Interessenbindung offenlegen.",
+        "Seelisberg: Eine Suchmaschinen-Zusammenfassung schrieb dem Erläuterungsbericht Sonnenberg einen Parzellenerwerb mit Baurecht zu; die Volltextsuche fand dies nicht. Solche Aussagen wurden daher nicht übernommen. Der Begriff «Halter» erscheint im Erläuterungsbericht mehrfach (Seitenangaben im Prüfnachweis von SEE-C2-01); die Rolle der Halter AG ist vor der Auswertung zu klären und eine allfällige Interessenbindung offenzulegen.",
         "Tragfähigkeit wurde bewusst nirgends eingestuft; die Schwellen in der Bewertungslogik sind noch nicht validiert.",
     ],
     "empfehlungen": [
