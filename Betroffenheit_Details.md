@@ -28,6 +28,12 @@ Methode: identify auf api3.geo.admin.ch, Treffer lokal mit der um 5 m nach innen
 | 8 | ch.bafu.bundesinventare-jagdbanngebiete | Münchenstein | nein |  |
 | 8 | ch.bafu.bundesinventare-jagdbanngebiete | Wil (SG) | nein |  |
 | 8 | ch.bafu.bundesinventare-jagdbanngebiete | Seelisberg | nein |  |
+| 9 | ch.bafu.bundesinventare-vogelreservate | Münchenstein | nein |  |
+| 9 | ch.bafu.bundesinventare-vogelreservate | Wil (SG) | nein |  |
+| 9 | ch.bafu.bundesinventare-vogelreservate | Seelisberg | nein |  |
+| 10 | ch.bafu.fauna-wildtierkorridor_national | Münchenstein | nein |  |
+| 10 | ch.bafu.fauna-wildtierkorridor_national | Wil (SG) | ja | SG-19 |
+| 10 | ch.bafu.fauna-wildtierkorridor_national | Seelisberg | nein |  |
 | 11 | ch.bafu.waldreservate | Münchenstein | ja | Ermitage - Chilchholz, Rütihard - Rothallen |
 | 11 | ch.bafu.waldreservate | Wil (SG) | ja | Thurauen Wil |
 | 11 | ch.bafu.waldreservate | Seelisberg | ja | Rütliwald |
@@ -43,9 +49,21 @@ Methode: identify auf api3.geo.admin.ch, Treffer lokal mit der um 5 m nach innen
 | 16 | ch.bfs.gebaeude_wohnungs_register | Münchenstein | ja | Aliothstrasse 32d, Binningerstrasse 3, Bruckfeldstrasse 4a, Buchenstrasse 60, Concordiastrasse 8.1, Dammstrasse 52, Dillackerstrasse 17a, Emil Frey-Strasse 164, Emil Frey-Strasse 33, Emil Frey-Strasse 82, Erlenstrasse 10, Forlisrain 15, Gartenstrasse 9a, Grienstrasse 1, Gruthweg 106a … (+35) |
 | 16 | ch.bfs.gebaeude_wohnungs_register | Wil (SG) | ja | AMP-Strasse 25, Bildfeldstrasse 1a.1, Bildfeldstrasse 4, Braunauerstrasse 7.1, Buebenloostrasse 3, Burgstallstrasse 13, Erlenstrasse 2, Feldeggstrasse 6, Flawilerstrasse 4, Florapark 2.1, Fuchslochstrasse 968.1, Fürstenaugasse 8, Gallusstrasse 49, Grabenstrasse 23, Grubenstrasse 10 … (+35) |
 | 16 | ch.bfs.gebaeude_wohnungs_register | Seelisberg | ja | Bergweg 19.2, Beroldingen 1.3, Bitzistrasse 19, Bitzistrasse 4, Bitzistrasse 9, Buechistrasse 15.1, Buechistrasse 21b, Dorfstrasse 18.4, Dorfstrasse 22.1, Dorfstrasse 28.1, Dorfstrasse 39.1, Dorfstrasse 41, Dorfstrasse 63, Dorfstrasse 67.1, Dorfstrasse 69 … (+35) |
+| 17 | ch.bfe.thermische-netze | Münchenstein | ja | BHKW Teichweg, BHKW Zollweiden, Birshofklinik, Fernwärme Basel Münchenstein, Quartierwärmeversorgung Loog, Rudolf Steiner Schule, Wärmeverbund Areal EBM, Wärmeverbund Bottmingen AG, Wärmeverbund LOOG-KUSPO, Wärmeverbund Läckerlihuus, Wärmeverbund Spengler, Wärmeverbund Tagesschulen Münchenstein, Wärmeversorgung Birseckstrasse, Wärmeversorgung Untere Loog, Wärmeversorgung Walzwerk |
+| 17 | ch.bfe.windenergie-potenzialgebiete | Münchenstein | nicht abfragbar (Rasterlayer) |  |
+| 17 | ch.swisstopo.geologie-geothermische_potenzialstudien_regional | Münchenstein | ja | Basel-Landschaft, Basel-Stadt |
+| 17 | ch.bfe.thermische-netze | Wil (SG) | nein |  |
+| 17 | ch.bfe.windenergie-potenzialgebiete | Wil (SG) | nicht abfragbar (Rasterlayer) |  |
+| 17 | ch.swisstopo.geologie-geothermische_potenzialstudien_regional | Wil (SG) | ja | St. Gallen, Thurgau |
+| 17 | ch.bfe.thermische-netze | Seelisberg | nein |  |
+| 17 | ch.bfe.windenergie-potenzialgebiete | Seelisberg | nicht abfragbar (Rasterlayer) |  |
+| 17 | ch.swisstopo.geologie-geothermische_potenzialstudien_regional | Seelisberg | ja | Nidwalden, Uri |
 | 18 | ch.are.gueteklassen_oev | Münchenstein | ja | A - sehr gute Erschliessung, B - gute Erschliessung, C - mittelmässige Erschliessung, D - geringe Erschliessung |
 | 18 | ch.are.gueteklassen_oev | Wil (SG) | ja | A - sehr gute Erschliessung, B - gute Erschliessung, C - mittelmässige Erschliessung, D - geringe Erschliessung |
 | 18 | ch.are.gueteklassen_oev | Seelisberg | ja | D - geringe Erschliessung |
+| 20 | ch.bafu.gefaehrdungskarte-oberflaechenabfluss | Münchenstein | nicht abfragbar (Rasterlayer) |  |
+| 20 | ch.bafu.gefaehrdungskarte-oberflaechenabfluss | Wil (SG) | nicht abfragbar (Rasterlayer) |  |
+| 20 | ch.bafu.gefaehrdungskarte-oberflaechenabfluss | Seelisberg | nicht abfragbar (Rasterlayer) |  |
 | 21 | ch.bafu.gefahren-baugrundklassen | Münchenstein | ja | B, E |
 | 21 | ch.bafu.gefahren-baugrundklassen | Wil (SG) | nein |  |
 | 21 | ch.bafu.gefahren-baugrundklassen | Seelisberg | ja | A |
