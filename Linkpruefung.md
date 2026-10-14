@@ -4,7 +4,7 @@ Stand 14.10.2026. Statische Prüfung (URL-Aufbau, Koordinaten, Layer-IDs).
 Ein HTTP-Test war aus der Cloud-Umgebung nicht möglich, weil die geo.admin- und Kantonsportale gesperrt waren.
 Der HTTP-Test lässt sich lokal nachholen: `python3 gis_betroffenheit.py Geodaten_mit_Nummerierung.md --links`.
 
-## Fehler
+## Fehler (in der Tabelle korrigiert, Nr. 29, 35 und 37)
 
 | Nr | Link | Problem | Vorschlag |
 | -- | ---- | ------- | --------- |
