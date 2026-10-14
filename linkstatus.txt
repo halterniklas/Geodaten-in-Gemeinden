@@ -42,10 +42,10 @@
 200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.waldreservate
 200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.waldreservate
 200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.waldreservate
-200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau
-200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau
-200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau
-200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau
+200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.swisstopo.swisstlm3d-wald
+200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.swisstopo.swisstlm3d-wald
+200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.swisstopo.swisstlm3d-wald
+200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.swisstopo.swisstlm3d-wald
 200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.are.bauzonen
 200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.are.bauzonen
 200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.are.bauzonen
@@ -70,6 +70,10 @@
 200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.are.gueteklassen_oev
 200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.are.gueteklassen_oev
 200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.are.gueteklassen_oev
+200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau
+200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau
+200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau
+200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau
 200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.gefaehrdungskarte-oberflaechenabfluss
 200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.gefaehrdungskarte-oberflaechenabfluss
 200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.gefaehrdungskarte-oberflaechenabfluss
@@ -86,6 +90,10 @@
 200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.laerm-bahnlaerm_tag
 200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.laerm-bahnlaerm_tag
 200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bafu.laerm-bahnlaerm_tag
+200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bav.lage-stoerfallverordnung_eisenbahnanlagen
+200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bav.lage-stoerfallverordnung_eisenbahnanlagen
+200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bav.lage-stoerfallverordnung_eisenbahnanlagen
+200	https://map.geo.admin.ch/#/map?lang=de&center=2687333,1203124&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bav.lage-stoerfallverordnung_eisenbahnanlagen
 200	https://map.geo.admin.ch/#/map?lang=de&center=2660000,1190000&z=1&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder
 200	https://map.geo.admin.ch/#/map?lang=de&center=2613308,1263110&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder
 200	https://map.geo.admin.ch/#/map?lang=de&center=2721138,1258009&z=9&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder
