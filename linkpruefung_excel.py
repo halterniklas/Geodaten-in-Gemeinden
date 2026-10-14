@@ -71,6 +71,10 @@ KORREKTUREN = {
     ("1_Q1_Rechtsordnung", 55): (
         "https://bl.clex.ch/app/de/texts_of_law/791",
         "SGS 780 ist das Umweltschutzgesetz BL (USG BL); das DHG BL ist SGS 791", "SGS 791"),
+    ("1_Q1_Rechtsordnung", 64): (
+        "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.53",
+        "sGS 271.51 ist seit 31.07.2019 aufgehoben; ersetzt durch den Nachfolgeerlass sGS 271.53",
+        "sGS 271.53"),
     ("1_Q1_Rechtsordnung", 61): (
         "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/734.1",
         "Link zeigte auf die Startseite sg.ch; Wasserbaugesetz SG = sGS 734.1", "sGS 734.1"),
@@ -130,8 +134,6 @@ HINWEISE = {
                                 "ist in der Rechtssammlung Wil nicht vorhanden",
     ("3_Q3_Klima_Energie", 27): "Referenz SRS 7.1-1 ist das Baureglement; eine eigene Energieplanung "
                                 "ist in der Rechtssammlung Wil nicht vorhanden",
-    ("1_Q1_Rechtsordnung", 64): "Nachfolgeerlass vermutlich sGS 271.53 «Verordnung über die Sicherung "
-                                "und Überlieferung von Naturkörpern» – bitte fachlich bestätigen",
     ("6_Q6_Bestellung", 25): "Link (RB 40.1111, PBG Uri) passt zur Bezeichnung; die Spalte Referenz "
                              "nennt dagegen IVöB/Submissionsreglement",
 }
