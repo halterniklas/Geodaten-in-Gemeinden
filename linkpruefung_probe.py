@@ -43,4 +43,11 @@ for k, base in BASES.items():
         s, ct, t = get(base + p)
         out["suche"][k + p] = {"status": s, "ctype": ct[:40], "len": len(t), "head": t[:1500]}
         print(k, p, s, ct[:30], len(t), flush=True)
+out["index"] = {}
+for k, base in BASES.items():  # vollständiges Titelverzeichnis jeder Sammlung
+    s, ct, t = get(base + "/api/de/texts_of_law/lightweight_index")
+    if s == 200:
+        out["index"][k] = sorted([x["systematic_number"], x["title"], x.get("abrogated")]
+                                 for v in json.loads(t).values() for x in v)
+    out["suche"] = {}
 json.dump(out, open("linkpruefung_probe.json", "w"), ensure_ascii=False, indent=1)
