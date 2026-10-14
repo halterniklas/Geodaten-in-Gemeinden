@@ -23,6 +23,7 @@ Aufruf:
 import argparse
 import json
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -48,10 +49,19 @@ SUCH_BEGRIFFE = ["wildtier", "oberflaechenabfluss", "Oberflächenabfluss", "laer
                  "wald", "hochwasser", "showme", "klima", "temperatur", "chemie", "risiko"]
 
 
-def get_json(url, params):
+def get_json(url, params, retries=4):
     full = url + "?" + urllib.parse.urlencode(params)
-    with urllib.request.urlopen(full, timeout=60) as r:
-        return json.load(r)
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(full, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or attempt == retries - 1:
+                raise
+        except urllib.error.URLError:
+            if attempt == retries - 1:
+                raise
+        time.sleep(2 ** (attempt + 1))
 
 
 def gemeinde_polygon(name):
@@ -238,6 +248,8 @@ def main():
                 cells[col] = "ja"
             elif all(r == "nein" for r in results):
                 cells[col] = "nein"
+            elif any(r.startswith("Fehler") for r in results) and cells[col] in ("ja", "nein"):
+                pass  # vorübergehender Serverfehler: bisherigen Wert behalten
             else:
                 cells[col] = results[0] if len(set(results)) == 1 else " / ".join(results)
         out.append(format_row(cells))
