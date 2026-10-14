@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - linkpruefung_excel.py
+      - linkpruefung_probe.py
       - Q-Rahmen_Uebersicht_Muenchenstein_Wil_Seelisberg.xlsx
       - .github/workflows/linkpruefung_excel.yml
 
@@ -25,11 +26,13 @@ jobs:
       - run: pip install openpyxl requests pypdf
       - name: Links prüfen
         run: python3 linkpruefung_excel.py Q-Rahmen_Uebersicht_Muenchenstein_Wil_Seelisberg.xlsx
+      - name: Kandidaten prüfen
+        run: python3 linkpruefung_probe.py
       - name: Ergebnis committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add linkpruefung_excel.json Linkpruefung_Excel.md
+          git add linkpruefung_excel.json Linkpruefung_Excel.md linkpruefung_probe.json
           git diff --cached --quiet || git commit -m "Linkprüfung Excel via GitHub-Runner"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
