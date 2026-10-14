@@ -1,6 +1,6 @@
 # Recherchebericht C-Grundlagenkataster
 
-Erzeugt am 14.10.2026 14:01 durch `scripts/verify_c_sources.py` im GitHub-Actions-Lauf [38575608698](https://github.com/halterniklas/Geodaten-in-Gemeinden/actions/runs/38575608698).
+Erzeugt am 14.10.2026 14:10 durch `scripts/verify_c_sources.py` im GitHub-Actions-Lauf [38576953944](https://github.com/halterniklas/Geodaten-in-Gemeinden/actions/runs/38576953944).
 Kuratierungsstand der Quellenliste: 2026-10-14.
 
 > Grundsatz: Nachvollziehbarkeit vor scheinbarer Vollständigkeit. HTTP 200 gilt nicht als Verifikation; «Bestätigt» heisst, dass erwartete Schlüsselwörter und Ort im Dokument gefunden wurden. Tragfähigkeit wurde nirgends eingestuft.
@@ -12,16 +12,16 @@ Kuratierungsstand der Quellenliste: 2026-10-14.
 | Katalogzeilen gesamt | 109 |
 | Davon ursprüngliche Zeilen | 40 |
 | Geprüfte eindeutige URLs (inkl. ersetzter Alt-Links) | 114 |
-| Erreichbar ohne Umleitung (Verifiziert) | 102 |
+| Erreichbar ohne Umleitung (Verifiziert) | 104 |
 | Erreichbar nach Weiterleitung | 5 |
-| Fehler | 2 |
+| Fehler | 0 |
 | Nicht prüfbar | 5 |
-| Katalogzeilen mit Inhalt «Bestätigt» | 102 |
+| Katalogzeilen mit Inhalt «Bestätigt» | 104 |
 | … «Teilweise bestätigt» | 0 |
-| … «Offen» | 7 |
+| … «Offen» | 5 |
 | Ersetzte Links | 18 |
 | Neu aufgenommene Dokumente | 69 |
-| Weiterhin offene Quellen (Inhalt nicht bestätigt oder Link nicht OK) | 7 |
+| Weiterhin offene Quellen (Inhalt nicht bestätigt oder Link nicht OK) | 5 |
 | Automatisch gefundene Recherche-Kandidaten | 832 |
 | Gemeindeanfragen | 27 |
 
@@ -121,8 +121,8 @@ Kuratierungsstand der Quellenliste: 2026-10-14.
 | BL-C4-02 | Basel-Landschaft | Verordnung zum Einführungsgesetz zur IVöB (Vo EG IVöB) Basel-Landschaft, SGS 420.11 | [Verifiziert](https://bl.clex.ch/app/de/texts_of_law/420.11) | Bestätigt |
 | SG-C4-02 | St. Gallen | Einführungsgesetz zur IVöB St. Gallen, sGS 841.1 | [Verifiziert](https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/841.1) | Bestätigt |
 | SEE-C4-02 | Seelisberg | Gemeinde Seelisberg: Personal der Gemeindeverwaltung | [Verifiziert](https://www.seelisberg.ch/personal) | Bestätigt |
-| SEE-C4-03 | Seelisberg | Verordnung über das Personal der Gemeinde Seelisberg | [Fehler](https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Personal.pdf) | Offen |
-| SEE-C4-04 | Seelisberg | Verordnung über das Verfahren in den Behörden der Gemeinde Seelisberg | [Fehler](https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_in_den_Beh%C3%B6rden.pdf) | Offen |
+| SEE-C4-03 | Seelisberg | Verordnung über das Personal der Gemeinde Seelisberg | [Verifiziert](https://www.seelisberg.ch/files/pdf/Verordnung_u%CC%88ber_das_Personal.pdf) | Bestätigt |
+| SEE-C4-04 | Seelisberg | Verordnung über das Verfahren in den Behörden der Gemeinde Seelisberg | [Verifiziert](https://www.seelisberg.ch/files/pdf/Verordnung_u%CC%88ber_das_Verfahren_in_den_Beho%CC%88rden.pdf) | Bestätigt |
 | MUE-C4-02 | Münchenstein | Personalreglement der Einwohnergemeinde Münchenstein (Genehmigungsfassung 23.6.2022) | [Verifiziert](https://www.muenchenstein.ch/_docn/3794018/Bereinigtes_Personalreglement_Genehmigungsfassung_per_23._Juni_2022.pdf) | Bestätigt |
 | MUE-C4-03 | Münchenstein | Verwaltungs- und Organisationsreglement der Einwohnergemeinde Münchenstein | [Verifiziert](https://www.muenchenstein.ch/reglemente/7208) | Bestätigt |
 
@@ -165,7 +165,7 @@ Zellen: bestätigte Dokumente / Zeilen gesamt (nur Gemeindeebene).
 
 | Gemeinde | C1 | C2 | C3 | C4 | C5 |
 |---|---|---|---|---|---|
-| Seelisberg | 5 / 5 | 4 / 4 | 2 / 2 | 2 / 4 | 8 / 8 |
+| Seelisberg | 5 / 5 | 4 / 4 | 2 / 2 | 4 / 4 | 8 / 8 |
 | Münchenstein | 6 / 6 | 3 / 3 | 2 / 2 | 3 / 3 | 5 / 5 |
 | Wil | 11 / 11 | 2 / 2 | 3 / 3 | 1 / 1 | 3 / 3 |
 
@@ -178,8 +178,6 @@ Zellen: bestätigte Dokumente / Zeilen gesamt (nur Gemeindeebene).
 | BL-C1-05 | Statistisches Amt BL: Webartikel Gemeindefinanzen 2023 (18.9.2024) | Nicht prüfbar 403 | Offen | Zugriff verweigert/gedrosselt (HTTP 403); keine Umgehung versucht |
 | BL-C3-02 | Medienmitteilung Kanton BL: Birsstadt erhält den Wakkerpreis (Verein Birsstadt, Raumkonzept Birsstadt 2035) | Nicht prüfbar 403 | Offen | Zugriff verweigert/gedrosselt (HTTP 403); keine Umgehung versucht |
 | BL-C4-01 | Kanton Basel-Landschaft: Gemeindefachstellen | Nicht prüfbar 403 | Offen | Zugriff verweigert/gedrosselt (HTTP 403); keine Umgehung versucht |
-| SEE-C4-03 | Verordnung über das Personal der Gemeinde Seelisberg | Fehler 404 | Offen | HTTP 404 |
-| SEE-C4-04 | Verordnung über das Verfahren in den Behörden der Gemeinde Seelisberg | Fehler 404 | Offen | HTTP 404 |
 
 ## 6 Datenlücken und Gemeindeanfragen je Gemeinde
 
@@ -233,7 +231,7 @@ Zellen: bestätigte Dokumente / Zeilen gesamt (nur Gemeindeebene).
 - Planerische Flächenverfügbarkeit (Zonen, Bauland-Datenbanken) ist kein Nachweis kommunalen Grundeigentums. C2 bleibt ohne Liegenschaftsverzeichnisse der Gemeinden unbelegt.
 - Organigramme und Reglemente belegen Strukturen, nicht Verwaltungskompetenz oder Kapazität (C4).
 - Leitbilder, Mitwirkungsverfahren und Beschlüsse belegen keine politische Akzeptanz (C5); dazu sind Abstimmungsresultate und qualitative Befunde nötig.
-- Seelisberg: Eine Suchmaschinen-Zusammenfassung schrieb dem Erläuterungsbericht Sonnenberg einen Parzellenerwerb mit Baurecht zu; die Volltextsuche fand dies nicht. Solche Aussagen wurden daher nicht übernommen. Ein unbestätigter Sekundärhinweis nennt eine Projektbeteiligung der Halter AG – vor der Auswertung klären und allfällige Interessenbindung offenlegen.
+- Seelisberg: Eine Suchmaschinen-Zusammenfassung schrieb dem Erläuterungsbericht Sonnenberg einen Parzellenerwerb mit Baurecht zu; die Volltextsuche fand dies nicht. Solche Aussagen wurden daher nicht übernommen. Der Begriff «Halter» erscheint im Erläuterungsbericht mehrfach (Seitenangaben im Prüfnachweis von SEE-C2-01); die Rolle der Halter AG ist vor der Auswertung zu klären und eine allfällige Interessenbindung offenzulegen.
 - Tragfähigkeit wurde bewusst nirgends eingestuft; die Schwellen in der Bewertungslogik sind noch nicht validiert.
 
 ## 8 Empfehlungen für weitere Recherchen
@@ -250,90 +248,90 @@ Zellen: bestätigte Dokumente / Zeilen gesamt (nur Gemeindeebene).
 ```
 Prüfe 114 URLs mit 6 Threads …
   [Verifiziert] 200 Bestätigt https://www.ur.ch/publikationen/6680
-  [Verifiziert] 200 Bestätigt https://www.efv.admin.ch/de/was-ist-die-finanzstatistik
-  [Verifiziert] 200 Bestätigt https://www.fedlex.admin.ch/eli/cc/1999/404/de
   [Verifiziert] 200 Bestätigt https://www.efv.admin.ch/de/finanzstatistik-daten
+  [Verifiziert] 200 Bestätigt https://www.efv.admin.ch/de/was-ist-die-finanzstatistik
+  [Verifiziert] 200 Bestätigt https://www.fedlex.admin.ch/eli/cc/2020/126/de
   [Verifiziert] 200 Bestätigt https://geo.ur.ch/
   [Verifiziert] 200 Bestätigt https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de
-  [Verifiziert] 200 Bestätigt https://www.fedlex.admin.ch/eli/cc/2020/126/de
-  [Weiterleitung] 200 Offen https://rechtsbuch.ur.ch/
+  [Verifiziert] 200 Bestätigt https://www.fedlex.admin.ch/eli/cc/1999/404/de
   [Verifiziert] 200 Bestätigt https://www.ur.ch/dienstleistungen/8444
-  [Verifiziert] 200 Bestätigt https://statistik.bl.ch/web_portal/18_5
+  [Weiterleitung] 200 Offen https://rechtsbuch.ur.ch/
   [Verifiziert] 200 Teilweise bestätigt https://www.ur.ch/
   [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen/rechnungslegung-einwohnergemeinden/excel-vorlagen
+  [Verifiziert] 200 Bestätigt https://statistik.bl.ch/web_portal/18_5
   [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/1.1111
   [Verifiziert] 200 Bestätigt https://geoview.bl.ch/
   [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/gemeinden
   [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/2.1201
-  [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/180
-  [Verifiziert] 200 Bestätigt https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/rechnungslegung--rmsg-.html
-  [Verifiziert] 200 Bestätigt https://www.geoportal.ch/
-  [Weiterleitung] 200 Offen https://bl.clex.ch/
-  [Verifiziert] 200 Bestätigt https://www.sg.ch/
   [Verifiziert] 200 Bestätigt https://www.ur.ch/finanzen/1588
+  [Verifiziert] 200 Bestätigt https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/rechnungslegung--rmsg-.html
+  [Weiterleitung] 200 Offen https://bl.clex.ch/
+  [Verifiziert] 200 Bestätigt https://www.geoportal.ch/
+  [Verifiziert] 200 Bestätigt https://www.sg.ch/
+  [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/180
   [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/120
-  [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/151.2
   [Weiterleitung] 200 Offen https://www.gesetzessammlung.sg.ch/
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/politik/gemeindeversammlung
+  [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/151.2
+  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/523378
   [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/125.1
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/ERLUTE1.PDF
-  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/523378
-  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/politik/beh%C3%B6rden-kommissionen
-  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/621658
   [Verifiziert] 200 Teilweise bestätigt https://www.seelisberg.ch/
+  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/621658
+  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/politik/beh%C3%B6rden-kommissionen
+  [Verifiziert] 200 Teilweise bestätigt https://www.muenchenstein.ch/
   [Verifiziert] 200 (HEAD 405) Bestätigt https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen
   [Verifiziert] 200 (HEAD 405) Bestätigt https://www.stadtwil.ch/political-business/28da2d58a16b4b85b0504eeaa7e396dc
-  [Verifiziert] 200 Teilweise bestätigt https://www.muenchenstein.ch/
   [Verifiziert] 200 (HEAD 405) Bestätigt https://www.stadtwil.ch/topics/stadt-politik-und-recht/abstimmungen-und-wahlen/vergangene-abstimmungen/2024-vergangene-abstimmungen-und-wahlen/24-11-2024-eidgenoessische-kantonale-und-kommunale-abstimmungen-sowie-2-wahlgang-kommunale-erneuerungswahlen/nachtrag-iv-zur-gemeindeordnung
+  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/organisationuorganigramm
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/_docn/2430218/20180713_Gemeindeordnung_Stand_01.01.2013_publiziert_sw.pdf
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/_docn/1059619/2015.03.16_Ratschlag_Homepage.pdf
-  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/organisationuorganigramm
-  [Verifiziert] 200 (HEAD 405) Teilweise bestätigt https://www.stadtwil.ch/political-businesses
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/legislaturziele
-  [Verifiziert] 200 (HEAD 405) Bestätigt https://www.stadtwil.ch/topics/stadt-politik-und-recht/rechtssammlung-1
+  [Verifiziert] 200 (HEAD 405) Teilweise bestätigt https://www.stadtwil.ch/political-businesses
   [Verifiziert] 200 Bestätigt https://www.efv.admin.ch/de/methoden-finanzstatistik
+  [Verifiziert] 200 (HEAD 405) Bestätigt https://www.stadtwil.ch/topics/stadt-politik-und-recht/rechtssammlung-1
   [Verifiziert] 200 Bestätigt https://opendata.swiss/en/dataset/detaillierte-daten-fs-und-gfs-modell-standardauswertungen
-  [Verifiziert] 200 Bestätigt https://ckan.opendata.swiss/dataset/regionalportrats-2021-kennzahlen-aller-gemeinden
   [Verifiziert] 200 Bestätigt https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/de
+  [Verifiziert] 200 Bestätigt https://ckan.opendata.swiss/dataset/regionalportrats-2021-kennzahlen-aller-gemeinden
   [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/api/de/versions/776/pdf_file
-  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/ee8bae2cd080dda0bc77e69f99046109dc3e161b3498b17df7581cfe441bc612
   [Weiterleitung] 200 Bestätigt https://www.ur.ch/_doc/451636
+  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/ee8bae2cd080dda0bc77e69f99046109dc3e161b3498b17df7581cfe441bc612
   [Verifiziert] 200 (HEAD 405) Teilweise bestätigt https://www.stadtwil.ch/
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/55dcd744fbd978ce5601e42dc48a7b53cdfe1082b7fecb9c647e6dadc8abf9c7
   [Weiterleitung] 200 Bestätigt https://www.ur.ch/_doc/420775
-  [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/3.2131
-  [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen
   [Verifiziert] 200 Bestätigt https://www.ur.ch/_docn/426685/Berechnung_FiLa_2025.pdf
   [Verifiziert] 200 Bestätigt https://www.ur.ch/dienstleistungen/4297
+  [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen
+  [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/3.2131
   [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/webartikel-vom-18-09-2024-gemeindefinanzen-2023
   [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/40.1111
-  [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/medienmitteilungen/ausgezeichnete-agglomeration-birsstadt-erhaelt-den-wakkerpreis
-  [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/400
-  [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/1.1101
   [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/185
-  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Druckvorlage2_Original_Versammlung-Nov2025_Traktanden-und-Botschaften-gesamt.pdf
+  [Nicht prüfbar] 403 Offen https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/medienmitteilungen/ausgezeichnete-agglomeration-birsstadt-erhaelt-den-wakkerpreis
+  [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/1.1101
+  [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/400
   [Verifiziert] 200 Bestätigt https://rechtsbuch.ur.ch/app/de/texts_of_law/3.3111
   [Verifiziert] 200 Bestätigt https://bl.clex.ch/app/de/texts_of_law/420.11
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Bau-und-Zonenordnung-Seelisberg.pdf
+  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Druckvorlage2_Original_Versammlung-Nov2025_Traktanden-und-Botschaften-gesamt.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/8_20221005_Bericht_Siedlungsleitbild_Genehmigungsexemplar.pdf
-  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/20230526_Erl%C3%A4uterungsbericht.pdf
+  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Verordnung_u%CC%88ber_das_Personal.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Gemeindeordnung.pdf
+  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/20230526_Erl%C3%A4uterungsbericht.pdf
+  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Verordnung_u%CC%88ber_das_Verfahren_in_den_Beho%CC%88rden.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_an_der_Gemeindeversammlung.pdf
-  [Fehler] 404 Offen https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Personal.pdf
-  [Fehler] 404 Offen https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_in_den_Beh%C3%B6rden.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/personal
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/news/neues-leitbild-der-gemeinde-seelisberg
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Beschlussprotokoll_GV_24.11.2023.pdf
-  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/JR2024_Gde-Seelisberg.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Jahresrechnung_Gde-Seelisberg_2023.pdf
-  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/556069
-  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/523381
+  [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/JR2024_Gde-Seelisberg.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Budget-ER-2026_Gesamtauflage_ohne-Bemerkungen_%C3%B6ffentlich.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Beschlussprotokoll_GV_28.11.2025.pdf
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/Beschlussprotokoll-GV-Mai-2025.pdf
-  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/sitzung/5729137
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/ORIGINAL-Leitbild-Seelisberg-2025-f%C3%BCr-Webseite.pdf
+  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/556069
   [Verifiziert] 200 Bestätigt https://www.seelisberg.ch/files/pdf/kommunale-Abstimmung-Seelisberg_260308.pdf
+  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/publikationen/523381
+  [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/sitzung/5729137
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/_docn/4130681/Bericht_Aufgaben__Finanzplan_2023-2027_publiziert.pdf
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/_docn/1199675/Zonenreglement_Siedlung.pdf
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/_docn/6998503/Ratschlag_Gemeindeversammlung_Montag,_15._Juni_2026.pdf
@@ -348,21 +346,21 @@ Prüfe 114 URLs mit 6 Threads …
   [Verifiziert] 200 Bestätigt https://www.muenchenstein.ch/behoerden/2838
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/08902ff399818ccc0d53949607b2d0f6f8bf702c334e295d493c2fd842ba4079
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/c6097b5ae815fb81f14b4db7630b14d9452e3be1ae3cbddd9f8e28d9d0777c7f
+  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/2ecd9e697734cc2262543c9da23828c2b6ad0129cf1654fcfa47f21ba113bf8a
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/875d422378d72386aae96efa76356fbfa05e9a0e1e03f208fbbe599dea21021c
   [Verifiziert] 200 Bestätigt https://www.ratsinfo.sg.ch//media/documents/published/signed/8b158b37-2fff-4d5d-b018-ef035f08732e.pdf
-  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/2ecd9e697734cc2262543c9da23828c2b6ad0129cf1654fcfa47f21ba113bf8a
-  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/86c954451190b5683f4cea602b5746ce096ff6338c9f35fbea68172b58f684d1
   [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/731.1
+  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/86c954451190b5683f4cea602b5746ce096ff6338c9f35fbea68172b58f684d1
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/9bf65acd52bfa75c91cc42760759e0ffc3a76d501e7d174c010444c290801cc2
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/c7e05a885ee1a6860975358848101c3f21fe558650ccfc5ba12339d34d3232e9
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/1e396670eed23bbd41611d92ceaa476797bc97e16fde09c29197453c3b3bc320
   [Verifiziert] 200 Bestätigt https://www.are.admin.ch/dam/de/sd-web/1LGAXN34JMxU/Pr%C3%BCfbericht%20Wil4G.pdf
   [Verifiziert] 200 Bestätigt https://www.sg.ch/content/dam/sgch/bauen/raumentwicklung/agglomerationsprogramme/Wil%20Flyer%205G.pdf
   [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/813.1
-  [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/151.53
   [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/841.1
-  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/533b0557b4e4988a6a4f9af13c0b789fec39837eef83d1e66cd1d3814dbe0acb
+  [Verifiziert] 200 Bestätigt https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/151.53
   [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/5d895f1e33cc1b2c352d7bdeb9d93dd5b2333fbff6a1793cd419f387dd4e1e28
+  [Verifiziert] 200 Bestätigt https://www.stadtwil.ch/storage/533b0557b4e4988a6a4f9af13c0b789fec39837eef83d1e66cd1d3814dbe0acb
 Automatische Recherche (Discovery) …
   Discovery https://www.seelisberg.ch/politik/gemeindeversammlung: 24 Kandidaten
   Discovery https://www.seelisberg.ch/: 35 Kandidaten
