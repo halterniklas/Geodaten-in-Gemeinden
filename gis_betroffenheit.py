@@ -44,7 +44,8 @@ MAX_URL = 7500
 IDENTIFY_LIMIT = 50
 SUCH_BEGRIFFE = ["wildtier", "oberflaechenabfluss", "Oberflächenabfluss", "laerm", "vogel",
                  "schutzwald", "silvaprotect", "thermische", "windenergie", "geotherm",
-                 "hitze", "stoerfall", "Störfall", "gefahren", "belastete"]
+                 "hitze", "stoerfall", "Störfall", "gefahren", "belastete",
+                 "wald", "hochwasser", "showme", "klima", "temperatur", "chemie", "risiko"]
 
 
 def get_json(url, params):
@@ -201,32 +202,44 @@ def main():
             out.append(line)
             continue
         cells = parse_row(line)
-        layer = cells[COL_LAYER] if len(cells) > COL_LAYER else ""
-        if not layer.startswith("ch."):
+        layers = [lid.strip() for lid in (cells[COL_LAYER] if len(cells) > COL_LAYER else "").split(",")
+                  if lid.strip().startswith("ch.")]
+        # Zeilen mit «manuell geprüft» in der Bemerkung werden nur abgefragt, nicht überschrieben
+        manuell = "manuell geprüft" in cells[-1]
+        if not layers:
             out.append(line)
             continue
-        cfg = layers_config.get(layer)
         for col, (name, _) in GEMEINDEN.items():
             if cells[col].replace(" ", "") == "n.a.":
                 continue
-            if cfg is None:
-                cells[col] = "Layer-ID ungültig"
-            elif not cfg.get("queryable", True):
-                cells[col] = "nicht abfragbar"
-            else:
+            results = []
+            for layer in layers:
+                cfg = layers_config.get(layer)
                 hits = []
-                try:
-                    cells[col], hits = identify(layer, *geoms[col])
-                except urllib.error.HTTPError as e:
-                    body = e.read()[:500].decode("utf-8", "replace")
-                    if "No GeoTable" in body:
-                        cells[col] = "nicht abfragbar (Rasterlayer)"
-                    else:
-                        cells[col] = f"Fehler {e.code}"
-                        print(body, file=sys.stderr)
+                if cfg is None:
+                    res = "Layer-ID ungültig"
+                else:
+                    try:
+                        res, hits = identify(layer, *geoms[col])
+                    except urllib.error.HTTPError as e:
+                        body = e.read()[:500].decode("utf-8", "replace")
+                        if "No GeoTable" in body:
+                            res = "nicht abfragbar (Rasterlayer)"
+                        else:
+                            res = f"Fehler {e.code}"
+                            print(body, file=sys.stderr)
+                results.append(res)
                 shown = ", ".join(hits[:15]) + (f" … (+{len(hits) - 15})" if len(hits) > 15 else "")
-                details.append(f"| {cells[0]} | {layer} | {name} | {cells[col]} | {shown.replace('|', '/')} |")
-            print(f"{cells[0]:>3} {layer:55} {name:14} {cells[col]}", file=sys.stderr)
+                details.append(f"| {cells[0]} | {layer} | {name} | {res} | {shown.replace('|', '/')} |")
+                print(f"{cells[0]:>3} {layer:55} {name:14} {res}", file=sys.stderr)
+            if manuell:
+                continue
+            if "ja" in results:
+                cells[col] = "ja"
+            elif all(r == "nein" for r in results):
+                cells[col] = "nein"
+            else:
+                cells[col] = results[0] if len(set(results)) == 1 else " / ".join(results)
         out.append(format_row(cells))
 
     with open(args.details, "w", encoding="utf-8") as f:
