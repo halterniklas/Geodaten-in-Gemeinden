@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - gis_betroffenheit.py
+      - Geodaten_mit_Nummerierung.md
       - .github/workflows/betroffenheit.yml
 
 permissions:
