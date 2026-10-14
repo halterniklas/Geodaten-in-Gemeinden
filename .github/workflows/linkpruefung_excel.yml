@@ -1,0 +1,35 @@
+name: Linkprüfung Excel
+
+# Prüft alle Links der Excel-Übersicht (HTTP-Status und ob der Link auf den
+# richtigen Erlass / das richtige Dokument zeigt). GitHub-Runner haben freien
+# Internetzugang; das Ergebnis wird auf den Branch zurückcommittet.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - linkpruefung_excel.py
+      - Q-Rahmen_Uebersicht_Muenchenstein_Wil_Seelisberg.xlsx
+      - .github/workflows/linkpruefung_excel.yml
+
+permissions:
+  contents: write
+
+jobs:
+  linkpruefung:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl requests pypdf
+      - name: Links prüfen
+        run: python3 linkpruefung_excel.py Q-Rahmen_Uebersicht_Muenchenstein_Wil_Seelisberg.xlsx
+      - name: Ergebnis committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add linkpruefung_excel.json Linkpruefung_Excel.md
+          git diff --cached --quiet || git commit -m "Linkprüfung Excel via GitHub-Runner"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
