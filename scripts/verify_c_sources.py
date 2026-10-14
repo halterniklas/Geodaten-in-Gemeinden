@@ -68,7 +68,7 @@ USER_AGENT = (
     "+https://github.com/halterniklas/Geodaten-in-Gemeinden)"
 )
 TIMEOUT = 25
-MAX_BYTES = 30 * 1024 * 1024
+MAX_BYTES = 100 * 1024 * 1024
 HOST_DELAY = 1.5  # Sekunden zwischen zwei Anfragen an denselben Host
 WORKERS = 6
 RETRIES = 3
@@ -231,6 +231,11 @@ class Http:
         self._host_lock = defaultdict(threading.Lock)
         self._host_last = defaultdict(float)
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
+        self.unreachable: Counter = Counter()  # Verbindungs-Timeouts je Host
+
+    def host_blocked(self, url) -> bool:
+        """Nach zwei Verbindungs-Timeouts wird ein Host nicht weiter angefragt (schont Server und Laufzeit)."""
+        return self.unreachable[urlparse(url).netloc] >= 2
 
     def _throttle(self, url):
         host = urlparse(url).netloc
@@ -242,6 +247,8 @@ class Http:
 
     def request(self, method, url, **kw):
         last_exc = None
+        if self.host_blocked(url):
+            raise requests.ConnectTimeout(f"Host {urlparse(url).netloc} bereits als nicht erreichbar erkannt")
         for attempt in range(RETRIES):
             self._throttle(url)
             try:
@@ -253,6 +260,10 @@ class Http:
                 return r
             except requests.RequestException as exc:  # Verbindungsfehler: erneut versuchen
                 last_exc = exc
+                if isinstance(exc, requests.ConnectTimeout):
+                    self.unreachable[urlparse(url).netloc] += 1
+                    if self.host_blocked(url):
+                        break
                 time.sleep(2 ** (attempt + 1))
         raise last_exc
 
@@ -317,7 +328,7 @@ def analyse_content(body: bytes, content_type: str) -> dict:
             except Exception:
                 pass
             texts = []
-            for page in reader.pages[:6]:
+            for page in reader.pages[:15]:
                 try:
                     texts.append(page.extract_text() or "")
                 except Exception:
@@ -341,7 +352,7 @@ def analyse_content(body: bytes, content_type: str) -> dict:
         info["titel"] = " | ".join(t for t in (title, h1t) if t)[:250]
         info["text"] = soup.get_text(" ", strip=True)[:200000]
         probe = norm(info["titel"] + " " + h1t)
-        if re.search(r"(seite (wurde )?nicht gefunden|page not found|\b404\b|fehlerseite|not found)", probe):
+        if re.search(r"(seite (wurde )?nicht gefunden|page not found|\b40[34]\b|fehlerseite|not found|an error has occur|access denied|zugriff verweigert)", probe):
             info["soft404"] = True
         return info
     if "json" in ct:
@@ -454,7 +465,7 @@ def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
     res = OrderedDict(
         url=url, final_url="", http="", methode="", linkstatus="", fehler="", dateityp="", titel="",
         jahre="", inhalt="Offen", inhalt_detail="", soft404=False, stabilitaet=link_stability(url),
-        geprueft=dt.datetime.now().strftime("%Y-%m-%d %H:%M"), redirect_kette="", ausser_kraft="",
+        geprueft=dt.datetime.now().strftime("%Y-%m-%d %H:%M"), redirect_kette="", ausser_kraft="", textauszug="",
     )
     ok, why = url_syntax_ok(url)
     if not ok:
@@ -476,6 +487,16 @@ def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
         res["methode"] = f"HEAD fehlgeschlagen ({type(exc).__name__})"
     try:
         r, body, truncated = http.get_limited(url)
+    except (requests.ConnectTimeout, requests.ReadTimeout, requests.ConnectionError) as exc:
+        if isinstance(exc, (requests.ConnectTimeout, requests.ReadTimeout)) or "timed out" in str(exc).lower():
+            res.update(linkstatus="Nicht prüfbar",
+                       fehler=f"Server vom Runner aus nicht erreichbar (Zeitüberschreitung beim Verbindungsaufbau, mehrfach wiederholt; "
+                              f"vermutlich Sperre für Rechenzentrums-IP). Link damit weder bestätigt noch widerlegt. [{type(exc).__name__}]")
+        else:
+            res.update(linkstatus="Fehler", fehler=f"GET: {type(exc).__name__}: {exc}"[:300])
+        if head_status:
+            res["http"] = str(head_status)
+        return res
     except Exception as exc:
         res.update(linkstatus="Fehler", fehler=f"GET: {type(exc).__name__}: {exc}"[:300])
         if head_status:
@@ -510,8 +531,12 @@ def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
                 res["ausser_kraft"] = special["ausser_kraft"]
 
     res["jahre"] = ", ".join(str(y) for y in extract_years(res["titel"] + " " + text[:30000]))
+    res["textauszug"] = re.sub(r"\s+", " ", info["text"])[:400]
     if info["soft404"]:
-        res.update(linkstatus="Fehler", fehler="Soft-404 (Fehlerseite mit HTTP 200)")
+        if re.search(r"403|access denied|zugriff verweigert|an error has occur", norm(res["titel"])):
+            res.update(linkstatus="Nicht prüfbar", fehler="Fehlerseite «Zugriff verweigert» mit HTTP 200; keine Umgehung versucht")
+        else:
+            res.update(linkstatus="Fehler", fehler="Soft-404 (Fehlerseite mit HTTP 200)")
         res["inhalt_detail"] = "Fehlerseite erkannt"
         return res
 
@@ -550,7 +575,7 @@ def check_url(http: Http, url: str, expected: list, places: list[str]) -> dict:
 DIM_PATTERNS = {
     "C1": r"jahresrechnung|rechnung[ _-]?20\d\d|budget|voranschlag|finanzplan|aufgaben[- ]und[- ]finanzplan|investitions|finanzbericht|finanzausgleich|finanzhaushalt|finanzkennzahl|finanzstatistik|steuerfuss",
     "C2": r"liegenschaft|immobilien|bodenpolitik|bodenstrategie|baurecht|grundst|areal|landkauf|landverkauf|landerwerb|verkauf.*parzelle",
-    "C3": r"gemeindeordnung|organisationsreglement|zweckverband|leistungsvereinbarung|eignerstrategie|beteiligung|interkommunal|zusammenarbeit|regio |agglomeration|gemeindeverband",
+    "C3": r"gemeindeordnung|rechtssammlung|erlasse|systematische sammlung|organisationsreglement|zweckverband|leistungsvereinbarung|eignerstrategie|beteiligung|interkommunal|zusammenarbeit|regio |agglomeration|gemeindeverband",
     "C4": r"organigramm|geschaeftsbericht|verwaltungsbericht|personalreglement|stellenplan|digitalisierung|beschaffung|submission|organisationsentwicklung|amtsbericht",
     "C5": r"gemeindeversammlung|protokoll|botschaft|legislatur|leitbild|mitwirkung|abstimmung|parlament|einwohnerrat|gemeindekommission|erlaeuterung|vernehmlassung|gemeindestrategie",
 }
@@ -778,6 +803,8 @@ def derive_fields(rows: list[dict], results: dict[str, dict]) -> None:
             rec["bearbeitung"] = "In Prüfung" if rec["inhalt"] == "Bestätigt" else "Offen"
         if not rec.get("einheit"):
             rec["einheit"] = rec.get("bezugsjahr") or ""
+        if rec["linkstatus"] == "Nicht prüfbar" and "manuell im Browser" not in (rec.get("hinweis") or ""):
+            rec["hinweis"] = "; ".join(x for x in (rec.get("hinweis"), "Automatisch nicht prüfbar – manuell im Browser prüfen") if x)
         if rec["linkstatus"] == "Fehler" and "Link defekt" not in (rec.get("hinweis") or ""):
             rec["hinweis"] = "; ".join(x for x in (rec.get("hinweis"), "Link defekt – Ersatz recherchieren") if x)
         if rec.get("linkstatus") in ("Verifiziert", "Weiterleitung"):

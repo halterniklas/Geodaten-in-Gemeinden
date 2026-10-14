@@ -268,7 +268,8 @@
      "Gemeindeversammlung"
     ]
    ],
-   "fundstelle": "https://www.seelisberg.ch/"
+   "fundstelle": "https://www.seelisberg.ch/",
+   "hinweis": "Direkte Dokumente: SEE-C1-02 bis SEE-C1-05."
   },
   "SEE-C2-01": {
    "url": "https://www.seelisberg.ch/files/pdf/ERLUTE1.PDF",
@@ -877,7 +878,7 @@
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Datengrundlage",
    "herausgeber": "Statistisches Amt Basel-Landschaft",
-   "url": "https://opendata.swiss/en/dataset/gemeindefinanzen-nach-rechnungsteil-funktion-kontenart-und-jahr-ab-2014/resource/2799cf61-92d5-4e24-8165-1fa67de11eca",
+   "url": "https://opendata.swiss/en/dataset/gemeindefinanzen-nach-rechnungsteil-funktion-kontenart-und-jahr-ab-2014",
    "relevanz": "Zeitreihe Gemeindefinanzen, filterbar auf Münchenstein",
    "kennzahl": "Aufwand/Ertrag nach Funktion",
    "vergleich": "Kanton × Grössenklasse",
@@ -1206,6 +1207,195 @@
     [
      "Beschlussprotokoll",
      "Beschluss"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C1-03",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C1",
+   "thema": "Jahresrechnung",
+   "titel": "Jahresrechnung 2024 der Einwohnergemeinde Seelisberg",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlossene Jahresrechnung (GV 28.5.2025)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/JR2024_Gde-Seelisberg.pdf",
+   "bezugsjahr": "2024",
+   "relevanz": "Erfolgsrechnung, Investitionsrechnung, Bilanz 2024",
+   "kennzahl": "Selbstfinanzierungsgrad, Nettoinvestitionen, Nettoschuld",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "verbindung": "A1; C1",
+   "sprint2": "Finanztragfähigkeit",
+   "fundstelle": "https://www.seelisberg.ch/politik/budget-rechnung",
+   "hinweis": "Jahresrechnung 2025 (GV 29.5.2026) auf der Fundstelle nicht als PDF gefunden.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Rechnung"
+    ],
+    [
+     "2024"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C1-04",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C1",
+   "thema": "Jahresrechnung",
+   "titel": "Jahresrechnung 2023 der Einwohnergemeinde Seelisberg",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlossene Jahresrechnung",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Jahresrechnung_Gde-Seelisberg_2023.pdf",
+   "bezugsjahr": "2023",
+   "relevanz": "Zeitreihe",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/budget-rechnung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Rechnung"
+    ],
+    [
+     "2023"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C1-05",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C1",
+   "thema": "Budget",
+   "titel": "Budget 2026 der Einwohnergemeinde Seelisberg (Erfolgsrechnung, Gesamtauflage)",
+   "doktyp": "Budget",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlossenes Budget (GV 28.11.2025)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Budget-ER-2026_Gesamtauflage_ohne-Bemerkungen_%C3%B6ffentlich.pdf",
+   "bezugsjahr": "2026",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/budget-rechnung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Budget"
+    ],
+    [
+     "2026"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C5-04",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Beschlussprotokoll",
+   "titel": "Beschlussprotokoll Gemeindeversammlung Seelisberg vom 28.11.2025",
+   "doktyp": "Protokoll",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschluss (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Beschlussprotokoll_GV_28.11.2025.pdf",
+   "bezugsjahr": "2025",
+   "relevanz": "Beschlüsse Budget 2026, Leitbild, Verordnungen",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/gemeindeversammlung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "weitere_dim": "C1",
+   "erwartet": [
+    [
+     "Beschluss"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C5-05",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Beschlussprotokoll",
+   "titel": "Beschlussprotokoll Gemeindeversammlung Seelisberg vom 28.5.2025",
+   "doktyp": "Protokoll",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschluss (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Beschlussprotokoll-GV-Mai-2025.pdf",
+   "bezugsjahr": "2025",
+   "relevanz": "Beschluss Jahresrechnung 2024",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/gemeindeversammlung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "weitere_dim": "C1",
+   "erwartet": [
+    [
+     "Beschluss"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C5-06",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Leitbild",
+   "titel": "Leitbild Seelisberg 2025 (Dokument)",
+   "doktyp": "Leitbild",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Politische Zielsetzung",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/ORIGINAL-Leitbild-Seelisberg-2025-f%C3%BCr-Webseite.pdf",
+   "bezugsjahr": "2025",
+   "relevanz": "Strategische Ziele (Wohnen, Tourismus, Finanzen); belegt keine Akzeptanz",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/ueber-seelisberg/leitbild",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Leitbild"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C5-07",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Abstimmung",
+   "titel": "Kommunale Abstimmung Seelisberg vom 8.3.2026 (Unterlage)",
+   "doktyp": "Abstimmungsunterlage",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Information",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/kommunale-Abstimmung-Seelisberg_260308.pdf",
+   "bezugsjahr": "2026",
+   "relevanz": "Kommunale Urnenentscheide (Legitimation)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "fundstelle": "https://www.seelisberg.ch/politik/abstimmungen-wahlen",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Abstimmung"
     ]
    ]
   },
@@ -1558,13 +1748,16 @@
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Beschlossene Jahresrechnung",
    "herausgeber": "Stadt Wil",
-   "url": "https://www.stadtwil.ch/_docn/5050942/Jahresrechnung_2023.pdf",
+   "url": "https://www.stadtwil.ch/storage/46c11db85e782dc122cd9a61cc291529509f659681277125f8b019bce5a31b9c",
    "bezugsjahr": "2023",
    "vergleich": "Kanton × Grössenklasse",
    "confidence": "Hoch",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
+   "hinweis": "Frühere Adresse /_docn/5050942/… liefert HTTP 404 (CMS-Umstellung); Link über Finanzseite der Stadt ermittelt.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
    "erwartet": [
     [
+     "Rechnung",
      "Jahresrechnung"
     ],
     [
@@ -1579,19 +1772,25 @@
    "gemeinde": "Wil",
    "dim": "C1",
    "thema": "Jahresrechnung",
-   "titel": "Rechnung 2024 Stadt Wil – Kurzfassung mit Bericht und Antrag (Stadtrat 4.3.2025)",
+   "titel": "Jahresrechnung 2024 der Stadt Wil",
    "doktyp": "Jahresrechnung",
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Beschlussvorlage",
    "herausgeber": "Stadt Wil",
-   "url": "https://www.stadtwil.ch/_doc/5592973",
+   "url": "https://www.stadtwil.ch/storage/0f0d7ad95464bf91a72506e63d2aae1d5c18327f9bff4bf34b8400c36999b277",
    "bezugsjahr": "2024",
    "vergleich": "Kanton × Grössenklasse",
    "confidence": "Hoch",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
+   "hinweis": "Frühere Adresse /_doc/5592973 liefert HTTP 404 (CMS-Umstellung); Link über Finanzseite der Stadt ermittelt.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
    "erwartet": [
     [
-     "Rechnung 2024"
+     "Rechnung",
+     "Jahresrechnung"
+    ],
+    [
+     "2024"
     ]
    ]
   },
@@ -1637,8 +1836,8 @@
    "url": "https://www.stadtwil.ch/storage/875d422378d72386aae96efa76356fbfa05e9a0e1e03f208fbbe599dea21021c",
    "bezugsjahr": "2026–2030",
    "vergleich": "Kanton × Grössenklasse",
-   "confidence": "Mittel",
-   "hinweis": "Zuordnung der Hash-URL stammt aus Suchzusammenfassung; nur Inhaltsprüfung belegt Identität.",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
    "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
    "erwartet": [
     [
@@ -1656,20 +1855,24 @@
    "gemeinde": "Wil",
    "dim": "C1",
    "thema": "Investitionen",
-   "titel": "Übersicht über die Investitionen 2025–2035 Stadt Wil",
-   "doktyp": "Investitionsübersicht",
+   "titel": "Investitionsplan 2026–2030 der Stadt Wil",
+   "doktyp": "Investitionsplan",
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Planungsinstrument",
    "herausgeber": "Stadt Wil",
-   "url": "https://www.stadtwil.ch/storage/68981c34e629883df15ea09baa331530387503f2a8c37c1259512877afe4840f",
-   "bezugsjahr": "2025–2035",
+   "url": "https://www.stadtwil.ch/storage/c6097b5ae815fb81f14b4db7630b14d9452e3be1ae3cbddd9f8e28d9d0777c7f",
+   "bezugsjahr": "2026–2030",
    "vergleich": "Kanton × Grössenklasse",
-   "confidence": "Niedrig",
-   "hinweis": "Unsichere Zuordnung (Suchzusammenfassung).",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
    "erwartet": [
     [
+     "Investitionsplan",
      "Investition"
+    ],
+    [
+     "2030"
     ]
    ]
   },
@@ -1680,24 +1883,81 @@
    "gemeinde": "Wil",
    "dim": "C1",
    "thema": "Budget",
-   "titel": "Budget 2026 Stadt Wil – Bericht und Antrag des Stadtrats",
+   "titel": "Budget 2026 der Stadt Wil",
    "doktyp": "Budget",
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Beschlussvorlage",
    "herausgeber": "Stadt Wil",
-   "url": "https://www.stadtwil.ch/storage/819a3bb87d4ead8a5dc31b37f1d59911eea50dc8005458ebf9ad112a61ce2694",
+   "url": "https://www.stadtwil.ch/storage/2ecd9e697734cc2262543c9da23828c2b6ad0129cf1654fcfa47f21ba113bf8a",
    "bezugsjahr": "2026",
    "vergleich": "Kanton × Grössenklasse",
-   "confidence": "Niedrig",
-   "hinweis": "Unsichere Zuordnung; Steuerfuss-Referendum 2026 – Beschlussstand prüfen.",
-   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
+   "hinweis": "Steuerfuss-Referendum 2026 – Beschlussstand prüfen.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
    "erwartet": [
     [
-     "Budget 2026",
      "Budget"
     ],
     [
      "2026"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-10",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Budget",
+   "titel": "Budget 2027 der Stadt Wil",
+   "doktyp": "Budget",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Vorlage (Beschluss Stadtparlament ausstehend/prüfen)",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/86c954451190b5683f4cea602b5746ce096ff6338c9f35fbea68172b58f684d1",
+   "bezugsjahr": "2027",
+   "relevanz": "Aktuellster Planungsstand Erfolgsrechnung/Investitionen",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
+   "hinweis": "Beschlussstand prüfen.",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Budget"
+    ],
+    [
+     "2027"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-11",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Finanzplanung",
+   "titel": "Finanzplan 2025–2029 der Stadt Wil (Vorjahresplan für Vergleich)",
+   "doktyp": "Finanzplan",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Planungsinstrument",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/c7e05a885ee1a6860975358848101c3f21fe558650ccfc5ba12339d34d3232e9",
+   "bezugsjahr": "2025–2029 (historisch)",
+   "relevanz": "Plan-Ist-Vergleich der Planungsgüte",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "fundstelle": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Finanzplan"
+    ],
+    [
+     "2029"
     ]
    ]
   },
@@ -2058,10 +2318,9 @@
  "gemeindeanfragen": {
   "bestehend": {
    "A-SEE-01": {
-    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie die Jahresrechnungen 2021–2025 (Erfolgsrechnung, Investitionsrechnung, Bilanz, Anhang, Kennzahlen HRM2) als PDF oder Excel zur Verfügung.",
-    "Recherchebefund": "Budget 2026 in GV-Botschaft (SEE-C1-02); Kennzahlen je Gemeinde bei Finanzkontrolle Uri (UR-C1-03/04). Vollständige Jahresrechnungen nicht als PDF gefunden.",
-    "Bezug Katalog-ID": "SEE-C1-01, SEE-C1-02, UR-C1-03",
-    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich",
+    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie die Jahresrechnung 2025 (inkl. Anhang und HRM2-Kennzahlen) zur Verfügung und bestätigen Sie, dass die online publizierten Rechnungen 2021–2024 vollständig sind.",
+    "Recherchebefund": "Jahresrechnungen 2020–2024 und Budgets 2020–2026 öffentlich (SEE-C1-03/04/05, weitere im Blatt Recherche-Kandidaten); Jahresrechnung 2025 nicht als PDF gefunden. Kennzahlen bei Finanzkontrolle Uri (UR-C1-03/04, vom Runner nicht erreichbar).",
+    "Bezug Katalog-ID": "SEE-C1-03, SEE-C1-04, SEE-C1-05, UR-C1-03",
     "Zuständige Stelle (vermutet)": "Gemeindeschreiberei / Finanzverwaltung Seelisberg"
    },
    "A-SEE-02": {
@@ -2098,9 +2357,9 @@
     "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
    },
    "A-SEE-07": {
-    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie das neue Leitbild 2025 inkl. Auswertung der Umfrage und die Beschlussprotokolle 2024–2026 zur Verfügung.",
-    "Recherchebefund": "Leitbild-Mitteilung (SEE-C5-02) und Protokoll 2023 (SEE-C5-03) gefunden; neuere Protokolle nur gelistet.",
-    "Bezug Katalog-ID": "SEE-C5-01, SEE-C5-02, SEE-C5-03"
+    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie die Auswertung der Leitbild-Umfrage 2025 und Informationen zur Umsetzungsplanung des Leitbilds zur Verfügung.",
+    "Recherchebefund": "Leitbild 2025 (SEE-C5-06) und Beschlussprotokolle 2023–2025 (SEE-C5-03/04/05) öffentlich; Umfrageauswertung nicht.",
+    "Bezug Katalog-ID": "SEE-C5-04, SEE-C5-05, SEE-C5-06"
    },
    "A-SEE-08": {
     "Präzisierte Frage an die Gemeinde": "Welche Akteure (Korporation, Tourismus, Hotellerie, Grundeigentümer) sind für die Entwicklung massgebend und wie sind ihre Positionen bekannt?",
@@ -2156,13 +2415,13 @@
    },
    "A-WIL-01": {
     "Präzisierte Frage an die Gemeinde": "Bitte bestätigen Sie die Fundstellen der Jahresrechnungen 2021–2025 und senden Sie die HRM2-Kennzahlen als Excel.",
-    "Recherchebefund": "Jahresrechnungen 2023–2025 als Dokumente gefunden (WIL-C1-03/04/05).",
+    "Recherchebefund": "Jahresrechnungen 2017–2025, Budgets 2019–2027, Finanz- und Investitionspläne öffentlich (WIL-C1-03/04/05/10/11 u. Recherche-Kandidaten).",
     "Bezug Katalog-ID": "WIL-C1-03, WIL-C1-04, WIL-C1-05",
     "Zuständige Stelle (vermutet)": "Finanzverwaltung Stadt Wil"
    },
    "A-WIL-02": {
     "Präzisierte Frage an die Gemeinde": "Bitte senden Sie den Investitionsplan 2026–2030 (bzw. 2025–2035) als Excel und eine Liste der Eventualverpflichtungen inkl. Beteiligungen (TBW, Thurcom, WISPAG).",
-    "Recherchebefund": "Finanzplan 2026–2030 und Investitionsübersicht gefunden (Zuordnung unsicher, WIL-C1-06/07).",
+    "Recherchebefund": "Finanzplan und Investitionsplan 2026–2030 öffentlich (WIL-C1-06/07); Eventualverpflichtungen und Beteiligungsrisiken nicht separat.",
     "Bezug Katalog-ID": "WIL-C1-06, WIL-C1-07"
    },
    "A-WIL-03": {
