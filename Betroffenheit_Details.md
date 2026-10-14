@@ -23,8 +23,8 @@ Methode: identify auf api3.geo.admin.ch, Treffer lokal mit der um 5 m nach innen
 | 6 | ch.bafu.bundesinventare-amphibien | Wil (SG) | ja | Hasenlooweiher |
 | 6 | ch.bafu.bundesinventare-amphibien | Seelisberg | nein |  |
 | 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Münchenstein | ja | Brügglingen, Zwölf Jucharte |
-| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Wil (SG) | Fehler 502 |  |
-| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Seelisberg | Fehler 502 |  |
+| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Wil (SG) | nein |  |
+| 7 | ch.bafu.bundesinventare-trockenwiesen_trockenweiden | Seelisberg | ja | Bol, Haltenen, Hinter Bergli, Läger, Weid |
 | 8 | ch.bafu.bundesinventare-jagdbanngebiete | Münchenstein | nein |  |
 | 8 | ch.bafu.bundesinventare-jagdbanngebiete | Wil (SG) | nein |  |
 | 8 | ch.bafu.bundesinventare-jagdbanngebiete | Seelisberg | nein |  |
