@@ -56,9 +56,10 @@ def gemeinde_polygon(name):
         "sr": 2056,
     })
     # Gemeindenamen sind in swissBOUNDARIES3D eindeutig («Wil (SG)»)
-    feats = [f for f in data["results"] if f["properties"].get("gemname") == name]
+    feats = [f for f in data["results"]
+             if name in (f.get("properties", {}).get("gemname"), f.get("label"))]
     if not feats:
-        sys.exit(f"Gemeinde nicht gefunden: {name}")
+        sys.exit(f"Gemeinde nicht gefunden: {name}\n{json.dumps(data)[:2000]}")
     geom = shape(feats[0]["geometry"])
     for f in feats[1:]:
         geom = geom.union(shape(f["geometry"]))
@@ -166,6 +167,7 @@ def main():
                     cells[col] = identify(layer, *geoms[col])
                 except urllib.error.HTTPError as e:
                     cells[col] = f"Fehler {e.code}"
+                    print(e.read()[:500], file=sys.stderr)
             print(f"{cells[0]:>3} {layer:55} {name:14} {cells[col]}", file=sys.stderr)
         out.append(format_row(cells))
 

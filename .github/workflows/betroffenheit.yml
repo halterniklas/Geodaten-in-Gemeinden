@@ -1,0 +1,32 @@
+name: GIS-Betroffenheit
+
+# Führt die Abfrage gegen api3.geo.admin.ch aus (GitHub-Runner haben freien
+# Internetzugang) und committet die aktualisierte Tabelle zurück.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - gis_betroffenheit.py
+      - .github/workflows/betroffenheit.yml
+
+permissions:
+  contents: write
+
+jobs:
+  abfrage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install shapely
+      - name: Abfrage und Linkprüfung
+        run: python3 gis_betroffenheit.py Geodaten_mit_Nummerierung.md --links | tee linkstatus.txt
+      - name: Ergebnis committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Geodaten_mit_Nummerierung.md linkstatus.txt
+          git diff --cached --quiet || git commit -m "Betroffenheit via api3.geo.admin.ch aktualisiert"
+          git push
