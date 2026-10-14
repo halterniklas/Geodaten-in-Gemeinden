@@ -325,11 +325,11 @@
   },
   "SEE-C2-01": {
    "url": "https://www.seelisberg.ch/files/pdf/ERLUTE1.PDF",
-   "titel": "Teilrevision Nutzungsplanung und Quartiergestaltungsplan «Sonnenberg» – Erläuterungsbericht (Erwerb Parzelle 775, Baurecht)",
+   "titel": "Teilrevision Nutzungsplanung und Quartiergestaltungsplanung «Sonnenberg» – Erläuterungsbericht nach Art. 47 RPV (öffentliche Auflage)",
    "doktyp": "Planungsbericht",
    "dokstatus": "Direktes Dokument",
    "rechtsstatus": "Planungsbericht (orientierend)",
-   "relevanz": "Belegt geplantes kommunales Grundstücksgeschäft (Erwerb Parzelle 775) mit Abgabe im Baurecht; einziges öffentlich gefundenes Bodenpolitik-Geschäft",
+   "relevanz": "Planungsgrundlage für das Entwicklungsgebiet Sonnenberg. Kein Nachweis kommunalen Grundeigentums oder eines Baurechts: «Baurecht», «775» und «Erwerb» kommen im Dokumenttext nicht vor (automatische Volltextsuche).",
    "erwartet": [
     [
      "Sonnenberg"
@@ -341,11 +341,14 @@
    "belege": [
     "Baurecht",
     "775",
-    "Erwerb"
+    "Erwerb",
+    "Halter",
+    "Grundeigentümer"
    ],
-   "confidence": "Mittel",
+   "confidence": "Niedrig",
    "fundstelle": "https://www.seelisberg.ch/",
-   "hinweis": "Projekt Sonnenberg wird in Quellen als Projekt der Halter AG genannt – Interessenbindung bei Auswertung offenlegen. Kein vollständiges Liegenschaftsverzeichnis.",
+   "pruefnachweis": "Belegt das Planungsverfahren Sonnenberg (Teilrevision NUP/QGP); belegt kein kommunales Grundeigentum.",
+   "hinweis": "Eine Suchmaschinen-Zusammenfassung nannte einen Erwerb von Parzelle 775 mit Baurecht – im Dokument nicht bestätigt, daher nicht übernommen. Ebenso unbestätigter Sekundärhinweis auf eine Projektbeteiligung der Halter AG: Belegstellen prüfen; allfällige Interessenbindung bei der Auswertung offenlegen. Kein Liegenschaftsverzeichnis öffentlich.",
    "grund": "Startseite durch direktes Dokument zu Grundeigentum/Baurecht ersetzt."
   },
   "SEE-C3-01": {
@@ -1242,6 +1245,58 @@
     ],
     [
      "Verfahren"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C4-03",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C4",
+   "thema": "Personal",
+   "titel": "Verordnung über das Personal der Gemeinde Seelisberg",
+   "doktyp": "Kommunale Verordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Personal.pdf",
+   "relevanz": "Anstellungsrahmen und Zuständigkeiten im Personalwesen (keine Aussage zu Kapazität)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/rechtssammlung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "erwartet": [
+    [
+     "Personal"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C4-04",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C4",
+   "thema": "Behördenorganisation",
+   "titel": "Verordnung über das Verfahren in den Behörden der Gemeinde Seelisberg",
+   "doktyp": "Kommunale Verordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Verordnung_%C3%BCber_das_Verfahren_in_den_Beh%C3%B6rden.pdf",
+   "relevanz": "Arbeitsweise und Beschlussfassung von Gemeinderat und Kommissionen",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/rechtssammlung",
+   "herkunft": "Automatische Recherche GitHub Actions (Discovery), Fundstelle siehe Spalte Offizielle Fundstelle",
+   "weitere_dim": "C3",
+   "erwartet": [
+    [
+     "Verfahren"
+    ],
+    [
+     "Behörde"
     ]
    ]
   },
@@ -2380,14 +2435,14 @@
    },
    "A-SEE-03": {
     "Präzisierte Frage an die Gemeinde": "Welche Grundstücke (Parzellennummern) besitzt die Einwohnergemeinde im Verwaltungs- und Finanzvermögen? Bitte Liste mit Fläche, Zone und Nutzung.",
-    "Recherchebefund": "Kein Liegenschaftsverzeichnis öffentlich; einziges Grundstücksgeschäft: Erwerb Parzelle 775 Sonnenberg (SEE-C2-01).",
+    "Recherchebefund": "Kein Liegenschaftsverzeichnis öffentlich; kein kommunales Grundstücksgeschäft im Dokumenttext belegt (SEE-C2-01 nur Planungsverfahren Sonnenberg).",
     "Bezug Katalog-ID": "SEE-C2-01",
     "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
     "Zuständige Stelle (vermutet)": "Gemeindeverwaltung / Bauverwaltung"
    },
    "A-SEE-04": {
     "Präzisierte Frage an die Gemeinde": "Bitte listen Sie bestehende und geplante Baurechte, Dienstbarkeiten und Kaufrechte der Gemeinde auf (Parzelle, Berechtigte, Laufzeit, Zins).",
-    "Recherchebefund": "Baurecht für Parzelle 775 im Erläuterungsbericht beschrieben; übrige Verträge nicht öffentlich.",
+    "Recherchebefund": "Keine Baurechts- oder Dienstbarkeitsverträge öffentlich; ein in der Websuche erwähntes Baurecht (Parzelle 775) ist im Erläuterungsbericht nicht belegt.",
     "Bezug Katalog-ID": "SEE-C2-01",
     "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
    },
@@ -2401,7 +2456,7 @@
    "A-SEE-06": {
     "Präzisierte Frage an die Gemeinde": "Wie viele Stellenprozente stehen in Verwaltung und Bauverwaltung zur Verfügung? Welche Projekte werden extern (Mandate) gesteuert? Wie läuft eine Beschaffung ab (Zuständigkeit, Schwellen)?",
     "Recherchebefund": "Personalseite (SEE-C4-02) zeigt Personen, keine Pensen; Restrukturierung der Verwaltung im Budget 2026 erwähnt.",
-    "Bezug Katalog-ID": "SEE-C4-01, SEE-C4-02",
+    "Bezug Katalog-ID": "SEE-C4-01, SEE-C4-02, SEE-C4-03",
     "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
    },
    "A-SEE-07": {
@@ -2511,14 +2566,14 @@
     "Anfrage-ID": "A-SEE-09",
     "Gemeinde": "Seelisberg",
     "C-Dimension": "C2, C3",
-    "Benötigte Lieferung": "Vertragsstand Projekt Sonnenberg (Planungs- und Infrastrukturvertrag, Baurechtsvertrag Parzelle 775)",
+    "Benötigte Lieferung": "Rolle der Gemeinde im Projekt Sonnenberg (Grundeigentum, Verträge, Kostenbeteiligung)",
     "Warum nötig": "Einziges dokumentiertes kommunales Bodengeschäft; Trägerschaft und Risiken",
     "Priorität": "Hoch",
     "Status": "Offen",
-    "Recherchebefund": "Im Erläuterungsbericht erwähnt (SEE-C2-01); Verträge nicht öffentlich.",
+    "Recherchebefund": "Nur Planungsverfahren öffentlich (SEE-C2-01); Eigentums- und Vertragsfragen nicht dokumentiert.",
     "Bezug Katalog-ID": "SEE-C2-01",
     "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich",
-    "Präzisierte Frage an die Gemeinde": "Liegen der Planungs-/Infrastrukturvertrag und der Baurechtsvertrag für Parzelle 775 vor? Welche Pflichten und Risiken übernimmt die Gemeinde?"
+    "Präzisierte Frage an die Gemeinde": "Besitzt die Gemeinde im Gebiet Sonnenberg Grundstücke oder plant sie Erwerb/Abgabe im Baurecht? Welche Verträge (Planung, Infrastruktur) bestehen, und welche Pflichten und Risiken übernimmt die Gemeinde?"
    },
    {
     "Anfrage-ID": "A-MUE-09",
@@ -2555,7 +2610,7 @@
    "Planerische Flächenverfügbarkeit (Zonen, Bauland-Datenbanken) ist kein Nachweis kommunalen Grundeigentums. C2 bleibt ohne Liegenschaftsverzeichnisse der Gemeinden unbelegt.",
    "Organigramme und Reglemente belegen Strukturen, nicht Verwaltungskompetenz oder Kapazität (C4).",
    "Leitbilder, Mitwirkungsverfahren und Beschlüsse belegen keine politische Akzeptanz (C5); dazu sind Abstimmungsresultate und qualitative Befunde nötig.",
-   "Seelisberg: Projekt Sonnenberg wird in Quellen als Halter-AG-Projekt genannt – mögliche Interessenbindung bei der Auswertung offenlegen.",
+   "Seelisberg: Eine Suchmaschinen-Zusammenfassung schrieb dem Erläuterungsbericht Sonnenberg einen Parzellenerwerb mit Baurecht zu; die Volltextsuche fand dies nicht. Solche Aussagen wurden daher nicht übernommen. Ein unbestätigter Sekundärhinweis nennt eine Projektbeteiligung der Halter AG – vor der Auswertung klären und allfällige Interessenbindung offenlegen.",
    "Tragfähigkeit wurde bewusst nirgends eingestuft; die Schwellen in der Bewertungslogik sind noch nicht validiert."
   ],
   "empfehlungen": [

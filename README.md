@@ -15,6 +15,7 @@ Arbeitsrepository für die drei Pilotgemeinden **Seelisberg (UR)**, **Münchenst
 |---|---|
 | `data/C_Grundlagenkataster_Schweiz_Kantone_Gemeinden.xlsx` | Ausgangsdatei (unverändert, verbindliche Basis) |
 | `data/quellen_kuratiert.json` | Kuratierte Korrekturen bestehender Zeilen (nach ID), neue Quellen mit erwarteten Schlüsselwörtern, präzisierte Gemeindeanfragen, Textbausteine für den Bericht |
+| `scripts/build_quellen_kuratiert.py` | Quelle der kuratierten Liste (lesbarer als JSON); erzeugt `data/quellen_kuratiert.json` |
 | `data/discovery_seeds.json` | Offizielle Einstiegsseiten, Sitemaps und optionale Suchanfragen für die automatische Recherche |
 | `scripts/verify_c_sources.py` | Prüf- und Erzeugungsskript |
 | `C_Grundlagenkataster_verifiziert.xlsx` | Ergebnis: verifizierter Kataster |
@@ -62,7 +63,7 @@ Nach manueller Bearbeitung der Gesamtübersicht die Gemeindeblätter neu erzeuge
 python3 scripts/verify_c_sources.py --sync-only C_Grundlagenkataster_verifiziert.xlsx
 ```
 
-Dauerhafte Änderungen gehören in `data/quellen_kuratiert.json` (sonst überschreibt der nächste Lauf sie).
+Dauerhafte Änderungen gehören in `scripts/build_quellen_kuratiert.py` (danach `python3 scripts/build_quellen_kuratiert.py data/quellen_kuratiert.json`), sonst überschreibt der nächste Lauf sie. Jede neue URL braucht erwartete Schlüsselwörter (`erwartet`), optional Belegbegriffe (`belege`) für Seitenangaben.
 
 ### GitHub Actions
 
