@@ -1,0 +1,37 @@
+{
+ "_hinweis": "Offizielle Einstiegsseiten und Sitemaps für die automatische Recherche. Funde erscheinen ungeprüft im Blatt «Recherche-Kandidaten». tiefe=2 folgt themenrelevanten Unterseiten derselben Domain.",
+ "seiten": [
+  {"url": "https://www.seelisberg.ch/politik/gemeindeversammlung", "gemeinde": "Seelisberg", "kanton": "Uri"},
+  {"url": "https://www.seelisberg.ch/", "gemeinde": "Seelisberg", "kanton": "Uri", "tiefe": 2, "max_unterseiten": 20},
+  {"url": "https://www.seelisberg.ch/ueber-seelisberg/leitbild", "gemeinde": "Seelisberg", "kanton": "Uri"},
+  {"url": "https://www.ur.ch/publikationen/6680", "gemeinde": "Seelisberg", "kanton": "Uri"},
+  {"url": "https://www.muenchenstein.ch/publikationen/621658", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/publikationen/556069", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/publikationen/523378", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/publikationen/523381", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/sitzung/5729137", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/sitzung/5729125", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/reglemente/7208", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/legislaturziele", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.muenchenstein.ch/finanzensteuern", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft", "tiefe": 2},
+  {"url": "https://www.muenchenstein.ch/organisationuorganigramm", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"url": "https://www.stadtwil.ch/topics/stadt-politik-und-recht/finanzen", "gemeinde": "Wil", "kanton": "St. Gallen", "tiefe": 2},
+  {"url": "https://www.stadtwil.ch/political-business/28da2d58a16b4b85b0504eeaa7e396dc", "gemeinde": "Wil", "kanton": "St. Gallen"},
+  {"url": "https://www.stadtwil.ch/publikationen/90704", "gemeinde": "Wil", "kanton": "St. Gallen"},
+  {"url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/rechnungslegung--rmsg-.html", "gemeinde": "Wil", "kanton": "St. Gallen", "tiefe": 2},
+  {"url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft", "tiefe": 2}
+ ],
+ "sitemaps": [
+  {"basis": "https://www.seelisberg.ch", "gemeinde": "Seelisberg", "kanton": "Uri"},
+  {"basis": "https://www.muenchenstein.ch", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"basis": "https://www.stadtwil.ch", "gemeinde": "Wil", "kanton": "St. Gallen"}
+ ],
+ "suchanfragen": [
+  {"q": "site:seelisberg.ch Jahresrechnung", "gemeinde": "Seelisberg", "kanton": "Uri"},
+  {"q": "site:seelisberg.ch Gemeindeordnung", "gemeinde": "Seelisberg", "kanton": "Uri"},
+  {"q": "site:muenchenstein.ch Liegenschaften Baurecht", "gemeinde": "Münchenstein", "kanton": "Basel-Landschaft"},
+  {"q": "site:stadtwil.ch Organigramm Stadtverwaltung", "gemeinde": "Wil", "kanton": "St. Gallen"},
+  {"q": "site:stadtwil.ch Immobilienstrategie", "gemeinde": "Wil", "kanton": "St. Gallen"},
+  {"q": "site:sg.ch Finanzstatistik politische Gemeinden", "gemeinde": "Wil", "kanton": "St. Gallen"}
+ ]
+}

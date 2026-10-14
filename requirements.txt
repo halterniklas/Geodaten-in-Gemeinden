@@ -1,0 +1,8 @@
+# C-Grundlagenkataster (scripts/verify_c_sources.py)
+openpyxl==3.1.5
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+pypdf==5.1.0
+# GIS-Betroffenheit (gis_betroffenheit.py)
+shapely==2.0.6

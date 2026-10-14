@@ -1,0 +1,2263 @@
+{
+ "stand": "2026-10-14",
+ "bestehende_zeilen": {
+  "CH-C1-01": {
+   "erwartet": [
+    [
+     "Finanzstatistik"
+    ]
+   ],
+   "fundstelle": "https://www.efv.admin.ch/"
+  },
+  "CH-C1-02": {
+   "erwartet": [
+    [
+     "Finanzstatistik"
+    ]
+   ]
+  },
+  "CH-C2-01": {
+   "erwartet": [
+    [
+     "Zivilgesetzbuch"
+    ]
+   ],
+   "rechtsstatus": "Bundesgesetz (verbindlich)",
+   "bezugsjahr": "SR 210, geltende Fassung"
+  },
+  "CH-C3-01": {
+   "erwartet": [
+    [
+     "Bundesverfassung"
+    ]
+   ],
+   "rechtsstatus": "Bundesverfassung (verbindlich)",
+   "bezugsjahr": "SR 101, geltende Fassung",
+   "weitere_dim": "C5"
+  },
+  "CH-C4-01": {
+   "erwartet": [
+    [
+     "öffentliche Beschaffungswesen",
+     "Beschaffungswesen"
+    ]
+   ],
+   "rechtsstatus": "Bundesgesetz (verbindlich für Bundesbeschaffungen; Gemeinden: IVöB/kantonales Recht)",
+   "bezugsjahr": "SR 172.056.1, geltende Fassung"
+  },
+  "CH-C5-01": {
+   "erwartet": [
+    [
+     "Bundesverfassung"
+    ]
+   ],
+   "rechtsstatus": "Bundesverfassung (verbindlich)",
+   "bezugsjahr": "SR 101, geltende Fassung",
+   "weitere_dim": "C3",
+   "hinweis": "Gleiche Quelle wie CH-C3-01; bewusst doppelt geführt (Zuordnung C5 politische Rechte)."
+  },
+  "UR-C1-01": {
+   "erwartet": [
+    [
+     "Gemeindefinanzstatistik",
+     "Kennzahlen",
+     "Gemeindefinanz"
+    ]
+   ]
+  },
+  "UR-C1-02": {
+   "erwartet": [
+    [
+     "Steuerstatistik",
+     "Steuer"
+    ]
+   ]
+  },
+  "UR-C2-01": {
+   "erwartet": [
+    [
+     "Geo",
+     "Uri"
+    ]
+   ],
+   "ort": [
+    "Uri",
+    "geo.ur"
+   ],
+   "hinweis": "Kartenportal (JavaScript); Inhaltsprüfung nur eingeschränkt möglich. Kein Eigentumsnachweis."
+  },
+  "UR-C3-01": {
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/1.1111",
+   "titel": "Gemeindegesetz (GEG) des Kantons Uri, RB 1.1111",
+   "doktyp": "Kantonales Gesetz",
+   "rechtsstatus": "Kantonales Gesetz (verbindlich)",
+   "bezugsjahr": "vom 21.5.2017; geltende Fassung",
+   "erwartet": [
+    [
+     "Gemeindegesetz"
+    ]
+   ],
+   "ort": [],
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "grund": "Startseite der Rechtssammlung durch direkten Erlass ersetzt (Gemeindegesetz, RB 1.1111)."
+  },
+  "UR-C4-01": {
+   "url": "https://www.ur.ch/dienstleistungen/8444",
+   "titel": "Kanton Uri: Submissionsrecht (IVöB 2019, in Kraft seit 1.6.2023)",
+   "doktyp": "Behördeninformation",
+   "rechtsstatus": "Information zu verbindlichem Recht",
+   "erwartet": [
+    [
+     "Submission",
+     "Beschaffung",
+     "IVöB"
+    ]
+   ],
+   "grund": "Allgemeine Startseite ur.ch durch themenspezifische Seite zum Beschaffungsrecht ersetzt."
+  },
+  "UR-C5-01": {
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/2.1201",
+   "titel": "Gesetz über die geheimen Wahlen, Abstimmungen und die Volksrechte (WAVG), RB 2.1201",
+   "doktyp": "Kantonales Gesetz",
+   "rechtsstatus": "Kantonales Gesetz (verbindlich)",
+   "bezugsjahr": "geltende Fassung; Revision hängig (Synopse 2026)",
+   "erwartet": [
+    [
+     "Wahlen",
+     "Abstimmungen"
+    ]
+   ],
+   "ort": [],
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "grund": "Startseite der Rechtssammlung durch direkten Erlass ersetzt (WAVG, RB 2.1201)."
+  },
+  "BL-C1-01": {
+   "erwartet": [
+    [
+     "Gemeindefinanzen",
+     "Finanzausgleich",
+     "Finanzen"
+    ]
+   ]
+  },
+  "BL-C1-02": {
+   "erwartet": [
+    [
+     "Rechnungslegung",
+     "Excel"
+    ]
+   ]
+  },
+  "BL-C2-01": {
+   "erwartet": [
+    [
+     "GeoView",
+     "Geo"
+    ]
+   ],
+   "ort": [
+    "BL",
+    "Basel-Landschaft",
+    "geoview"
+   ],
+   "hinweis": "Kartenportal (JavaScript); kein Eigentumsnachweis."
+  },
+  "BL-C3-01": {
+   "url": "https://bl.clex.ch/app/de/texts_of_law/180",
+   "titel": "Gemeindegesetz (GemG) Basel-Landschaft, SGS 180",
+   "doktyp": "Kantonales Gesetz",
+   "rechtsstatus": "Kantonales Gesetz (verbindlich)",
+   "bezugsjahr": "vom 28.5.1970; geltende Fassung",
+   "erwartet": [
+    [
+     "Gemeinden",
+     "Gemeindegesetz"
+    ]
+   ],
+   "ort": [],
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "grund": "Startseite der Gesetzessammlung durch direkten Erlass ersetzt (Gemeindegesetz SGS 180)."
+  },
+  "BL-C4-01": {
+   "erwartet": [
+    [
+     "Gemeinden"
+    ]
+   ]
+  },
+  "BL-C5-01": {
+   "url": "https://bl.clex.ch/app/de/texts_of_law/120",
+   "titel": "Gesetz über die politischen Rechte (GpR) Basel-Landschaft, SGS 120",
+   "doktyp": "Kantonales Gesetz",
+   "rechtsstatus": "Kantonales Gesetz (verbindlich)",
+   "bezugsjahr": "vom 7.9.1981; geltende Fassung",
+   "erwartet": [
+    [
+     "politischen Rechte"
+    ]
+   ],
+   "ort": [],
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "grund": "Startseite der Gesetzessammlung durch direkten Erlass ersetzt (GpR SGS 120)."
+  },
+  "SG-C1-01": {
+   "url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/rechnungslegung--rmsg-.html",
+   "titel": "Kanton St. Gallen, Amt für Gemeinden: Rechnungslegung (RMSG) / Gemeindefinanzen",
+   "doktyp": "Behördeninformation",
+   "herausgeber": "Kanton St. Gallen, Amt für Gemeinden",
+   "erwartet": [
+    [
+     "Rechnungslegung",
+     "RMSG"
+    ]
+   ],
+   "grund": "Herausgeber «Kanton St. Gallen» passte nicht zum EFV-Bundeslink (Dublette zu CH-C1-01); durch kantonale Fundstelle ersetzt."
+  },
+  "SG-C2-01": {
+   "erwartet": [
+    [
+     "geoportal"
+    ]
+   ],
+   "ort": [],
+   "hinweis": "Kartenportal (JavaScript); kein Eigentumsnachweis."
+  },
+  "SG-C3-01": {
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/151.2",
+   "titel": "Gemeindegesetz (GG) St. Gallen, sGS 151.2",
+   "doktyp": "Kantonales Gesetz",
+   "rechtsstatus": "Kantonales Gesetz (verbindlich)",
+   "bezugsjahr": "vom 21.4.2009; geltende Fassung",
+   "erwartet": [
+    [
+     "Gemeindegesetz",
+     "Gemeinden"
+    ]
+   ],
+   "ort": [],
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "weitere_dim": "C1",
+   "grund": "Startseite der Gesetzessammlung durch direkten Erlass ersetzt (Gemeindegesetz sGS 151.2)."
+  },
+  "SG-C4-01": {
+   "erwartet": [
+    [
+     "St.Gallen",
+     "St. Gallen"
+    ]
+   ]
+  },
+  "SG-C5-01": {
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/125.1",
+   "titel": "Gesetz über Referendum und Initiative (RIG) St. Gallen, sGS 125.1",
+   "doktyp": "Kantonales Gesetz",
+   "rechtsstatus": "Kantonales Gesetz (verbindlich)",
+   "bezugsjahr": "geltende Fassung",
+   "erwartet": [
+    [
+     "Referendum"
+    ]
+   ],
+   "ort": [],
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "grund": "Startseite der Gesetzessammlung durch direkten Erlass ersetzt (RIG sGS 125.1)."
+  },
+  "SEE-C1-01": {
+   "erwartet": [
+    [
+     "Gemeindeversammlung"
+    ]
+   ],
+   "fundstelle": "https://www.seelisberg.ch/"
+  },
+  "SEE-C2-01": {
+   "url": "https://www.seelisberg.ch/files/pdf/ERLUTE1.PDF",
+   "titel": "Teilrevision Nutzungsplanung und Quartiergestaltungsplan «Sonnenberg» – Erläuterungsbericht (Erwerb Parzelle 775, Baurecht)",
+   "doktyp": "Planungsbericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Planungsbericht (orientierend)",
+   "relevanz": "Belegt geplantes kommunales Grundstücksgeschäft (Erwerb Parzelle 775) mit Abgabe im Baurecht; einziges öffentlich gefundenes Bodenpolitik-Geschäft",
+   "erwartet": [
+    [
+     "Sonnenberg"
+    ],
+    [
+     "Baurecht"
+    ]
+   ],
+   "confidence": "Mittel",
+   "fundstelle": "https://www.seelisberg.ch/",
+   "hinweis": "Projekt Sonnenberg wird in Quellen als Projekt der Halter AG genannt – Interessenbindung bei Auswertung offenlegen. Kein vollständiges Liegenschaftsverzeichnis.",
+   "grund": "Startseite durch direktes Dokument zu Grundeigentum/Baurecht ersetzt."
+  },
+  "SEE-C3-01": {
+   "erwartet": [
+    [
+     "Kommission",
+     "Behörden"
+    ]
+   ]
+  },
+  "SEE-C4-01": {
+   "erwartet": [
+    [
+     "Kommission",
+     "Behörden"
+    ]
+   ]
+  },
+  "SEE-C5-01": {
+   "erwartet": [
+    [
+     "Gemeindeversammlung"
+    ]
+   ]
+  },
+  "MUE-C1-01": {
+   "erwartet": [
+    [
+     "Finanzplan"
+    ]
+   ]
+  },
+  "MUE-C1-02": {
+   "url": "https://www.muenchenstein.ch/publikationen/621658",
+   "titel": "Bericht zur Jahresrechnung 2025 der Einwohnergemeinde Münchenstein",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Publikationsseite mit PDF",
+   "rechtsstatus": "Beschlossene Jahresrechnung (Gemeindeversammlung 15.6.2026)",
+   "bezugsjahr": "2025",
+   "erwartet": [
+    [
+     "Jahresrechnung 2025"
+    ]
+   ],
+   "confidence": "Mittel",
+   "grund": "Startseite durch Publikationsseite der Jahresrechnung 2025 ersetzt."
+  },
+  "MUE-C2-01": {
+   "url": "https://www.muenchenstein.ch/_docn/1059619/2015.03.16_Ratschlag_Homepage.pdf",
+   "titel": "Ratschlag Gemeindeversammlung 16.3.2015 (Landverkauf Parzelle 799; Grundsätze aktive Landpolitik / Baurecht)",
+   "doktyp": "Ratschlag / Vorlage",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage (historisch)",
+   "bezugsjahr": "2015",
+   "relevanz": "Dokumentiert Grundsätze der kommunalen Landpolitik (Verkauf vs. Baurecht); historische Grundlage",
+   "erwartet": [
+    [
+     "Ratschlag"
+    ],
+    [
+     "Baurecht"
+    ]
+   ],
+   "confidence": "Mittel",
+   "hinweis": "Historisches Dokument (2015); aktuelle Liegenschaftsstrategie nicht öffentlich gefunden.",
+   "grund": "Startseite durch direktes Dokument zur Landpolitik ersetzt."
+  },
+  "MUE-C3-01": {
+   "url": "https://www.muenchenstein.ch/_docn/2430218/20180713_Gemeindeordnung_Stand_01.01.2013_publiziert_sw.pdf",
+   "titel": "Gemeindeordnung der Einwohnergemeinde Münchenstein (Stand 1.1.2013)",
+   "doktyp": "Gemeindeordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "bezugsjahr": "vom 13.9.1999, Stand 1.1.2013",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Gemeindeordnung"
+    ],
+    [
+     "Gemeindekommission",
+     "Gemeinderat"
+    ]
+   ],
+   "confidence": "Hoch",
+   "fundstelle": "https://www.muenchenstein.ch/reglemente/7140",
+   "hinweis": "Prüfen, ob neuere Fassung existiert (Einwohnerrat-Diskussion).",
+   "grund": "Startseite durch Gemeindeordnung ersetzt."
+  },
+  "MUE-C4-01": {
+   "url": "https://www.muenchenstein.ch/organisationuorganigramm",
+   "titel": "Gemeinde Münchenstein: Organisation und Organigramm der Verwaltung",
+   "doktyp": "Organigramm / Webseite",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "erwartet": [
+    [
+     "Organigramm",
+     "Organisation"
+    ]
+   ],
+   "confidence": "Mittel",
+   "grund": "Startseite durch Organigrammseite ersetzt."
+  },
+  "MUE-C5-01": {
+   "url": "https://www.muenchenstein.ch/legislaturziele",
+   "titel": "Legislaturziele 2024–2028 des Gemeinderats Münchenstein",
+   "doktyp": "Legislaturprogramm",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Politische Zielsetzung (behördenverbindlich, nicht rechtsverbindlich)",
+   "bezugsjahr": "2024–2028",
+   "erwartet": [
+    [
+     "Legislatur"
+    ]
+   ],
+   "confidence": "Mittel",
+   "grund": "Startseite durch Legislaturziele ersetzt."
+  },
+  "WIL-C1-01": {
+   "erwartet": [
+    [
+     "Finanzen"
+    ]
+   ]
+  },
+  "WIL-C1-02": {
+   "erwartet": [
+    [
+     "Jahresrechnung",
+     "Rechnung"
+    ]
+   ]
+  },
+  "WIL-C2-01": {
+   "url": "https://stadtwil.ch/_doc/4801870",
+   "titel": "Nachtrag IV zur Gemeindeordnung: Finanzbefugnisse für Liegenschaftsgeschäfte im Finanzvermögen (Bericht Stadtrat 24.10.2023)",
+   "doktyp": "Bericht und Antrag",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Vorlage (Beschluss/Referendum prüfen)",
+   "bezugsjahr": "2023",
+   "relevanz": "Kompetenzordnung für aktive Bodenpolitik (Kauf/Verkauf im Finanzvermögen)",
+   "erwartet": [
+    [
+     "Nachtrag"
+    ],
+    [
+     "Liegenschaft"
+    ]
+   ],
+   "confidence": "Mittel",
+   "hinweis": "Ob der Nachtrag angenommen wurde, ist nicht belegt.",
+   "grund": "Geschäftsregister-Startseite durch direktes Dokument zur Bodenpolitik ersetzt."
+  },
+  "WIL-C3-01": {
+   "url": "https://www.stadtwil.ch/_doc/2079992",
+   "titel": "Reglement über die Steuerung und Beaufsichtigung von Organisationen mit städtischer Beteiligung (Beteiligungsreglement)",
+   "doktyp": "Reglement",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "bezugsjahr": "2020",
+   "erwartet": [
+    [
+     "Beteiligung"
+    ]
+   ],
+   "confidence": "Mittel",
+   "grund": "Geschäftsregister-Startseite durch Beteiligungsreglement ersetzt."
+  },
+  "WIL-C4-01": {
+   "url": "https://www.stadtwil.ch/_doc/5663965",
+   "titel": "Geschäftsbericht der Stadt Wil 2024",
+   "doktyp": "Geschäftsbericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Rechenschaftsbericht",
+   "bezugsjahr": "2024",
+   "erwartet": [
+    [
+     "Geschäftsbericht"
+    ]
+   ],
+   "confidence": "Mittel",
+   "grund": "Startseite durch Geschäftsbericht ersetzt."
+  },
+  "WIL-C5-01": {
+   "url": "https://www.stadtwil.ch/storage/55dcd744fbd978ce5601e42dc48a7b53cdfe1082b7fecb9c647e6dadc8abf9c7",
+   "titel": "Legislaturplanung 2025–2028 «wil sind wir» – Bericht an das Stadtparlament",
+   "doktyp": "Legislaturprogramm",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Politische Zielsetzung",
+   "bezugsjahr": "2025–2028",
+   "erwartet": [
+    [
+     "Legislatur"
+    ]
+   ],
+   "confidence": "Mittel",
+   "grund": "Geschäftsregister-Startseite durch Legislaturplanung ersetzt."
+  }
+ },
+ "neue_quellen": [
+  {
+   "id": "CH-C1-03",
+   "ebene": "Bund",
+   "kanton": "Alle",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzstatistik Methode",
+   "titel": "EFV: FS-Methodenband (Finanzstatistik-Modell, HRM2-Zuordnung)",
+   "doktyp": "Methodik",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Methodische Grundlage",
+   "herausgeber": "Eidgenössische Finanzverwaltung (EFV)",
+   "url": "https://www.efv.admin.ch/dam/efv/en/dokumente/finanzstatistik/methoden/FS-Methodenband.pdf.download.pdf/FS-Methodenband.pdf",
+   "relevanz": "Definitionen der Kennzahlen und HRM2-Abbildung für Vergleichbarkeit",
+   "kennzahl": "Kennzahlendefinitionen",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "verbindung": "C1",
+   "sprint2": "Vergleichsregeln C1",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Finanzstatistik",
+     "financial statistics",
+     "statistique financière"
+    ]
+   ]
+  },
+  {
+   "id": "CH-C1-04",
+   "ebene": "Bund",
+   "kanton": "Alle",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzdaten Gemeinden",
+   "titel": "EFV: Detaillierte Daten FS- und GFS-Modell (Open Government Data)",
+   "doktyp": "Datensatz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Datengrundlage",
+   "herausgeber": "EFV / opendata.swiss",
+   "url": "https://opendata.swiss/en/dataset/detaillierte-daten-fs-und-gfs-modell-standardauswertungen",
+   "relevanz": "Maschinenlesbare Finanzdaten für Peer-Vergleich",
+   "kennzahl": "Einnahmen, Ausgaben, Schulden",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "FS"
+    ],
+    [
+     "GFS"
+    ]
+   ]
+  },
+  {
+   "id": "CH-C2-02",
+   "ebene": "Bund",
+   "kanton": "Alle",
+   "gemeinde": "Alle",
+   "dim": "C2",
+   "thema": "Raumplanung / Baulandmobilisierung",
+   "titel": "Bundesgesetz über die Raumplanung (RPG), SR 700",
+   "doktyp": "Bundesgesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Bundesgesetz (verbindlich)",
+   "herausgeber": "Bund",
+   "url": "https://www.fedlex.admin.ch/eli/cc/1979/1573_1573_1573/de",
+   "bezugsjahr": "SR 700, geltende Fassung",
+   "relevanz": "Art. 15a RPG: Förderung der Verfügbarkeit von Bauland; Mehrwertausgleich Art. 5",
+   "kennzahl": "Bauverpflichtung, Mehrwertabgabe",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B; Q1",
+   "herkunft": "ELI-Permalink Fedlex; Identität per Fedlex-SPARQL geprüft",
+   "erwartet": [
+    [
+     "Raumplanung"
+    ]
+   ]
+  },
+  {
+   "id": "CH-C4-02",
+   "ebene": "Bund",
+   "kanton": "Alle",
+   "gemeinde": "Alle",
+   "dim": "C4",
+   "thema": "Gemeindekennzahlen",
+   "titel": "BFS: Regionalporträts – Kennzahlen aller Gemeinden (Datensatz)",
+   "doktyp": "Datensatz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Datengrundlage",
+   "herausgeber": "Bundesamt für Statistik (BFS)",
+   "url": "https://ckan.opendata.swiss/dataset/regionalportrats-2021-kennzahlen-aller-gemeinden",
+   "bezugsjahr": "2021 (neuere Ausgabe prüfen)",
+   "relevanz": "Strukturdaten (Einwohner, Fläche) zur Bildung der Grössenklassen",
+   "vergleich": "Grössenklasse",
+   "confidence": "Mittel",
+   "hinweis": "Ausgabe 2021; aktuelle Ausgabe beim BFS prüfen.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C1",
+   "erwartet": [
+    [
+     "Regionalporträts",
+     "Regionalportraits",
+     "Portraits régionaux"
+    ]
+   ]
+  },
+  {
+   "id": "UR-C1-03",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzkennzahlen Gemeinden",
+   "titel": "Kennzahlen Einwohnergemeinden Uri 2025 (Finanzkontrolle)",
+   "doktyp": "Statistik / Bericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Datengrundlage",
+   "herausgeber": "Kanton Uri, Finanzkontrolle",
+   "url": "https://www.ur.ch/_doc/451636",
+   "bezugsjahr": "Rechnungsjahr 2025 (publ. 2026)",
+   "relevanz": "Kennzahlen je Urner Gemeinde inkl. Seelisberg (Selbstfinanzierung, Kapitaldienst)",
+   "kennzahl": "Selbstfinanzierungsanteil, Kapitaldienstanteil, Steuern/Kopf",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "verbindung": "A1; C1",
+   "sprint2": "Finanztragfähigkeit Seelisberg im Kantonsvergleich",
+   "fundstelle": "https://www.ur.ch/publikationen/6680",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Kennzahlen"
+    ],
+    [
+     "Seelisberg"
+    ]
+   ]
+  },
+  {
+   "id": "UR-C1-04",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzkennzahlen Gemeinden",
+   "titel": "Kennzahlen Einwohnergemeinden Uri 2024 (Finanzkontrolle)",
+   "doktyp": "Statistik / Bericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Datengrundlage",
+   "herausgeber": "Kanton Uri, Finanzkontrolle",
+   "url": "https://www.ur.ch/_doc/420775",
+   "bezugsjahr": "Rechnungsjahr 2024",
+   "relevanz": "Vorjahreswerte für Zeitreihe",
+   "kennzahl": "wie UR-C1-03",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.ur.ch/publikationen/6680",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Kennzahlen"
+    ],
+    [
+     "Seelisberg"
+    ]
+   ]
+  },
+  {
+   "id": "UR-C1-05",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Rechnungslegung Gemeinden",
+   "titel": "Reglement über das Rechnungswesen der Einwohnergemeinden (RRE), RB 3.2115",
+   "doktyp": "Kantonales Reglement",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Regierungsrat Uri",
+   "url": "https://rechtsbuch.ur.ch/api/de/versions/776/pdf_file",
+   "bezugsjahr": "Version 776 (Stand prüfen)",
+   "relevanz": "Rechtsgrundlage HRM2 und kantonale Finanzaufsicht über Gemeinden (Uri kennt kein separates FHGG)",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.ur.ch/dienstleistungen/3150",
+   "hinweis": "Versions-PDF: prüfen, ob dies die geltende Fassung ist.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Rechnungswesen"
+    ],
+    [
+     "Einwohnergemeinden"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "UR-C1-06",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzausgleich",
+   "titel": "Gesetz über den Finanz- und Lastenausgleich zwischen dem Kanton und den Gemeinden (FiLaG), RB 3.2131",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Uri",
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/3.2131",
+   "bezugsjahr": "geltende Fassung",
+   "relevanz": "Art. 22: Sonderbeitrag an Seelisberg (Abgeschiedenheit); Ressourcen- und Lastenausgleich",
+   "kennzahl": "Ausgleichszahlungen",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Lastenausgleich"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "UR-C1-07",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzausgleich",
+   "titel": "Finanz- und Lastenausgleich (FiLa) 2025 – Berechnung je Gemeinde",
+   "doktyp": "Berechnungstabelle",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Datengrundlage",
+   "herausgeber": "Kanton Uri, Finanzdirektion",
+   "url": "https://www.ur.ch/_docn/426685/Berechnung_FiLa_2025.pdf",
+   "bezugsjahr": "2025",
+   "relevanz": "Höhe der Ausgleichszahlungen an Seelisberg",
+   "kennzahl": "Ressourcenausgleich, Lastenausgleich CHF",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "2025"
+    ],
+    [
+     "Seelisberg"
+    ]
+   ]
+  },
+  {
+   "id": "UR-C2-02",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C2",
+   "thema": "Raumplanung / Baulandmobilisierung",
+   "titel": "Planungs- und Baugesetz (PBG) des Kantons Uri, RB 40.1111",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Uri",
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/40.1111",
+   "bezugsjahr": "geltende Fassung",
+   "relevanz": "Bauverpflichtung/Baulandmobilisierung, Mehrwertausgleich",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B; Q1",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Planungs",
+     "Baugesetz"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "UR-C2-03",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C2",
+   "thema": "Bauland",
+   "titel": "Kanton Uri: Baulanddatenbank (unbebaute Bauzonen, Raum+)",
+   "doktyp": "Datenbank / Webseite",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "herausgeber": "Kanton Uri, Amt für Raumentwicklung",
+   "url": "https://www.ur.ch/dienstleistungen/4297",
+   "relevanz": "Unüberbaute Bauzonenreserven; kein Nachweis kommunalen Eigentums",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Bauland"
+    ]
+   ]
+  },
+  {
+   "id": "UR-C3-02",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C3",
+   "thema": "Kantonsverfassung",
+   "titel": "Verfassung des Kantons Uri, RB 1.1101",
+   "doktyp": "Kantonsverfassung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Uri",
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/1.1101",
+   "bezugsjahr": "vom 28.10.1984; geltende Fassung",
+   "relevanz": "Gemeindeautonomie; Art. 58 Finanzplanung der Gemeinden; Art. 110 Rechtsetzung Gemeinden",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "weitere_dim": "C1, C5",
+   "erwartet": [
+    [
+     "Verfassung"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "UR-C4-02",
+   "ebene": "Kanton",
+   "kanton": "Uri",
+   "gemeinde": "Alle",
+   "dim": "C4",
+   "thema": "Beschaffung",
+   "titel": "Interkantonale Vereinbarung über das öffentliche Beschaffungswesen (IVöB 2019), RB 3.3111",
+   "doktyp": "Interkantonales Recht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Interkantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Uri",
+   "url": "https://rechtsbuch.ur.ch/app/de/texts_of_law/3.3111",
+   "relevanz": "Beschaffungsrecht für Gemeinden (Schwellenwerte, Verfahren)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Beschaffungswesen"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "BL-C1-03",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Rechnungslegung Gemeinden",
+   "titel": "Kanton BL: Gemeindefinanzen (Rechtsgrundlagen, Finanzausgleich, Rechnungslegung)",
+   "doktyp": "Behördeninformation",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "herausgeber": "Kanton Basel-Landschaft, Finanz- und Kirchendirektion",
+   "url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
+   "relevanz": "Einstieg zu Finanzhandbuch, Rechtsgrundlagen und Finanzausgleich",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Gemeindefinanzen"
+    ]
+   ]
+  },
+  {
+   "id": "BL-C1-04",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzstatistik Gemeinden",
+   "titel": "Gemeindefinanzen nach Rechnungsteil, Funktion, Kontenart und Jahr (ab 2014) – OGD Kanton BL",
+   "doktyp": "Datensatz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Datengrundlage",
+   "herausgeber": "Statistisches Amt Basel-Landschaft",
+   "url": "https://opendata.swiss/en/dataset/gemeindefinanzen-nach-rechnungsteil-funktion-kontenart-und-jahr-ab-2014/resource/2799cf61-92d5-4e24-8165-1fa67de11eca",
+   "relevanz": "Zeitreihe Gemeindefinanzen, filterbar auf Münchenstein",
+   "kennzahl": "Aufwand/Ertrag nach Funktion",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Gemeindefinanzen"
+    ]
+   ],
+   "ort": [
+    "Basel-Landschaft",
+    "Basel-Land",
+    "BL"
+   ]
+  },
+  {
+   "id": "BL-C1-05",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzstatistik Gemeinden",
+   "titel": "Statistisches Amt BL: Webartikel Gemeindefinanzen 2023 (18.9.2024)",
+   "doktyp": "Statistischer Bericht",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "herausgeber": "Statistisches Amt Basel-Landschaft",
+   "url": "https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/webartikel-vom-18-09-2024-gemeindefinanzen-2023",
+   "bezugsjahr": "2023",
+   "relevanz": "Kantonaler Überblick Ergebnis/Eigenkapital der Gemeinden",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Gemeindefinanzen"
+    ],
+    [
+     "2023"
+    ]
+   ]
+  },
+  {
+   "id": "BL-C1-06",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzausgleich",
+   "titel": "Finanzausgleichsgesetz (FAG) Basel-Landschaft, SGS 185",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Basel-Landschaft",
+   "url": "https://bl.clex.ch/app/de/texts_of_law/185",
+   "relevanz": "Ressourcen- und Lastenausgleich; Münchenstein als Geber/Nehmer prüfen",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Finanzausgleich"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "BL-C2-02",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C2",
+   "thema": "Raumplanung / Baulandmobilisierung",
+   "titel": "Raumplanungs- und Baugesetz (RBG) Basel-Landschaft, SGS 400",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Basel-Landschaft",
+   "url": "https://bl.clex.ch/app/de/texts_of_law/400",
+   "bezugsjahr": "vom 8.1.1998; geltende Fassung",
+   "relevanz": "Mehrwertabgabe, Quartierplanung, Mitwirkung § 7 RBG",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B; Q1",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Raumplanungs",
+     "Baugesetz"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "BL-C4-02",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C4",
+   "thema": "Beschaffung",
+   "titel": "Verordnung zum Einführungsgesetz zur IVöB (Vo EG IVöB) Basel-Landschaft, SGS 420.11",
+   "doktyp": "Kantonale Verordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton Basel-Landschaft",
+   "url": "https://bl.clex.ch/app/de/texts_of_law/420.11",
+   "relevanz": "Beschaffungsrecht für Gemeinden ab 1.1.2024",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Beschaffung"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "BL-C3-02",
+   "ebene": "Kanton",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Alle",
+   "dim": "C3",
+   "thema": "Regionale Kooperation",
+   "titel": "Medienmitteilung Kanton BL: Birsstadt erhält den Wakkerpreis (Verein Birsstadt, Raumkonzept Birsstadt 2035)",
+   "doktyp": "Medienmitteilung",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "herausgeber": "Kanton Basel-Landschaft, Bau- und Umweltschutzdirektion",
+   "url": "https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/medienmitteilungen/ausgezeichnete-agglomeration-birsstadt-erhaelt-den-wakkerpreis",
+   "relevanz": "Belegt interkommunale Kooperation Birsstadt (10 Gemeinden inkl. Münchenstein)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Birsstadt"
+    ]
+   ],
+   "ort": [
+    "Münchenstein",
+    "Birsstadt"
+   ]
+  },
+  {
+   "id": "SEE-C1-02",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C1",
+   "thema": "Budget / Finanzplan",
+   "titel": "Einladung Gemeindeversammlung November 2025: Traktanden und Botschaften (Budget 2026, Finanzplan 2027–2032, Leitbild)",
+   "doktyp": "Botschaft / Vorlage",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Druckvorlage2_Original_Versammlung-Nov2025_Traktanden-und-Botschaften-gesamt.pdf",
+   "bezugsjahr": "Budget 2026; Finanzplan 2027–2032",
+   "relevanz": "Budget 2026, Nettoinvestitionen, Steuerfuss, Finanzplan; Grundlage C1",
+   "kennzahl": "Aufwand/Ertrag, Nettoinvestitionen, Steuerfuss",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "verbindung": "A1; C1",
+   "sprint2": "Finanztragfähigkeit",
+   "fundstelle": "https://www.seelisberg.ch/politik/gemeindeversammlung",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Budget"
+    ],
+    [
+     "2026"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C2-02",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C2",
+   "thema": "Bau- und Zonenordnung",
+   "titel": "Bau- und Zonenordnung Seelisberg (BZO)",
+   "doktyp": "Kommunales Reglement",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Bau-und-Zonenordnung-Seelisberg.pdf",
+   "relevanz": "Zonen und Bauvorschriften; Q-Bezug; kein Eigentumsnachweis",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B; Q1",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Zonenordnung",
+     "Bau- und Zonen"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C2-03",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C2",
+   "thema": "Siedlungsentwicklung",
+   "titel": "Siedlungsleitbild Seelisberg (Genehmigungsexemplar, 5.10.2022)",
+   "doktyp": "Leitbild / Bericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Behördenverbindliche Planung",
+   "herausgeber": "Gemeinderat Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/8_20221005_Bericht_Siedlungsleitbild_Genehmigungsexemplar.pdf",
+   "bezugsjahr": "2022",
+   "relevanz": "Strategische Entwicklungsgebiete (Sonnenberg, Chilendorf); Bodenpolitik-Absichten",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Siedlungsleitbild"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C2-04",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C2",
+   "thema": "Nutzungsplanung",
+   "titel": "Seelisberg: Teilrevision Nutzungsplanung – Erläuterungsbericht (26.5.2023)",
+   "doktyp": "Planungsbericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Planungsbericht",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/20230526_Erl%C3%A4uterungsbericht.pdf",
+   "bezugsjahr": "2023",
+   "relevanz": "Planerische Flächenverfügbarkeit (≠ Eigentum)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "verbindung": "B",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Nutzungsplanung"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C4-02",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C4",
+   "thema": "Verwaltungsorganisation",
+   "titel": "Gemeinde Seelisberg: Personal der Gemeindeverwaltung",
+   "doktyp": "Webseite",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/personal",
+   "relevanz": "Übersicht Verwaltungspersonal (Kapazitätsindikator, kein Kompetenznachweis)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Personal",
+     "Verwaltung"
+    ]
+   ],
+   "anfrage": "Ja"
+  },
+  {
+   "id": "SEE-C5-02",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Leitbild",
+   "titel": "Gemeinde Seelisberg: Neues Leitbild der Gemeinde (2025)",
+   "doktyp": "Leitbild / Mitteilung",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Politische Zielsetzung",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/news/neues-leitbild-der-gemeinde-seelisberg",
+   "bezugsjahr": "2025",
+   "relevanz": "Mitwirkungsprozess (Workshop, Umfrage) und Themen; belegt keine Akzeptanz",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "fundstelle": "https://www.seelisberg.ch/ueber-seelisberg/leitbild",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Leitbild"
+    ]
+   ]
+  },
+  {
+   "id": "SEE-C5-03",
+   "ebene": "Gemeinde",
+   "kanton": "Uri",
+   "gemeinde": "Seelisberg",
+   "dim": "C5",
+   "thema": "Beschlussprotokoll",
+   "titel": "Beschlussprotokoll Gemeindeversammlung Seelisberg vom 24.11.2023",
+   "doktyp": "Protokoll",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschluss (verbindlich)",
+   "herausgeber": "Gemeinde Seelisberg",
+   "url": "https://www.seelisberg.ch/files/pdf/Beschlussprotokoll_GV_24.11.2023.pdf",
+   "bezugsjahr": "2023",
+   "relevanz": "Dokumentierte Beschlüsse/Wahlen",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.seelisberg.ch/politik/gemeindeversammlung",
+   "hinweis": "Neuere Protokolle (28.5.2025, 28.11.2025) auf der Fundstelle gelistet; direkter Link per Discovery suchen.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Beschlussprotokoll",
+     "Beschluss"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C1-03",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C1",
+   "thema": "Jahresrechnung",
+   "titel": "Bericht zur Jahresrechnung 2024 der Einwohnergemeinde Münchenstein",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Publikationsseite mit PDF",
+   "rechtsstatus": "Beschlossene Jahresrechnung",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/publikationen/556069",
+   "bezugsjahr": "2024",
+   "relevanz": "Ergebnis, Investitionen, Bilanz 2024 (Zeitreihe)",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Jahresrechnung 2024"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C1-04",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C1",
+   "thema": "Budget",
+   "titel": "Budget 2025 der Einwohnergemeinde Münchenstein",
+   "doktyp": "Budget",
+   "dokstatus": "Publikationsseite mit PDF",
+   "rechtsstatus": "Beschlossenes Budget",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/publikationen/523381",
+   "bezugsjahr": "2025",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Budget 2025"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C1-05",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C1",
+   "thema": "Budget / Finanzplan",
+   "titel": "Gemeindeversammlung 8.12.2025: Budgetbericht 2026 und Bericht zum Aufgaben- und Finanzplan 2026–2030",
+   "doktyp": "Sitzungsseite mit Unterlagen",
+   "dokstatus": "Sitzungsseite mit PDF",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/sitzung/5729137",
+   "bezugsjahr": "2026 / 2026–2030",
+   "relevanz": "Aktuellstes Budget und AFP inkl. Investitionsplanung",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Budget"
+    ],
+    [
+     "2026"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C1-06",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C1",
+   "thema": "Finanzplanung",
+   "titel": "Aufgaben- & Finanzplan der Einwohnergemeinde Münchenstein 2023–2027",
+   "doktyp": "Finanzplan",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Planungsinstrument (Kenntnisnahme)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/4130681/Bericht_Aufgaben__Finanzplan_2023-2027_publiziert.pdf",
+   "bezugsjahr": "2023–2027 (historisch)",
+   "relevanz": "Baurechtszinsen, Investitionen, Bilanzüberschuss-Prognose",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "hinweis": "Ältere Fassung; aktuelle AFP 2026–2030 siehe MUE-C1-05.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Finanzplan"
+    ],
+    [
+     "2023"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C2-02",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C2",
+   "thema": "Zonenvorschriften / Mehrwertabgabe",
+   "titel": "Zonenreglement Siedlung Münchenstein",
+   "doktyp": "Kommunales Reglement",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/1199675/Zonenreglement_Siedlung.pdf",
+   "relevanz": "Mehrwertabgabe und Zonenordnung; kein Eigentumsnachweis",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B; Q1",
+   "fundstelle": "https://www.muenchenstein.ch/reglemente/10743",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Zonenreglement",
+     "Zonenvorschriften"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C2-03",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C2",
+   "thema": "Liegenschaftsverkäufe / Baurecht",
+   "titel": "Ratschlag Gemeindeversammlung 12.3.2018 (Baurechtszinsen, Liegenschaftsverkäufe)",
+   "doktyp": "Ratschlag / Vorlage",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage (historisch)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/1591897/2018.03.12_Ratschlag_GzD.pdf",
+   "bezugsjahr": "2018",
+   "relevanz": "Bedeutung von Baurechtszinsen und Landverkäufen für den Haushalt",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C1",
+   "erwartet": [
+    [
+     "Ratschlag"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C3-02",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C3",
+   "thema": "Leistungsvereinbarung / Kooperation",
+   "titel": "Ratschlag Gemeindeversammlung 15.6.2026 (u. a. Leistungsvereinbarung Spitex Birseck, Jahresrechnung 2025)",
+   "doktyp": "Ratschlag / Vorlage",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/6998503/Ratschlag_Gemeindeversammlung_Montag,_15._Juni_2026.pdf",
+   "bezugsjahr": "2026",
+   "relevanz": "Interkommunale Leistungsvereinbarung und Kostenteiler",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C1, C5",
+   "erwartet": [
+    [
+     "Ratschlag"
+    ],
+    [
+     "Spitex"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C4-02",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C4",
+   "thema": "Personal",
+   "titel": "Personalreglement der Einwohnergemeinde Münchenstein (Genehmigungsfassung 23.6.2022)",
+   "doktyp": "Kommunales Reglement",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/3794018/Bereinigtes_Personalreglement_Genehmigungsfassung_per_23._Juni_2022.pdf",
+   "bezugsjahr": "in Kraft 1.1.2023",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.muenchenstein.ch/reglemente/402889",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Personalreglement"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C4-03",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C4",
+   "thema": "Verwaltungsorganisation",
+   "titel": "Verwaltungs- und Organisationsreglement der Einwohnergemeinde Münchenstein",
+   "doktyp": "Kommunales Reglement",
+   "dokstatus": "Reglementsseite mit PDF",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/reglemente/7208",
+   "bezugsjahr": "Stand 1.1.2000",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C3",
+   "erwartet": [
+    [
+     "Organisationsreglement",
+     "Verwaltungs- und Organisation"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C5-02",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C5",
+   "thema": "Protokoll",
+   "titel": "Protokoll Gemeindeversammlung Münchenstein 13.6.2024",
+   "doktyp": "Protokoll",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschluss (verbindlich)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/5478214/Protokoll_Gemeindeversammlung_13._Juni_2024_definitiv.pdf",
+   "bezugsjahr": "2024",
+   "relevanz": "Beschlüsse, Stimmverhalten, Bericht Legislaturziele 2020–2024",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Protokoll"
+    ],
+    [
+     "Gemeindeversammlung"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C5-03",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C5",
+   "thema": "Beschlüsse",
+   "titel": "Beschlüsse der Gemeindeversammlung vom 8.12.2025 (Budget 2026, AFP 2026–2030)",
+   "doktyp": "Beschlussmitteilung",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Beschluss (verbindlich)",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/politikinformationen/2666993",
+   "bezugsjahr": "2025",
+   "relevanz": "Beschlussstand, Teilnehmerzahl (Legitimationsindikator)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C1",
+   "erwartet": [
+    [
+     "Gemeindeversammlung"
+    ],
+    [
+     "Budget"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C5-04",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C5",
+   "thema": "Mitwirkung",
+   "titel": "Quartierplanung Spenglerpark – Mitwirkungsbericht (2019)",
+   "doktyp": "Mitwirkungsbericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Bericht",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/_docn/2359339/43037_Ber05_Mitwirkungsbericht_VerabschiedungGR_Unterschrieben_20190924_korr.pdf",
+   "bezugsjahr": "2019",
+   "relevanz": "Mitwirkungspraxis und Einwendungen bei Arealentwicklung",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C2",
+   "erwartet": [
+    [
+     "Mitwirkung"
+    ],
+    [
+     "Spenglerpark"
+    ]
+   ]
+  },
+  {
+   "id": "MUE-C5-05",
+   "ebene": "Gemeinde",
+   "kanton": "Basel-Landschaft",
+   "gemeinde": "Münchenstein",
+   "dim": "C5",
+   "thema": "Politische Gremien",
+   "titel": "Gemeindekommission Münchenstein (§ 88 GemG)",
+   "doktyp": "Behördenseite",
+   "dokstatus": "Webseite",
+   "rechtsstatus": "Information",
+   "herausgeber": "Gemeinde Münchenstein",
+   "url": "https://www.muenchenstein.ch/behoerden/2838",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C3",
+   "erwartet": [
+    [
+     "Gemeindekommission"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-03",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Jahresrechnung",
+   "titel": "Jahresrechnung 2023 der Stadt Wil",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlossene Jahresrechnung",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/_docn/5050942/Jahresrechnung_2023.pdf",
+   "bezugsjahr": "2023",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Jahresrechnung"
+    ],
+    [
+     "2023"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-04",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Jahresrechnung",
+   "titel": "Rechnung 2024 Stadt Wil – Kurzfassung mit Bericht und Antrag (Stadtrat 4.3.2025)",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/_doc/5592973",
+   "bezugsjahr": "2024",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Rechnung 2024"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-05",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Jahresrechnung",
+   "titel": "Rechnung 2025 Stadt Wil – Finanzbericht, Erfolgsrechnung, Bilanz, Anhang",
+   "doktyp": "Jahresrechnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/08902ff399818ccc0d53949607b2d0f6f8bf702c334e295d493c2fd842ba4079",
+   "bezugsjahr": "2025",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "hinweis": "Zuordnung der Hash-URL stammt aus Suchzusammenfassung; nur Inhaltsprüfung belegt Identität.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "2025"
+    ],
+    [
+     "Bilanz"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-06",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Finanzplanung",
+   "titel": "Finanzplan 2026–2030 der Stadt Wil (Stadtrat 23.9.2025)",
+   "doktyp": "Finanzplan",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Planungsinstrument",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/875d422378d72386aae96efa76356fbfa05e9a0e1e03f208fbbe599dea21021c",
+   "bezugsjahr": "2026–2030",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "hinweis": "Zuordnung der Hash-URL stammt aus Suchzusammenfassung; nur Inhaltsprüfung belegt Identität.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Finanzplan"
+    ],
+    [
+     "2030"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-07",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Investitionen",
+   "titel": "Übersicht über die Investitionen 2025–2035 Stadt Wil",
+   "doktyp": "Investitionsübersicht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Planungsinstrument",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/68981c34e629883df15ea09baa331530387503f2a8c37c1259512877afe4840f",
+   "bezugsjahr": "2025–2035",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Niedrig",
+   "hinweis": "Unsichere Zuordnung (Suchzusammenfassung).",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Investition"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-08",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Budget",
+   "titel": "Budget 2026 Stadt Wil – Bericht und Antrag des Stadtrats",
+   "doktyp": "Budget",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/819a3bb87d4ead8a5dc31b37f1d59911eea50dc8005458ebf9ad112a61ce2694",
+   "bezugsjahr": "2026",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Niedrig",
+   "hinweis": "Unsichere Zuordnung; Steuerfuss-Referendum 2026 – Beschlussstand prüfen.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Budget 2026",
+     "Budget"
+    ],
+    [
+     "2026"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C1-09",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C1",
+   "thema": "Beteiligungen / Rechnung",
+   "titel": "Jahresrechnung 2025 Technische Betriebe Wil (TBW) – Bericht und Antrag",
+   "doktyp": "Jahresrechnung Unternehmen",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschlussvorlage",
+   "herausgeber": "Stadt Wil / Technische Betriebe Wil",
+   "url": "https://www.stadtwil.ch/storage/9bf65acd52bfa75c91cc42760759e0ffc3a76d501e7d174c010444c290801cc2",
+   "bezugsjahr": "2025",
+   "relevanz": "Gewinnablieferung und Abgaben der TBW an die Stadt",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C3",
+   "erwartet": [
+    [
+     "Technische Betriebe"
+    ],
+    [
+     "2025"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C2-02",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C2",
+   "thema": "Bodenpolitik",
+   "titel": "PO 101 «Für eine neue Bodenpolitik» – Stellungnahme des Stadtrats (Grundsätze Liegenschaftenkonzept)",
+   "doktyp": "Stellungnahme",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Politische Stellungnahme (historisch)",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/_docn/1058128/PO_101_Fuer_eine_neue_Bodenpolitik_Stellungnahme.pdf",
+   "bezugsjahr": "2012",
+   "relevanz": "Grundsätze der städtischen Liegenschaften-/Bodenpolitik",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "hinweis": "Historisch; aktuelle Boden-/Immobilienstrategie prüfen.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Bodenpolitik"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C2-03",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C2",
+   "thema": "Bodenpolitik",
+   "titel": "Stadt Wil: aktive Bodenpolitik / Boden- und Immobilienstrategie",
+   "doktyp": "Strategie / Bericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Strategie",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/1e396670eed23bbd41611d92ceaa476797bc97e16fde09c29197453c3b3bc320",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Niedrig",
+   "hinweis": "Unsichere Zuordnung (Suchzusammenfassung).",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Bodenpolitik",
+     "Immobilien"
+    ]
+   ]
+  },
+  {
+   "id": "SG-C2-02",
+   "ebene": "Kanton",
+   "kanton": "St. Gallen",
+   "gemeinde": "Alle",
+   "dim": "C2",
+   "thema": "Arealentwicklung",
+   "titel": "WILWEST: Grundstücksgeschäft Kanton St. Gallen (Verkauf an Kanton Thurgau) – Kantonsratsvorlage",
+   "doktyp": "Botschaft / Beschluss",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Beschluss (Volksabstimmung 2026)",
+   "herausgeber": "Kanton St. Gallen",
+   "url": "https://www.ratsinfo.sg.ch//media/documents/published/signed/8b158b37-2fff-4d5d-b018-ef035f08732e.pdf",
+   "relevanz": "Kantonales Grundeigentum im Entwicklungsgebiet WILWEST (nicht städtisches Eigentum)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "verbindung": "B",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "WILWEST",
+     "Wil West"
+    ]
+   ],
+   "ort": [
+    "Wil",
+    "Münchwilen"
+   ]
+  },
+  {
+   "id": "SG-C2-03",
+   "ebene": "Kanton",
+   "kanton": "St. Gallen",
+   "gemeinde": "Alle",
+   "dim": "C2",
+   "thema": "Raumplanung / Baulandmobilisierung",
+   "titel": "Planungs- und Baugesetz (PBG) St. Gallen, sGS 731.1",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton St. Gallen",
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/731.1",
+   "relevanz": "Ortsplanungsrevision bis 2027, Bauverpflichtung, Mehrwertabgabe",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B; Q1",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Planungs",
+     "Baugesetz"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "SG-C1-02",
+   "ebene": "Kanton",
+   "kanton": "St. Gallen",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Finanzausgleich",
+   "titel": "Finanzausgleichsgesetz St. Gallen, sGS 813.1",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton St. Gallen",
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/813.1",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Finanzausgleich"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "SG-C1-03",
+   "ebene": "Kanton",
+   "kanton": "St. Gallen",
+   "gemeinde": "Alle",
+   "dim": "C1",
+   "thema": "Rechnungslegung Gemeinden",
+   "titel": "Verordnung über den Finanzhaushalt der Gemeinden (FHGV) St. Gallen, sGS 151.53",
+   "doktyp": "Kantonale Verordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton St. Gallen",
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/151.53",
+   "vergleich": "Kanton × Grössenklasse",
+   "confidence": "Hoch",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Finanzhaushalt"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "SG-C4-02",
+   "ebene": "Kanton",
+   "kanton": "St. Gallen",
+   "gemeinde": "Alle",
+   "dim": "C4",
+   "thema": "Beschaffung",
+   "titel": "Einführungsgesetz zur IVöB St. Gallen, sGS 841.1",
+   "doktyp": "Kantonales Gesetz",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kantonales Recht (verbindlich)",
+   "herausgeber": "Kanton St. Gallen",
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/841.1",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.sg.ch/recht/beschaffungswesen/neues_beschaffungsrecht_2023/",
+   "herkunft": "URL nach dokumentiertem Schema der amtlichen Rechtssammlung gebildet; Identität per Runner geprüft",
+   "erwartet": [
+    [
+     "Beschaffung"
+    ]
+   ],
+   "ort": []
+  },
+  {
+   "id": "WIL-C3-02",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C3",
+   "thema": "Gemeindeordnung",
+   "titel": "Gemeindeordnung der Stadt Wil vom 28.2.2016 (sRS 111.1)",
+   "doktyp": "Gemeindeordnung",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Stadt Wil",
+   "url": "https://stadtwil.ch/_doc/1267121",
+   "bezugsjahr": "in Kraft seit 1.1.2017; Nachträge prüfen",
+   "relevanz": "Zuständigkeiten Stadtrat/Stadtparlament, Finanzkompetenzen, Referendum",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "fundstelle": "https://www.stadtwil.ch/publikationen/90704",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C5",
+   "erwartet": [
+    [
+     "Gemeindeordnung"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C3-03",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C3",
+   "thema": "Beteiligungen",
+   "titel": "Reglement Technische Betriebe Wil (TBW) – Erlass 2020",
+   "doktyp": "Kommunales Reglement",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Kommunales Recht (verbindlich)",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/_docn/2747618/012_BA_Erlass_neuesTBW-Reglement.pdf",
+   "bezugsjahr": "2020",
+   "relevanz": "Trägerschaft/Steuerung der TBW",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Technische Betriebe"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C3-04",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C3",
+   "thema": "Agglomeration",
+   "titel": "Prüfbericht des Bundes zum Agglomerationsprogramm Wil, 4. Generation (22.2.2023)",
+   "doktyp": "Prüfbericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Bundesbeurteilung",
+   "herausgeber": "Bundesamt für Raumentwicklung (ARE)",
+   "url": "https://www.are.admin.ch/dam/de/sd-web/1LGAXN34JMxU/Pr%C3%BCfbericht%20Wil4G.pdf",
+   "bezugsjahr": "2023",
+   "relevanz": "Regionale Trägerschaft und Umsetzungsreife (Regio Wil)",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Hoch",
+   "verbindung": "B",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Prüfbericht"
+    ],
+    [
+     "Agglomerationsprogramm"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C3-05",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C3",
+   "thema": "Agglomeration",
+   "titel": "Agglomerationsprogramm Wil 5. Generation – Flyer",
+   "doktyp": "Informationsblatt",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Information",
+   "herausgeber": "Kanton St. Gallen / Regio Wil",
+   "url": "https://www.sg.ch/content/dam/sgch/bauen/raumentwicklung/agglomerationsprogramme/Wil%20Flyer%205G.pdf",
+   "bezugsjahr": "2025",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Agglomerationsprogramm"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C5-02",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C5",
+   "thema": "Ortsplanung / Mitwirkung",
+   "titel": "Richtplan Siedlung und Grün-/Freiraum – Planungsbericht inkl. Auszug Stadtentwicklungskonzept (31.3.2026)",
+   "doktyp": "Planungsbericht",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Behördenverbindliche Planung (Entwurf)",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/533b0557b4e4988a6a4f9af13c0b789fec39837eef83d1e66cd1d3814dbe0acb",
+   "bezugsjahr": "2026",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Mittel",
+   "hinweis": "Zuordnung der Hash-URL aus Suchzusammenfassung.",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "weitere_dim": "C2",
+   "erwartet": [
+    [
+     "Richtplan"
+    ]
+   ]
+  },
+  {
+   "id": "WIL-C5-03",
+   "ebene": "Gemeinde",
+   "kanton": "St. Gallen",
+   "gemeinde": "Wil",
+   "dim": "C5",
+   "thema": "Mitwirkung",
+   "titel": "Ortsplanungsrevision Wil – Mitwirkung 2025",
+   "doktyp": "Mitwirkungsunterlage",
+   "dokstatus": "Direktes Dokument",
+   "rechtsstatus": "Information",
+   "herausgeber": "Stadt Wil",
+   "url": "https://www.stadtwil.ch/storage/5d895f1e33cc1b2c352d7bdeb9d93dd5b2333fbff6a1793cd419f387dd4e1e28",
+   "bezugsjahr": "2025",
+   "vergleich": "Kein Peer-Vergleich",
+   "confidence": "Niedrig",
+   "hinweis": "Unsichere Zuordnung (Suchzusammenfassung).",
+   "herkunft": "Websuche 14.10.2026 (URL im Suchergebnis gefunden)",
+   "erwartet": [
+    [
+     "Mitwirkung"
+    ]
+   ]
+  }
+ ],
+ "gemeindeanfragen": {
+  "bestehend": {
+   "A-SEE-01": {
+    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie die Jahresrechnungen 2021–2025 (Erfolgsrechnung, Investitionsrechnung, Bilanz, Anhang, Kennzahlen HRM2) als PDF oder Excel zur Verfügung.",
+    "Recherchebefund": "Budget 2026 in GV-Botschaft (SEE-C1-02); Kennzahlen je Gemeinde bei Finanzkontrolle Uri (UR-C1-03/04). Vollständige Jahresrechnungen nicht als PDF gefunden.",
+    "Bezug Katalog-ID": "SEE-C1-01, SEE-C1-02, UR-C1-03",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich",
+    "Zuständige Stelle (vermutet)": "Gemeindeschreiberei / Finanzverwaltung Seelisberg"
+   },
+   "A-SEE-02": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie den aktuellen Finanzplan 2027–2032 inkl. Investitionsliste und Angaben zu Eventualverpflichtungen (Bürgschaften, Garantien, Baurechtsverpflichtungen).",
+    "Recherchebefund": "Finanzplan 2027–2032 in GV-Botschaft Nov. 2025 erwähnt; Investitionsliste und Eventualverpflichtungen nicht öffentlich.",
+    "Bezug Katalog-ID": "SEE-C1-02",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich",
+    "Zuständige Stelle (vermutet)": "Gemeinderat / Finanzverwaltung"
+   },
+   "A-SEE-03": {
+    "Präzisierte Frage an die Gemeinde": "Welche Grundstücke (Parzellennummern) besitzt die Einwohnergemeinde im Verwaltungs- und Finanzvermögen? Bitte Liste mit Fläche, Zone und Nutzung.",
+    "Recherchebefund": "Kein Liegenschaftsverzeichnis öffentlich; einziges Grundstücksgeschäft: Erwerb Parzelle 775 Sonnenberg (SEE-C2-01).",
+    "Bezug Katalog-ID": "SEE-C2-01",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
+    "Zuständige Stelle (vermutet)": "Gemeindeverwaltung / Bauverwaltung"
+   },
+   "A-SEE-04": {
+    "Präzisierte Frage an die Gemeinde": "Bitte listen Sie bestehende und geplante Baurechte, Dienstbarkeiten und Kaufrechte der Gemeinde auf (Parzelle, Berechtigte, Laufzeit, Zins).",
+    "Recherchebefund": "Baurecht für Parzelle 775 im Erläuterungsbericht beschrieben; übrige Verträge nicht öffentlich.",
+    "Bezug Katalog-ID": "SEE-C2-01",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   },
+   "A-SEE-05": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie die geltende Gemeindeordnung (27.11.2009), die Verordnung über die Zuständigkeiten im Finanzbereich und eine Liste der Zweckverbände/Leistungsvereinbarungen (z. B. ZAKU, Abwasser Uri, Schule).",
+    "Recherchebefund": "Gemeindeordnung nur zitiert, Volltext nicht online gefunden; Mitgliedschaften in Zweckverbänden nicht belegt.",
+    "Bezug Katalog-ID": "SEE-C3-01",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
+    "Zuständige Stelle (vermutet)": "Gemeindeschreiberei"
+   },
+   "A-SEE-06": {
+    "Präzisierte Frage an die Gemeinde": "Wie viele Stellenprozente stehen in Verwaltung und Bauverwaltung zur Verfügung? Welche Projekte werden extern (Mandate) gesteuert? Wie läuft eine Beschaffung ab (Zuständigkeit, Schwellen)?",
+    "Recherchebefund": "Personalseite (SEE-C4-02) zeigt Personen, keine Pensen; Restrukturierung der Verwaltung im Budget 2026 erwähnt.",
+    "Bezug Katalog-ID": "SEE-C4-01, SEE-C4-02",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   },
+   "A-SEE-07": {
+    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie das neue Leitbild 2025 inkl. Auswertung der Umfrage und die Beschlussprotokolle 2024–2026 zur Verfügung.",
+    "Recherchebefund": "Leitbild-Mitteilung (SEE-C5-02) und Protokoll 2023 (SEE-C5-03) gefunden; neuere Protokolle nur gelistet.",
+    "Bezug Katalog-ID": "SEE-C5-01, SEE-C5-02, SEE-C5-03"
+   },
+   "A-SEE-08": {
+    "Präzisierte Frage an die Gemeinde": "Welche Akteure (Korporation, Tourismus, Hotellerie, Grundeigentümer) sind für die Entwicklung massgebend und wie sind ihre Positionen bekannt?",
+    "Recherchebefund": "Keine öffentliche Akteursübersicht; nur indirekt aus Planungsberichten ableitbar.",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   },
+   "A-MUE-01": {
+    "Präzisierte Frage an die Gemeinde": "Bitte bestätigen Sie, dass die publizierten Berichte zu den Jahresrechnungen 2021–2025 vollständig sind, und senden Sie die HRM2-Kennzahlen als Excel.",
+    "Recherchebefund": "Jahresrechnungen 2024 und 2025 als Publikationsseiten gefunden (MUE-C1-02, MUE-C1-03).",
+    "Bezug Katalog-ID": "MUE-C1-02, MUE-C1-03",
+    "Zuständige Stelle (vermutet)": "Abteilung Finanzen Münchenstein"
+   },
+   "A-MUE-02": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie die Investitionsplanung des AFP 2026–2030 als Excel und eine Liste der Eventualverpflichtungen.",
+    "Recherchebefund": "AFP 2026–2030 auf Sitzungsseite GV 8.12.2025 (MUE-C1-05); Eventualverpflichtungen nicht separat publiziert.",
+    "Bezug Katalog-ID": "MUE-C1-01, MUE-C1-05",
+    "Zuständige Stelle (vermutet)": "Abteilung Finanzen"
+   },
+   "A-MUE-03": {
+    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie ein Verzeichnis der Grundstücke im Eigentum der Einwohnergemeinde (Finanz- und Verwaltungsvermögen) mit Parzellen-ID zur Verfügung.",
+    "Recherchebefund": "Landverkäufe und Baurechtszinsen in Ratschlägen dokumentiert (MUE-C2-01, MUE-C2-03); kein Verzeichnis öffentlich.",
+    "Bezug Katalog-ID": "MUE-C2-01, MUE-C2-03",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
+    "Zuständige Stelle (vermutet)": "Bauverwaltung / Liegenschaften"
+   },
+   "A-MUE-04": {
+    "Präzisierte Frage an die Gemeinde": "Bitte listen Sie die Baurechtsverträge der Gemeinde (Parzelle, Baurechtsnehmer, Ablauf, Zins).",
+    "Recherchebefund": "Baurechtszinsen als Ertragsposition erwähnt; Verträge nicht öffentlich.",
+    "Bezug Katalog-ID": "MUE-C2-01",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   },
+   "A-MUE-05": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie eine Übersicht der Zweckverbände, Leistungsvereinbarungen und Beteiligungen (u. a. Zweckverband Alter Birsstadt, Spitex Birseck, Verein Birsstadt).",
+    "Recherchebefund": "Einzelne Leistungsvereinbarungen in Ratschlägen (MUE-C3-02), Birsstadt-Kooperation (BL-C3-02); keine Gesamtübersicht.",
+    "Bezug Katalog-ID": "MUE-C3-01, MUE-C3-02, BL-C3-02",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar"
+   },
+   "A-MUE-06": {
+    "Präzisierte Frage an die Gemeinde": "Wie viele Stellenprozente hat die Bauverwaltung, wie werden Entwicklungsprojekte organisiert (Projektleitung, externe Mandate), und welche Beschaffungsweisungen gelten?",
+    "Recherchebefund": "Organigramm (MUE-C4-01) und Personalreglement (MUE-C4-02) öffentlich; Pensen und Projektorganisation nicht.",
+    "Bezug Katalog-ID": "MUE-C4-01, MUE-C4-02",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   },
+   "A-MUE-07": {
+    "Präzisierte Frage an die Gemeinde": "Bitte bestätigen Sie den Stand der Legislaturziele 2024–2028 und des Leitbilds (2004/2011) und senden Sie Mitwirkungsberichte zur Zonenplanrevision Siedlung.",
+    "Recherchebefund": "Legislaturziele (MUE-C5-01) und Mitwirkungsbericht Spenglerpark (MUE-C5-04) gefunden; Leitbild-Volltext nicht.",
+    "Bezug Katalog-ID": "MUE-C5-01, MUE-C5-04"
+   },
+   "A-MUE-08": {
+    "Präzisierte Frage an die Gemeinde": "Welche politischen Akteure und Interessengruppen sind für Areal- und Bodenentwicklung massgebend? Wie ist der Stand der Diskussion um einen Einwohnerrat?",
+    "Recherchebefund": "Einwohnerrat-Diskussion nur in Sekundärquelle (SRF) erwähnt; Ergebnis nicht gefunden.",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar"
+   },
+   "A-WIL-01": {
+    "Präzisierte Frage an die Gemeinde": "Bitte bestätigen Sie die Fundstellen der Jahresrechnungen 2021–2025 und senden Sie die HRM2-Kennzahlen als Excel.",
+    "Recherchebefund": "Jahresrechnungen 2023–2025 als Dokumente gefunden (WIL-C1-03/04/05).",
+    "Bezug Katalog-ID": "WIL-C1-03, WIL-C1-04, WIL-C1-05",
+    "Zuständige Stelle (vermutet)": "Finanzverwaltung Stadt Wil"
+   },
+   "A-WIL-02": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie den Investitionsplan 2026–2030 (bzw. 2025–2035) als Excel und eine Liste der Eventualverpflichtungen inkl. Beteiligungen (TBW, Thurcom, WISPAG).",
+    "Recherchebefund": "Finanzplan 2026–2030 und Investitionsübersicht gefunden (Zuordnung unsicher, WIL-C1-06/07).",
+    "Bezug Katalog-ID": "WIL-C1-06, WIL-C1-07"
+   },
+   "A-WIL-03": {
+    "Präzisierte Frage an die Gemeinde": "Bitte stellen Sie das Liegenschaftsverzeichnis der Stadt (Finanz- und Verwaltungsvermögen) mit Parzellen-ID zur Verfügung.",
+    "Recherchebefund": "Bodenpolitik-Grundsätze (WIL-C2-02) und Kompetenzordnung (WIL-C2-01) gefunden; kein Verzeichnis.",
+    "Bezug Katalog-ID": "WIL-C2-01, WIL-C2-02",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
+    "Zuständige Stelle (vermutet)": "Liegenschaften / Bauverwaltung Stadt Wil"
+   },
+   "A-WIL-04": {
+    "Präzisierte Frage an die Gemeinde": "Bitte listen Sie Baurechte und Kaufrechte der Stadt (Parzelle, Berechtigte, Laufzeit, Zins).",
+    "Recherchebefund": "Nicht öffentlich.",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   },
+   "A-WIL-05": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie die aktuellen Eignerstrategien und Leistungsvereinbarungen (TBW, Thurcom AG, WISPAG) sowie Unterlagen zur Regio Wil.",
+    "Recherchebefund": "Beteiligungsreglement (WIL-C3-01) und TBW-Reglement (WIL-C3-03) gefunden; Regio-Wil-Statuten nicht.",
+    "Bezug Katalog-ID": "WIL-C3-01, WIL-C3-03"
+   },
+   "A-WIL-06": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie das aktuelle Organigramm der Stadtverwaltung, den Stellenplan der Bereiche Bau/Stadtentwicklung und Angaben zur Projektorganisation (z. B. WILWEST, Ortsplanungsrevision).",
+    "Recherchebefund": "Geschäftsbericht 2024 (WIL-C4-01) gefunden; aktuelles Organigramm nicht.",
+    "Bezug Katalog-ID": "WIL-C4-01",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar"
+   },
+   "A-WIL-07": {
+    "Präzisierte Frage an die Gemeinde": "Bitte senden Sie die Legislaturplanung 2025–2028, Mitwirkungsberichte zur Ortsplanungsrevision und den Stand des Budget-2026-Referendums.",
+    "Recherchebefund": "Legislaturplanung (WIL-C5-01) und Mitwirkungsunterlagen (WIL-C5-03) gefunden; Ergebnisse Mitwirkung nicht.",
+    "Bezug Katalog-ID": "WIL-C5-01, WIL-C5-03"
+   },
+   "A-WIL-08": {
+    "Präzisierte Frage an die Gemeinde": "Welche Fraktionen/Akteure prägen Boden- und Arealfragen (WILWEST, Liegenschaftsgeschäfte), und welche Konflikte sind bekannt?",
+    "Recherchebefund": "Nur indirekt über Parlamentsprotokolle erschliessbar.",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich"
+   }
+  },
+  "neu": [
+   {
+    "Anfrage-ID": "A-SEE-09",
+    "Gemeinde": "Seelisberg",
+    "C-Dimension": "C2, C3",
+    "Benötigte Lieferung": "Vertragsstand Projekt Sonnenberg (Planungs- und Infrastrukturvertrag, Baurechtsvertrag Parzelle 775)",
+    "Warum nötig": "Einziges dokumentiertes kommunales Bodengeschäft; Trägerschaft und Risiken",
+    "Priorität": "Hoch",
+    "Status": "Offen",
+    "Recherchebefund": "Im Erläuterungsbericht erwähnt (SEE-C2-01); Verträge nicht öffentlich.",
+    "Bezug Katalog-ID": "SEE-C2-01",
+    "Quellenstatus (Recherche)": "Nur über Gemeindeanfrage erhältlich",
+    "Präzisierte Frage an die Gemeinde": "Liegen der Planungs-/Infrastrukturvertrag und der Baurechtsvertrag für Parzelle 775 vor? Welche Pflichten und Risiken übernimmt die Gemeinde?"
+   },
+   {
+    "Anfrage-ID": "A-MUE-09",
+    "Gemeinde": "Münchenstein",
+    "C-Dimension": "C2",
+    "Benötigte Lieferung": "Liegenschafts- bzw. Bodenstrategie (falls vorhanden) und Grundsätze zu Verkauf vs. Baurecht",
+    "Warum nötig": "Steuerungswille Bodenpolitik",
+    "Priorität": "Mittel",
+    "Status": "Offen",
+    "Recherchebefund": "Grundsätze nur in Ratschlag 2015 (MUE-C2-01); aktuelle Strategie nicht gefunden.",
+    "Bezug Katalog-ID": "MUE-C2-01",
+    "Quellenstatus (Recherche)": "Nicht öffentlich auffindbar",
+    "Präzisierte Frage an die Gemeinde": "Gibt es eine aktuelle Liegenschafts- oder Bodenstrategie des Gemeinderats? Gelten die Grundsätze von 2015 noch?"
+   },
+   {
+    "Anfrage-ID": "A-WIL-09",
+    "Gemeinde": "Wil",
+    "C-Dimension": "C2",
+    "Benötigte Lieferung": "Aktuelle Boden- und Immobilienstrategie; Stand Nachtrag IV Gemeindeordnung (Finanzbefugnisse Liegenschaften)",
+    "Warum nötig": "Handlungsspielraum aktive Bodenpolitik",
+    "Priorität": "Mittel",
+    "Status": "Offen",
+    "Recherchebefund": "Strategiedokument nur mit unsicherer Zuordnung gefunden (WIL-C2-03); Abstimmungsergebnis Nachtrag IV nicht belegt.",
+    "Bezug Katalog-ID": "WIL-C2-01, WIL-C2-03",
+    "Präzisierte Frage an die Gemeinde": "Welche Boden-/Immobilienstrategie gilt aktuell, und ist der Nachtrag IV zur Gemeindeordnung in Kraft?"
+   }
+  ]
+ },
+ "bericht": {
+  "unsicherheiten": [
+   "Inhaltsprüfung ist ein automatischer Schlüsselwort-Abgleich (Titel/erste Seiten). Sie belegt die Dokumentidentität, nicht die fachliche Eignung oder Vollständigkeit.",
+   "Hash-Links der Stadt Wil (/storage/…) wurden über Suchmaschinen-Zusammenfassungen zugeordnet; massgeblich ist allein die Inhaltsprüfung des Runners.",
+   "Kantonale Rechtssammlungen (LexWork: rechtsbuch.ur.ch, bl.clex.ch, gesetzessammlung.sg.ch) und Fedlex sind JavaScript-Anwendungen; die Identität wird über deren Daten-Schnittstellen geprüft. Fehlt diese, bleibt die Inhaltsprüfung «Offen».",
+   "Planerische Flächenverfügbarkeit (Zonen, Bauland-Datenbanken) ist kein Nachweis kommunalen Grundeigentums. C2 bleibt ohne Liegenschaftsverzeichnisse der Gemeinden unbelegt.",
+   "Organigramme und Reglemente belegen Strukturen, nicht Verwaltungskompetenz oder Kapazität (C4).",
+   "Leitbilder, Mitwirkungsverfahren und Beschlüsse belegen keine politische Akzeptanz (C5); dazu sind Abstimmungsresultate und qualitative Befunde nötig.",
+   "Seelisberg: Projekt Sonnenberg wird in Quellen als Halter-AG-Projekt genannt – mögliche Interessenbindung bei der Auswertung offenlegen.",
+   "Tragfähigkeit wurde bewusst nirgends eingestuft; die Schwellen in der Bewertungslogik sind noch nicht validiert."
+  ],
+  "empfehlungen": [
+   "Gemeindeanfragen mit Priorität «Hoch» zuerst versenden (C1-Zeitreihen, C2-Liegenschaftsverzeichnisse, C4-Stellenpläne).",
+   "Blatt «Recherche-Kandidaten» sichten: direkte PDF-Links hinter Publikations- und Sitzungsseiten übernehmen (v. a. Münchenstein /publikationen/, Seelisberg Beschlussprotokolle 2025).",
+   "C1: Kennzahlen (Selbstfinanzierungsgrad, Nettoschuld je Einwohner, Investitionsanteil) aus den bestätigten Jahresrechnungen extrahieren und Peer-Gruppe Kanton × Grössenklasse bilden (BFS-Regionalporträts).",
+   "Kantonale Finanzstatistik St. Gallen (Finanzstatistik der politischen Gemeinden) als direkten Download ermitteln.",
+   "Gemeindeordnung Seelisberg (2009) und Regio-Wil-Statuten bei den Gemeinden anfordern, da online nicht auffindbar.",
+   "Optional Secret BRAVE_SEARCH_API_KEY hinterlegen, um die automatische Recherche um eine Such-API zu erweitern."
+  ]
+ }
+}
