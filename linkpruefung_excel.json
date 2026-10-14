@@ -1037,14 +1037,14 @@
    "text": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.51",
    "target": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.51",
    "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.51",
-   "new_url": null,
-   "new_ref": null,
+   "new_url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.53",
+   "new_ref": "sGS 271.53",
    "new_layer": null,
-   "reason": "Link passt zu Bezeichnung/Referenz, aber Erlass 271.51 «Verordnung betreffend den Schutz von Naturkörpern und Altertümern» ist aufgehoben (vom 21.03.1933, in Vollzug von 21.03.1933 bis: 31.07.2019)",
-   "hint": "Nachfolgeerlass vermutlich sGS 271.53 «Verordnung über die Sicherung und Überlieferung von Naturkörpern» – bitte fachlich bestätigen",
+   "reason": "sGS 271.51 ist seit 31.07.2019 aufgehoben; ersetzt durch den Nachfolgeerlass sGS 271.53 (Titel lt. Sammlung: «Verordnung über die Sicherung und Überlieferung von Naturkörpern»)",
+   "hint": "",
    "status": 200,
    "title": "LexWork",
-   "verdict": "prüfen"
+   "verdict": "korrigiert"
   },
   {
    "sheet": "1_Q1_Rechtsordnung",
@@ -6660,6 +6660,13 @@
    "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.51",
    "status": 200,
    "final": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.51",
+   "ctype": "text/html",
+   "title": "LexWork"
+  },
+  "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.53": {
+   "url": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.53",
+   "status": 200,
+   "final": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.53",
    "ctype": "text/html",
    "title": "LexWork"
   },

@@ -2,7 +2,7 @@
 
 Geprüft im GitHub-Runner «Linkprüfung Excel» (`.github/workflows/linkpruefung_excel.yml`, Skript `linkpruefung_excel.py`).
 
-Ergebnis: nur Einstiegsseite 53, Hinweis 3, korrigiert 167, OK 72, manuell prüfen 15
+Ergebnis: nur Einstiegsseite 53, Hinweis 3, korrigiert 168, OK 72, manuell prüfen 14
 
 ## Korrigierte Links
 
@@ -30,6 +30,7 @@ Ergebnis: nur Einstiegsseite 53, Hinweis 3, korrigiert 167, OK 72, manuell prüf
 | 1_Q1_Rechtsordnung!M55 | Gesetz über den Denkmal- und Heimatschutz (DHG BL) | SGS 780 → SGS 791 | SGS 780 ist das Umweltschutzgesetz BL (USG BL); das DHG BL ist SGS 791 (Titel lt. Sammlung: «Gesetz über den Denkmal- und Heimatschutz (DHG)») | https://bl.clex.ch/app/de/texts_of_law/791 |
 | 1_Q1_Rechtsordnung!M58 | Planungs- und Baugesetz SG (PBG) | sGS 731.1 | Link auf Standardform der Sammlung vereinheitlicht (731.1 «Planungs- und Baugesetz (PBG)») | https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/731.1 |
 | 1_Q1_Rechtsordnung!M61 | Wasserbaugesetz SG | sGS-Nr. verifizieren → sGS 734.1 | Link zeigte auf die Startseite sg.ch; Wasserbaugesetz SG = sGS 734.1 (Titel lt. Sammlung: «Wasserbaugesetz (WBG)») | https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/734.1 |
+| 1_Q1_Rechtsordnung!M64 | Verordnung betreffend den Schutz von Naturkörpern und Altertümern | sGS 271.51 → sGS 271.53 | sGS 271.51 ist seit 31.07.2019 aufgehoben; ersetzt durch den Nachfolgeerlass sGS 271.53 (Titel lt. Sammlung: «Verordnung über die Sicherung und Überlieferung von Naturkörpern») | https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/271.53 |
 | 1_Q1_Rechtsordnung!M70 | Natur- und Heimatschutzrecht Uri (kantonale Erlasse) | RB-Nr. verifizieren → RB 10.5101 | Link zeigte auf die Startseite ur.ch; Gesetz über den Natur- und Heimatschutz = RB 10.5101 (Titel lt. Sammlung: «Gesetz über den Natur- und Heimatschutz») | https://rechtsbuch.ur.ch/app/de/texts_of_law/10.5101 |
 | 1_Q1_Rechtsordnung!M72 | Wasserbau-/Naturgefahrenrecht Uri | RB-Nr. verifizieren → RB 40.1211 | Link zeigte auf die Startseite ur.ch; Wasserbaugesetz Uri (WBG) = RB 40.1211 (Titel lt. Sammlung: «Wasserbaugesetz (WBG)») | https://rechtsbuch.ur.ch/app/de/texts_of_law/40.1211 |
 | 1_Q1_Rechtsordnung!M73 | Beitritt Kanton Uri zur IVöB 2019 (Landratsbeschluss vom 15.06.2022) | IVöB: RB 3.3111 | Link zeigte auf https://www.ur.ch/_doc/337571 (HTTP 200, «Microsoft PowerPoint - 20230508_Schulung_IVöB_Uri final(2).p»); richtig: RB 3.3111 «Interkantonale Vereinbarung über das öffentliche Beschaffungswesen (IVöB)» | https://rechtsbuch.ur.ch/app/de/texts_of_law/3.3111 |
@@ -185,7 +186,6 @@ Ergebnis: nur Einstiegsseite 53, Hinweis 3, korrigiert 167, OK 72, manuell prüf
 
 | Zelle | Bezeichnung | Ergebnis | Begründung |
 | --- | --- | --- | --- |
-| 1_Q1_Rechtsordnung!M64 | Verordnung betreffend den Schutz von Naturkörpern und Altertümern | prüfen | Link passt zu Bezeichnung/Referenz, aber Erlass 271.51 «Verordnung betreffend den Schutz von Naturkörpern und Altertümern» ist aufgehoben (vom 21.03.1933, in Vollzug von 21.03.1933 bis: 31.07.2019); Nachfolgeerlass vermutlich sGS 271.53 «Verordnung über die Sicherung und Überlieferung von Naturkörpern» – bitte fachlich bestätigen |
 | 1_Q1_Rechtsordnung!M78 | Kommunale Natur- und Landschaftsschutzfestlegungen | prüfen | erreichbar, Bezeichnung im Dokument nicht gefunden («Lk,gslghl») |
 | 1_Q1_Rechtsordnung!M79 | Kommunale Energieplanung / Wärmeversorgung | prüfen | erreichbar, Bezeichnung im Dokument nicht gefunden («Lk,gslghl») |
 | 1_Q1_Rechtsordnung!M81 | Kommunale Schutzverordnung / Ortsbildvorgaben | prüfen | erreichbar, Bezeichnung im Dokument nicht gefunden («Lk,gslghl») |
