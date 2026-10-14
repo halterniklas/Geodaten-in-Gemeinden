@@ -112,7 +112,8 @@ def kennzahlen(key, url):
 def lexwork(ref, base):
     nr = ref.split()[-1]
     try:
-        d = get(f"{base}/api/de/texts_of_law/{nr}", headers={**UA, "Accept": "application/json"}).json()
+        d = requests.get(f"{base}/api/de/texts_of_law/{nr}", timeout=60,
+                         headers={**UA, "Accept": "application/json"}).json()
         t = d.get("text_of_law", {})
         return {"ref": ref, "url": f"{base}/app/de/texts_of_law/{nr}", "title": t.get("title"),
                 "abbr": t.get("abbreviation"), "dates": t.get("text_of_law_dates_str")}
@@ -137,8 +138,55 @@ def oereblex(i):
         return None
 
 
+CRAWL = {  # Seiten, deren Links nach Stichworten durchsucht werden
+    "MUE-JR2025": "https://www.muenchenstein.ch/publikationen/621658",
+    "MUE-JR2024": "https://www.muenchenstein.ch/publikationen/556069",
+    "MUE-GV-Dez2025": "https://www.muenchenstein.ch/sitzung/5729137",
+    "MUE-Publikationen": "https://www.muenchenstein.ch/publikationen",
+    "MUE-Reglemente": "https://www.muenchenstein.ch/reglemente",
+    "MUE-Bauverwaltung": "https://www.muenchenstein.ch/bauverwaltung",
+    "MUE-Ortsplanung": "https://www.muenchenstein.ch/ortsplanung",
+    "BL-Gemeindefinanzen-2023": "https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/"
+                                "daten-statistik/abteilung-statistik/publikationen-und-statistiken/finanzen-und-steuern/"
+                                "webartikel-vom-18-09-2024-gemeindefinanzen-2023",
+    "BL-Gemeindefinanzen": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
+}
+CRAWL_RE = re.compile(r"zonenplan|nutzungsplan|jahresrechnung|rechnung 20|bericht|kennzahl|finanzstatistik|"
+                      r"gemeindefinanz|\.xlsx|\.pdf|_docn", re.I)
+
+
+def crawl(key, url):
+    out = {"key": key, "url": url}
+    try:
+        r = get(url)
+        out["status"], out["final"] = r.status_code, r.url
+        links = re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', r.text, re.S | re.I)
+        hits = []
+        for href, txt in links:
+            t = re.sub(r"<[^>]+>|\s+", " ", txt).strip()
+            if CRAWL_RE.search(href) or CRAWL_RE.search(t):
+                hits.append((urljoin(r.url, href), t[:120]))
+        out["links"] = hits[:80]
+        out["n_links"] = len(links)
+        out["text"] = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", r.text))[:1500]
+        pdfs = [h for h, t in hits if re.search(r"jahresrechnung|rechnung|bericht|finanz", h + t, re.I)
+                and re.search(r"_docn|\.pdf|download", h, re.I)]
+        out["kennzahlen"] = [kennzahlen(f"{key}-pdf", p) for p in pdfs[:4]]
+    except Exception as e:  # noqa: BLE001
+        out["error"] = str(e)[:300]
+    return out
+
+
 def main():
     out = {}
+    if "--crawl" in sys.argv:
+        with ThreadPoolExecutor(6) as ex:
+            out["crawl"] = list(ex.map(lambda kv: crawl(*kv), CRAWL.items()))
+        out["lexwork"] = [lexwork(r, b) for r, b in LEXWORK.items()]
+        json.dump(out, open("recherche_qc2.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        for c in out["crawl"]:
+            print(c["key"], c.get("status"), c.get("n_links"), len(c.get("links", [])))
+        return
     # 1. Geodaten
     cfg = get(gis.API + "/layersConfig", params={"lang": "de"}).json()
     found = {k: v.get("label", "") for k, v in cfg.items()

@@ -22,12 +22,12 @@ jobs:
           python-version: "3.12"
       - run: pip install shapely requests pypdf
       - name: Recherche
-        run: python3 recherche_qc.py
+        run: python3 recherche_qc.py --crawl
       - name: Ergebnis committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add recherche_qc.json recherche_qc.md
+          git add recherche_qc*.json recherche_qc.md
           git diff --cached --quiet || git commit -m "Recherche Q/C via GitHub-Runner"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
