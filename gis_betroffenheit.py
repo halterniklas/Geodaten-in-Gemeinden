@@ -41,6 +41,10 @@ GEMEINDEN = {
 COL_LAYER = 5
 INNER_BUFFER_M = 5
 MAX_URL = 7500
+IDENTIFY_LIMIT = 50
+SUCH_BEGRIFFE = ["wildtier", "oberflaechenabfluss", "Oberflächenabfluss", "laerm", "vogel",
+                 "schutzwald", "silvaprotect", "thermische", "windenergie", "geotherm",
+                 "hitze", "stoerfall", "Störfall", "gefahren", "belastete"]
 
 
 def get_json(url, params):
@@ -83,19 +87,54 @@ def query_geometry(geom):
         js = json.dumps({"rings": esri_rings(s), "spatialReference": {"wkid": 2056}},
                         separators=(",", ":"))
         if len(urllib.parse.quote(js)) < MAX_URL:
-            return js, s.bounds
-    return js, s.bounds
+            break
+    return js, s.bounds, g
 
 
-def identify(layer_id, geom_json, bounds):
+def feature_label(f):
+    props = f.get("properties") or f.get("attributes") or {}
+    for key in ("label", "name", "objname", "obj_name", "bezeichnung", "titel"):
+        if f.get(key):
+            return str(f[key])
+        if props.get(key):
+            return str(props[key])
+    return str(f.get("featureId", f.get("id", "?")))
+
+
+def identify(layer_id, geom_json, bounds, exact):
+    """Treffer per identify holen und lokal exakt mit der Gemeindefläche verschneiden.
+
+    Gibt ("ja"|"nein", [Namen der Treffer]) zurück.
+    """
     minx, miny, maxx, maxy = bounds
     data = get_json(f"{API}/identify", {
         "geometry": geom_json, "geometryType": "esriGeometryPolygon",
         "layers": f"all:{layer_id}", "sr": 2056, "tolerance": 0,
         "mapExtent": f"{minx},{miny},{maxx},{maxy}", "imageDisplay": "1000,1000,96",
-        "returnGeometry": "false", "limit": 1, "lang": "de",
+        "returnGeometry": "true", "geometryFormat": "geojson", "limit": IDENTIFY_LIMIT,
+        "lang": "de",
     })
-    return "ja" if data.get("results") else "nein"
+    hits = []
+    for f in data.get("results", []):
+        g = f.get("geometry")
+        try:
+            inside = g is None or shape(g).intersects(exact)
+        except Exception:  # noqa: BLE001 - ungültige Geometrie: Server-Treffer gelten
+            inside = True
+        if inside:
+            hits.append(feature_label(f))
+    return ("ja" if hits else "nein"), sorted(set(hits))
+
+
+def search_layers(layers_config, keywords):
+    lines = []
+    for kw in keywords:
+        lines.append(f"## {kw}")
+        for lid, cfg in sorted(layers_config.items()):
+            if kw.lower() in lid.lower() or kw.lower() in str(cfg.get("label", "")).lower():
+                lines.append(f"- {lid} | {cfg.get('label', '')} | queryable={cfg.get('queryable')}")
+        lines.append("")
+    return "\n".join(lines)
 
 
 def parse_row(line):
@@ -129,6 +168,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("table")
     ap.add_argument("--links", action="store_true", help="HTTP-Status aller Links ausgeben")
+    ap.add_argument("--details", default="Betroffenheit_Details.md",
+                    help="Datei mit den Namen der Treffer pro Layer und Gemeinde")
+    ap.add_argument("--layersuche", default="layer_suche.md",
+                    help="Datei mit Layer-IDs zu Suchbegriffen (für fehlende/ungültige IDs)")
     ap.add_argument("--dry-run", action="store_true", help="nur ausgeben, Datei nicht schreiben")
     args = ap.parse_args()
 
@@ -139,6 +182,14 @@ def main():
         check_links(lines)
 
     layers_config = get_json(f"{API}/layersConfig", {"lang": "de"})
+    with open(args.layersuche, "w", encoding="utf-8") as f:
+        f.write("# Layer-Suche in layersConfig (api3.geo.admin.ch)\n\n")
+        f.write(search_layers(layers_config, SUCH_BEGRIFFE))
+    details = ["# Betroffenheit – Treffer pro Layer und Gemeinde", "",
+               f"Methode: identify auf api3.geo.admin.ch, Treffer lokal mit der um {INNER_BUFFER_M} m "
+               "nach innen gepufferten Gemeindefläche (swissBOUNDARIES3D) verschnitten. "
+               f"Pro Abfrage max. {IDENTIFY_LIMIT} Objekte.", "",
+               "| Nr | Layer | Gemeinde | Ergebnis | Treffer |", "| -- | ----- | -------- | -------- | ------- |"]
     geoms = {}
     for col, (name, _) in GEMEINDEN.items():
         geoms[col] = query_geometry(gemeinde_polygon(name))
@@ -163,13 +214,23 @@ def main():
             elif not cfg.get("queryable", True):
                 cells[col] = "nicht abfragbar"
             else:
+                hits = []
                 try:
-                    cells[col] = identify(layer, *geoms[col])
+                    cells[col], hits = identify(layer, *geoms[col])
                 except urllib.error.HTTPError as e:
-                    cells[col] = f"Fehler {e.code}"
-                    print(e.read()[:500], file=sys.stderr)
+                    body = e.read()[:500].decode("utf-8", "replace")
+                    if "No GeoTable" in body:
+                        cells[col] = "nicht abfragbar (Rasterlayer)"
+                    else:
+                        cells[col] = f"Fehler {e.code}"
+                        print(body, file=sys.stderr)
+                shown = ", ".join(hits[:15]) + (f" … (+{len(hits) - 15})" if len(hits) > 15 else "")
+                details.append(f"| {cells[0]} | {layer} | {name} | {cells[col]} | {shown.replace('|', '/')} |")
             print(f"{cells[0]:>3} {layer:55} {name:14} {cells[col]}", file=sys.stderr)
         out.append(format_row(cells))
+
+    with open(args.details, "w", encoding="utf-8") as f:
+        f.write("\n".join(details) + "\n")
 
     text = "\n".join(out) + "\n"
     if args.dry_run:
