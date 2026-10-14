@@ -1,8 +1,13 @@
 # Linkprüfung – Geodaten_mit_Nummerierung.md
 
-Stand 14.10.2026. Statische Prüfung (URL-Aufbau, Koordinaten, Layer-IDs).
-Ein HTTP-Test war aus der Cloud-Umgebung nicht möglich, weil die geo.admin- und Kantonsportale gesperrt waren.
-Der HTTP-Test lässt sich lokal nachholen: `python3 gis_betroffenheit.py Geodaten_mit_Nummerierung.md --links`.
+Stand 14.10.2026. Statische Prüfung (URL-Aufbau, Koordinaten, Layer-IDs) plus HTTP-Test über GitHub Actions (`linkstatus.txt`).
+
+**HTTP-Test:** Alle Links antworten mit Status 200. Bei map.geo.admin.ch heisst 200 nur, dass die Viewer-App lädt.
+Die Layer-IDs wurden deshalb zusätzlich gegen `layersConfig` geprüft. Ungültig waren zwei:
+- Nr. 10: `ch.bafu.fauna-wildtierkorridore_national` → `ch.bafu.fauna-wildtierkorridor_national`
+- Nr. 20: `ch.bafu.gefahren-oberflaechenabfluss` → `ch.bafu.gefaehrdungskarte-oberflaechenabfluss`
+
+Beide sind in der Tabelle korrigiert.
 
 ## Fehler (in der Tabelle korrigiert, Nr. 29, 35 und 37)
 
