@@ -1,0 +1,229 @@
+{
+ "retrieved": "2026-10-26T15:06:53.518168Z",
+ "items": {
+  "bfs_statpop_sg_bl_ur_2010.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73316,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2010"
+  },
+  "bfs_statpop_sg_bl_ur_2011.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73380,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2011"
+  },
+  "bfs_statpop_sg_bl_ur_2012.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73463,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2012"
+  },
+  "bfs_statpop_sg_bl_ur_2013.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73569,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2013"
+  },
+  "bfs_statpop_sg_bl_ur_2014.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73640,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2014"
+  },
+  "bfs_statpop_sg_bl_ur_2015.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73725,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2015"
+  },
+  "bfs_statpop_sg_bl_ur_2016.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73752,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2016"
+  },
+  "bfs_statpop_sg_bl_ur_2017.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73808,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2017"
+  },
+  "bfs_statpop_sg_bl_ur_2018.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73837,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2018"
+  },
+  "bfs_statpop_sg_bl_ur_2019.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73893,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2019"
+  },
+  "bfs_statpop_sg_bl_ur_2020.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 73977,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2020"
+  },
+  "bfs_statpop_sg_bl_ur_2021.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 74051,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2021"
+  },
+  "bfs_statpop_sg_bl_ur_2022.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 74131,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2022"
+  },
+  "bfs_statpop_sg_bl_ur_2023.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 74237,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2023"
+  },
+  "bfs_statpop_sg_bl_ur_2024.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 74336,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2024"
+  },
+  "bfs_statpop_sg_bl_ur_2025.csv": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "text/csv; charset=Windows-1252",
+   "bytes": 74427,
+   "saved": true,
+   "err": "",
+   "table": "px-x-0102010000_101",
+   "jahr": "2025"
+  },
+  "bfs_gemeindegrenzen_gg25.zip": {
+   "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/34367751/master",
+   "status": 200,
+   "content_type": "application/zip",
+   "bytes": 10584579,
+   "saved": true,
+   "err": ""
+  },
+  "bl_dataset_10640_meta.json": {
+   "url": "https://data.bl.ch/api/explore/v2.1/catalog/datasets/10640",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 11961,
+   "saved": true,
+   "err": ""
+  },
+  "bl_dataset_10640.csv": {
+   "url": "https://data.bl.ch/api/explore/v2.1/catalog/datasets/10640/exports/csv?delimiter=%3B&lang=de&timezone=UTC&use_labels=false",
+   "status": 200,
+   "content_type": "text/csv; charset=utf-8",
+   "bytes": 65281199,
+   "saved": true,
+   "err": ""
+  },
+  "bl_dataset_10650_meta.json": {
+   "url": "https://data.bl.ch/api/explore/v2.1/catalog/datasets/10650",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 21924,
+   "saved": true,
+   "err": ""
+  },
+  "bl_dataset_10650.csv": {
+   "url": "https://data.bl.ch/api/explore/v2.1/catalog/datasets/10650/exports/csv?delimiter=%3B&lang=de&timezone=UTC&use_labels=false",
+   "status": 200,
+   "content_type": "text/csv; charset=utf-8",
+   "bytes": 351286,
+   "saved": true,
+   "err": ""
+  },
+  "bl_catalog_gemeinde.json": {
+   "url": "data.bl.ch catalog search Gemeinde",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 1157700,
+   "saved": true,
+   "err": ""
+  },
+  "bl_catalog_finanz.json": {
+   "url": "data.bl.ch catalog search Finanz",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 570634,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2012.pdf": {
+   "url": "https://www.ur.ch/_doc/48629",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 4102139,
+   "saved": true,
+   "err": ""
+  }
+ }
+}
