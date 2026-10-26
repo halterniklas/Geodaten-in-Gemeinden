@@ -8,6 +8,7 @@ on:
       - c1-finanzen/tools/probe.py
       - c1-finanzen/tools/probe2.py
       - c1-finanzen/tools/probe3.sh
+      - c1-finanzen/tools/fetch4.py
       - .github/workflows/c1-probe.yml
 
 permissions:
@@ -27,6 +28,8 @@ jobs:
         run: python3 c1-finanzen/tools/probe2.py c1-finanzen/data/raw/_probe c1-finanzen/data/raw/download
       - name: BL-Quellen sondieren (Stufe 3)
         run: bash c1-finanzen/tools/probe3.sh c1-finanzen/data/raw/_probe/bl
+      - name: Bevölkerung, Grenzen, BL-Open-Data (Stufe 4)
+        run: python3 c1-finanzen/tools/fetch4.py c1-finanzen/data/raw/download
       - name: Ergebnis committen
         run: |
           git config user.name "github-actions[bot]"
