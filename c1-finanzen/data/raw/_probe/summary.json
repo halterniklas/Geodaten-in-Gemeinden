@@ -1,11 +1,11 @@
 {
- "retrieved": "2026-10-26T15:04:55.111519Z",
+ "retrieved": "2026-10-26T15:46:44.726827Z",
  "pages": {
   "are_bauzonen": {
    "url": "https://www.are.admin.ch/de/bauzonenstatistik-schweiz",
    "status": 200,
    "content_type": "text/html;charset=utf-8",
-   "bytes": 197895,
+   "bytes": 197595,
    "file_links": [
     "https://www.are.admin.ch/_nuxt/builds/meta/4a2876d5-ad9d-4d0a-a0b4-3babb2c9ecce.json",
     "https://www.are.admin.ch/dam/de/sd-web/3lK47686QIeu/Bauzonenstatistik_Schweiz_2012.zip",
@@ -83,7 +83,7 @@
    "url": "https://www.ur.ch/publikationen/6680",
    "status": 200,
    "content_type": "text/html; charset=UTF-8",
-   "bytes": 88922,
+   "bytes": 88924,
    "file_links": []
   },
   "bfs_statpop": {
@@ -104,7 +104,7 @@
    "url": "https://www.swisstopo.admin.ch/de/landschaftsmodell-swissboundaries3d",
    "status": 200,
    "content_type": "text/html;charset=utf-8",
-   "bytes": 317988,
+   "bytes": 318313,
    "file_links": [
     "https://www.swisstopo.admin.ch/_nuxt/builds/meta/4a2876d5-ad9d-4d0a-a0b4-3babb2c9ecce.json",
     "https://www.swisstopo.admin.ch/dam/de/sd-web/1ue59AoreVUj/swissboundaries3d-release2023-DE.pdf",

@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-10-26T15:05:32.388215Z",
+ "retrieved": "2026-10-26T15:47:06.780114Z",
  "pages": {
   "bl_gemeindefinanzen": {
    "url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
@@ -53,7 +53,7 @@
   "ur_gemeinden": {
    "url": "https://www.ur.ch/gemeinden",
    "status": 200,
-   "bytes": 125454,
+   "bytes": 125453,
    "links": [
     "https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=6577&lang=de_de&amp;readclass=icms-i-speaker&url=https%3A%2F%2Fwww.ur.ch%2Fgemeinden",
     "https://www.ur.ch/_rtm/datenschutz",
