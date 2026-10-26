@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-10-26T14:56:15.821321Z",
+ "retrieved": "2026-10-26T15:02:20.241628Z",
  "pages": {
   "bl_gemeindefinanzen": {
    "url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
@@ -237,11 +237,11 @@
   },
   "ur_gemeindefinanzstatistik_2012.pdf": {
    "url": "https://www.ur.ch/_doc/48629",
-   "status": 0,
-   "content_type": "",
-   "bytes": 35,
-   "saved": false,
-   "err": "URLError(TimeoutError('timed out'))"
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 4102139,
+   "saved": true,
+   "err": ""
   },
   "ur_gemeindefinanzstatistik_2013.pdf": {
    "url": "https://www.ur.ch/_doc/55992",
