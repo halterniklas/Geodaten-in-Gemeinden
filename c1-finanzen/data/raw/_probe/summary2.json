@@ -1,0 +1,359 @@
+{
+ "retrieved": "2026-10-26T14:56:15.821321Z",
+ "pages": {
+  "bl_gemeindefinanzen": {
+   "url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
+   "status": 403,
+   "bytes": 25,
+   "links": [],
+   "err": ""
+  },
+  "bl_finanzstatistik": {
+   "url": "https://www.baselland.ch/politik-und-behorden/gemeinden/gemeindefinanzen/finanzstatistik",
+   "status": 403,
+   "bytes": 25,
+   "links": [],
+   "err": ""
+  },
+  "bl_statistik_amt": {
+   "url": "https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/statistisches-amt",
+   "status": 403,
+   "bytes": 25,
+   "links": [],
+   "err": ""
+  },
+  "bl_statistik_portal": {
+   "url": "https://statistik.bl.ch/",
+   "status": 0,
+   "bytes": 153,
+   "links": [],
+   "err": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))"
+  },
+  "bl_statistik_portal_www": {
+   "url": "https://www.statistik.bl.ch/",
+   "status": 0,
+   "bytes": 153,
+   "links": [],
+   "err": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'))"
+  },
+  "bl_api_gemeindefinanzen": {
+   "url": "https://bl-api.webcloud7.ch/politik-und-behorden/gemeinden/gemeindefinanzen",
+   "status": 403,
+   "bytes": 25,
+   "links": [],
+   "err": ""
+  },
+  "bl_open": {
+   "url": "https://opendata.bl.ch/",
+   "status": 403,
+   "bytes": 25,
+   "links": [],
+   "err": ""
+  },
+  "ur_gemeinden": {
+   "url": "https://www.ur.ch/gemeinden",
+   "status": 200,
+   "bytes": 125454,
+   "links": [
+    "https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=6577&lang=de_de&amp;readclass=icms-i-speaker&url=https%3A%2F%2Fwww.ur.ch%2Fgemeinden",
+    "https://www.ur.ch/_rtm/datenschutz",
+    "https://www.ur.ch/_rtr/datenschutz",
+    "https://www.ur.ch/finanzen",
+    "https://www.ur.ch/finanzen/1154",
+    "https://www.ur.ch/finanzen/1564",
+    "https://www.ur.ch/finanzen/1567",
+    "https://www.ur.ch/finanzen/1570",
+    "https://www.ur.ch/finanzen/1576",
+    "https://www.ur.ch/finanzen/1579",
+    "https://www.ur.ch/finanzen/1582",
+    "https://www.ur.ch/finanzen/1585",
+    "https://www.ur.ch/finanzen/1588",
+    "https://www.ur.ch/finanzen/1591",
+    "https://www.ur.ch/finanzen/1594",
+    "https://www.ur.ch/finanzen/1600",
+    "https://www.ur.ch/finanzen/1609",
+    "https://www.ur.ch/finanzen/1612",
+    "https://www.ur.ch/finanzen/1615",
+    "https://www.ur.ch/finanzen/1618",
+    "https://www.ur.ch/finanzen/1621",
+    "https://www.ur.ch/finanzen/1627",
+    "https://www.ur.ch/finanzen/1630",
+    "https://www.ur.ch/finanzen/1633",
+    "https://www.ur.ch/finanzen/1636",
+    "https://www.ur.ch/finanzen/1639",
+    "https://www.ur.ch/finanzen/1642",
+    "https://www.ur.ch/finanzen/1645",
+    "https://www.ur.ch/finanzen/1648",
+    "https://www.ur.ch/finanzen/1651",
+    "https://www.ur.ch/finanzen/1654",
+    "https://www.ur.ch/finanzen/1657",
+    "https://www.ur.ch/finanzen/1660",
+    "https://www.ur.ch/finanzen/1750",
+    "https://www.ur.ch/finanzen/1756",
+    "https://www.ur.ch/finanzen/4225",
+    "https://www.ur.ch/finanzen/6922",
+    "https://www.ur.ch/finanzen/6928",
+    "https://www.ur.ch/finanzen/6934",
+    "https://www.ur.ch/gemeinden"
+   ],
+   "err": ""
+  },
+  "sg_statistik": {
+   "url": "https://www.statistik.sg.ch/",
+   "status": 200,
+   "bytes": 99241,
+   "links": [
+    "https://www.sg.ch/news/sgch_statistik/2026/09/privathaushalte-2025.html",
+    "https://www.sg.ch/news/sgch_statistik/2026/09/vergleichsvorlagen.html",
+    "https://www.sg.ch/ueber-den-kanton-st-gallen/statistik.html",
+    "https://www.statistik.sg.ch/f/datenschutz-sg-ch.html",
+    "https://www.statistik.sg.ch/news/sgch_allgemein/2025/12/kanton-schafft-neues-amt-fuer-daten-und-statistik.html",
+    "https://www.statistik.sg.ch/steuern-finanzen.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/_jcr_content/NewsPar.AtomFeed.qualident__item0.xml",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/_jcr_content/NewsPar.RssFeed.qualident__item0.rdf",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/amt-fuer-daten-und-statistik.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/erhebungen.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/faktencheck-politische-ziele.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistikberichte.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistikdatenbanken.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistiken-schnell-finden.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistiken-schnell-finden/kanton-st-gallen-mit-gesamtschweiz-vergleichen.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistiken-schnell-finden/sofort-zahlen-sehen.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistiken-schnell-finden/statistikprodukte-finden.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/statistikgesetz.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/themen.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/themen/B01.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/themen/B03/erwerbstaetige-beschaeftigte-arbeitsplaetze.html",
+    "https://www.statistik.sg.ch/ueber-den-kanton-st-gallen/statistik/themen/B03/stellensuchende-arbeitslose-erwerbslose.html"
+   ],
+   "err": ""
+  }
+ },
+ "files": {
+  "are_bzs2022_gemeinden.xlsx": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/7cEPibyb2l-3/bauzonenstatistik_schweiz_2022_gemeinden.xlsx",
+   "status": 200,
+   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "bytes": 942323,
+   "saved": true,
+   "err": ""
+  },
+  "are_bzs2022_resultate.xlsx": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/uPugMgFnGj0m/bauzonenstatistik_schweiz_2022_resultate.xlsx",
+   "status": 200,
+   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "bytes": 186525,
+   "saved": true,
+   "err": ""
+  },
+  "are_bzs2022_raumgliederung.xlsx": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/lTUT9gVTUx4y/bauzonenstatistik_schweiz_2022_raumgliederung.xlsx",
+   "status": 200,
+   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "bytes": 205665,
+   "saved": true,
+   "err": ""
+  },
+  "are_bzs2022_steckbrief.pdf": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/7lugJ64jJSgn/bzs-steckbrief.pdf",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 123756,
+   "saved": true,
+   "err": ""
+  },
+  "are_bzs2022_bericht.pdf": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/AS4q88PlZYXF/bzs_2022.pdf",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 1669069,
+   "saved": true,
+   "err": ""
+  },
+  "are_bzs2017.zip": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/iLHkdaGp7qi3/Bauzonenstatistik_Schweiz_2017.zip",
+   "status": 200,
+   "content_type": "application/zip",
+   "bytes": 3584664,
+   "saved": true,
+   "err": ""
+  },
+  "are_bzs2012.zip": {
+   "url": "https://www.are.admin.ch/dam/de/sd-web/3lK47686QIeu/Bauzonenstatistik_Schweiz_2012.zip",
+   "status": 200,
+   "content_type": "application/zip",
+   "bytes": 3104456,
+   "saved": true,
+   "err": ""
+  },
+  "sg_kennzahlen_rmsg.xlsx": {
+   "url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_396006679/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download.ocFile/Kennzahlen%20neues%20Rechnungslegungsmodell%20der%20St.Galler%20Gemeinden.xlsx",
+   "status": 200,
+   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "bytes": 106289,
+   "saved": true,
+   "err": ""
+  },
+  "sg_uebersicht_finanzkennzahlen.xlsx": {
+   "url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_396006679/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_131465241.ocFile/%C3%9Cbersichtstabelle%20zu%20den%20Finanzkennzahlen%20der%20St.Galler%20Gemeinden.xlsx",
+   "status": 404,
+   "content_type": "",
+   "bytes": 25,
+   "saved": false,
+   "err": "HTTP Error 404: Not Found"
+  },
+  "sg_kennzahlenberechnung_rmsg_v1_2.xlsx": {
+   "url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_228014448/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_237847518.ocFile/Kennzahlenberechnung%20RMSG%20(Version%201.2).xlsx",
+   "status": 200,
+   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "bytes": 254360,
+   "saved": true,
+   "err": ""
+  },
+  "sg_detailberechnungen_rmsg.pdf": {
+   "url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_228014448/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download.ocFile/Detailberechnungen%20Kennzahlen%20RMSG.pdf",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 55689,
+   "saved": true,
+   "err": ""
+  },
+  "sg_fag_2025.xlsx": {
+   "url": "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202025%20Gesamtliste.xlsx",
+   "status": 200,
+   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "bytes": 368370,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2011.pdf": {
+   "url": "https://www.ur.ch/_doc/48622",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 415852,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2012.pdf": {
+   "url": "https://www.ur.ch/_doc/48629",
+   "status": 0,
+   "content_type": "",
+   "bytes": 35,
+   "saved": false,
+   "err": "URLError(TimeoutError('timed out'))"
+  },
+  "ur_gemeindefinanzstatistik_2013.pdf": {
+   "url": "https://www.ur.ch/_doc/55992",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 4306389,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2014.pdf": {
+   "url": "https://www.ur.ch/_doc/66254",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 4309969,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2015.pdf": {
+   "url": "https://www.ur.ch/_doc/84076",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 516352,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2016.pdf": {
+   "url": "https://www.ur.ch/_doc/92673",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 426782,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2017.pdf": {
+   "url": "https://www.ur.ch/_doc/123997",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 426335,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2018.pdf": {
+   "url": "https://www.ur.ch/_doc/181043",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 1724662,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2019.pdf": {
+   "url": "https://www.ur.ch/_doc/220117",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 2875502,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2020.pdf": {
+   "url": "https://www.ur.ch/_doc/259639",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 3220873,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2021.pdf": {
+   "url": "https://www.ur.ch/_doc/301199",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 1330896,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2022.pdf": {
+   "url": "https://www.ur.ch/_doc/345095",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 2558923,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2023.pdf": {
+   "url": "https://www.ur.ch/_doc/386428",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 3469212,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2024.pdf": {
+   "url": "https://www.ur.ch/_doc/420775",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 2632387,
+   "saved": true,
+   "err": ""
+  },
+  "ur_gemeindefinanzstatistik_2025.pdf": {
+   "url": "https://www.ur.ch/_doc/451636",
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 1505979,
+   "saved": true,
+   "err": ""
+  },
+  "bfs_px_bev_meta.json": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101/px-x-0102010000_101.px",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 73063,
+   "saved": true,
+   "err": ""
+  }
+ }
+}
