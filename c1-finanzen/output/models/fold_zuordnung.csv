@@ -1,0 +1,865 @@
+untersuchung,validierung,bfs_nr,kanton,fold
+A,gruppiert (Gemeinde),3443,SG,1
+A,gruppiert (Gemeinde),3441,SG,4
+A,gruppiert (Gemeinde),3444,SG,2
+A,gruppiert (Gemeinde),3442,SG,4
+A,gruppiert (Gemeinde),3203,SG,2
+A,gruppiert (Gemeinde),3204,SG,2
+A,gruppiert (Gemeinde),3201,SG,5
+A,gruppiert (Gemeinde),3202,SG,4
+A,gruppiert (Gemeinde),3212,SG,4
+A,gruppiert (Gemeinde),3214,SG,3
+A,gruppiert (Gemeinde),3213,SG,3
+A,gruppiert (Gemeinde),3217,SG,1
+A,gruppiert (Gemeinde),3211,SG,1
+A,gruppiert (Gemeinde),3218,SG,2
+A,gruppiert (Gemeinde),3219,SG,4
+A,gruppiert (Gemeinde),3216,SG,1
+A,gruppiert (Gemeinde),3215,SG,4
+A,gruppiert (Gemeinde),3237,SG,1
+A,gruppiert (Gemeinde),3235,SG,4
+A,gruppiert (Gemeinde),3236,SG,5
+A,gruppiert (Gemeinde),3231,SG,2
+A,gruppiert (Gemeinde),3233,SG,5
+A,gruppiert (Gemeinde),3232,SG,4
+A,gruppiert (Gemeinde),3234,SG,4
+A,gruppiert (Gemeinde),3238,SG,2
+A,gruppiert (Gemeinde),3255,SG,2
+A,gruppiert (Gemeinde),3253,SG,2
+A,gruppiert (Gemeinde),3251,SG,1
+A,gruppiert (Gemeinde),3252,SG,3
+A,gruppiert (Gemeinde),3254,SG,5
+A,gruppiert (Gemeinde),3256,SG,3
+A,gruppiert (Gemeinde),3274,SG,5
+A,gruppiert (Gemeinde),3272,SG,1
+A,gruppiert (Gemeinde),3273,SG,1
+A,gruppiert (Gemeinde),3271,SG,4
+A,gruppiert (Gemeinde),3275,SG,2
+A,gruppiert (Gemeinde),3276,SG,5
+A,gruppiert (Gemeinde),3296,SG,4
+A,gruppiert (Gemeinde),3297,SG,3
+A,gruppiert (Gemeinde),3291,SG,2
+A,gruppiert (Gemeinde),3294,SG,3
+A,gruppiert (Gemeinde),3293,SG,3
+A,gruppiert (Gemeinde),3292,SG,1
+A,gruppiert (Gemeinde),3298,SG,1
+A,gruppiert (Gemeinde),3295,SG,4
+A,gruppiert (Gemeinde),3311,SG,5
+A,gruppiert (Gemeinde),3316,SG,4
+A,gruppiert (Gemeinde),3315,SG,3
+A,gruppiert (Gemeinde),3312,SG,5
+A,gruppiert (Gemeinde),3313,SG,3
+A,gruppiert (Gemeinde),3341,SG,3
+A,gruppiert (Gemeinde),3339,SG,3
+A,gruppiert (Gemeinde),3338,SG,2
+A,gruppiert (Gemeinde),3340,SG,5
+A,gruppiert (Gemeinde),3342,SG,1
+A,gruppiert (Gemeinde),3359,SG,4
+A,gruppiert (Gemeinde),3360,SG,2
+A,gruppiert (Gemeinde),3352,SG,4
+A,gruppiert (Gemeinde),3379,SG,2
+A,gruppiert (Gemeinde),3374,SG,5
+A,gruppiert (Gemeinde),3396,SG,5
+A,gruppiert (Gemeinde),3395,SG,5
+A,gruppiert (Gemeinde),3393,SG,2
+A,gruppiert (Gemeinde),3394,SG,5
+A,gruppiert (Gemeinde),3392,SG,5
+A,gruppiert (Gemeinde),3405,SG,2
+A,gruppiert (Gemeinde),3407,SG,1
+A,gruppiert (Gemeinde),3408,SG,1
+A,gruppiert (Gemeinde),3402,SG,3
+A,gruppiert (Gemeinde),3401,SG,3
+A,gruppiert (Gemeinde),3426,SG,3
+A,gruppiert (Gemeinde),3424,SG,1
+A,gruppiert (Gemeinde),3422,SG,3
+A,gruppiert (Gemeinde),3423,SG,1
+A,gruppiert (Gemeinde),2761,BL,2
+A,gruppiert (Gemeinde),2762,BL,5
+A,gruppiert (Gemeinde),2763,BL,1
+A,gruppiert (Gemeinde),2764,BL,1
+A,gruppiert (Gemeinde),2765,BL,4
+A,gruppiert (Gemeinde),2766,BL,2
+A,gruppiert (Gemeinde),2767,BL,3
+A,gruppiert (Gemeinde),2768,BL,5
+A,gruppiert (Gemeinde),2770,BL,5
+A,gruppiert (Gemeinde),2771,BL,5
+A,gruppiert (Gemeinde),2772,BL,5
+A,gruppiert (Gemeinde),2773,BL,3
+A,gruppiert (Gemeinde),2774,BL,1
+A,gruppiert (Gemeinde),2775,BL,1
+A,gruppiert (Gemeinde),2781,BL,5
+A,gruppiert (Gemeinde),2782,BL,4
+A,gruppiert (Gemeinde),2783,BL,4
+A,gruppiert (Gemeinde),2784,BL,4
+A,gruppiert (Gemeinde),2785,BL,3
+A,gruppiert (Gemeinde),2786,BL,2
+A,gruppiert (Gemeinde),2787,BL,3
+A,gruppiert (Gemeinde),2788,BL,3
+A,gruppiert (Gemeinde),2789,BL,1
+A,gruppiert (Gemeinde),2790,BL,2
+A,gruppiert (Gemeinde),2791,BL,2
+A,gruppiert (Gemeinde),2792,BL,4
+A,gruppiert (Gemeinde),2793,BL,5
+A,gruppiert (Gemeinde),2821,BL,5
+A,gruppiert (Gemeinde),2822,BL,5
+A,gruppiert (Gemeinde),2823,BL,3
+A,gruppiert (Gemeinde),2824,BL,3
+A,gruppiert (Gemeinde),2825,BL,1
+A,gruppiert (Gemeinde),2826,BL,5
+A,gruppiert (Gemeinde),2827,BL,4
+A,gruppiert (Gemeinde),2828,BL,3
+A,gruppiert (Gemeinde),2829,BL,1
+A,gruppiert (Gemeinde),2830,BL,3
+A,gruppiert (Gemeinde),2831,BL,4
+A,gruppiert (Gemeinde),2832,BL,3
+A,gruppiert (Gemeinde),2833,BL,4
+A,gruppiert (Gemeinde),2834,BL,2
+A,gruppiert (Gemeinde),2841,BL,4
+A,gruppiert (Gemeinde),2842,BL,5
+A,gruppiert (Gemeinde),2843,BL,1
+A,gruppiert (Gemeinde),2844,BL,3
+A,gruppiert (Gemeinde),2845,BL,1
+A,gruppiert (Gemeinde),2846,BL,4
+A,gruppiert (Gemeinde),2847,BL,1
+A,gruppiert (Gemeinde),2848,BL,2
+A,gruppiert (Gemeinde),2849,BL,4
+A,gruppiert (Gemeinde),2850,BL,3
+A,gruppiert (Gemeinde),2851,BL,2
+A,gruppiert (Gemeinde),2852,BL,2
+A,gruppiert (Gemeinde),2853,BL,2
+A,gruppiert (Gemeinde),2854,BL,4
+A,gruppiert (Gemeinde),2855,BL,3
+A,gruppiert (Gemeinde),2856,BL,5
+A,gruppiert (Gemeinde),2857,BL,5
+A,gruppiert (Gemeinde),2858,BL,2
+A,gruppiert (Gemeinde),2859,BL,5
+A,gruppiert (Gemeinde),2860,BL,4
+A,gruppiert (Gemeinde),2861,BL,2
+A,gruppiert (Gemeinde),2862,BL,3
+A,gruppiert (Gemeinde),2863,BL,4
+A,gruppiert (Gemeinde),2864,BL,1
+A,gruppiert (Gemeinde),2865,BL,2
+A,gruppiert (Gemeinde),2866,BL,4
+A,gruppiert (Gemeinde),2867,BL,1
+A,gruppiert (Gemeinde),2868,BL,5
+A,gruppiert (Gemeinde),2869,BL,1
+A,gruppiert (Gemeinde),2881,BL,5
+A,gruppiert (Gemeinde),2882,BL,1
+A,gruppiert (Gemeinde),2883,BL,3
+A,gruppiert (Gemeinde),2884,BL,2
+A,gruppiert (Gemeinde),2885,BL,2
+A,gruppiert (Gemeinde),2886,BL,3
+A,gruppiert (Gemeinde),2887,BL,4
+A,gruppiert (Gemeinde),2888,BL,5
+A,gruppiert (Gemeinde),2889,BL,3
+A,gruppiert (Gemeinde),2890,BL,2
+A,gruppiert (Gemeinde),2891,BL,1
+A,gruppiert (Gemeinde),2892,BL,4
+A,gruppiert (Gemeinde),2893,BL,1
+A,gruppiert (Gemeinde),2894,BL,1
+A,gruppiert (Gemeinde),2895,BL,2
+A,gruppiert (Gemeinde),1201,UR,1
+A,gruppiert (Gemeinde),1202,UR,1
+A,gruppiert (Gemeinde),1203,UR,3
+A,gruppiert (Gemeinde),1205,UR,5
+A,gruppiert (Gemeinde),1206,UR,2
+A,gruppiert (Gemeinde),1207,UR,4
+A,gruppiert (Gemeinde),1209,UR,2
+A,gruppiert (Gemeinde),1208,UR,2
+A,gruppiert (Gemeinde),1210,UR,1
+A,gruppiert (Gemeinde),1211,UR,3
+A,gruppiert (Gemeinde),1212,UR,1
+A,gruppiert (Gemeinde),1213,UR,5
+A,gruppiert (Gemeinde),1214,UR,2
+A,gruppiert (Gemeinde),1216,UR,4
+A,gruppiert (Gemeinde),1217,UR,4
+A,gruppiert (Gemeinde),1218,UR,3
+A,gruppiert (Gemeinde),1219,UR,5
+A,gruppiert (Gemeinde),1220,UR,3
+A,räumlich geblockt,2761,BL,1
+A,räumlich geblockt,2762,BL,2
+A,räumlich geblockt,2763,BL,2
+A,räumlich geblockt,2764,BL,2
+A,räumlich geblockt,2765,BL,2
+A,räumlich geblockt,2766,BL,2
+A,räumlich geblockt,2767,BL,2
+A,räumlich geblockt,2768,BL,2
+A,räumlich geblockt,2770,BL,2
+A,räumlich geblockt,2771,BL,2
+A,räumlich geblockt,2772,BL,1
+A,räumlich geblockt,2773,BL,2
+A,räumlich geblockt,2774,BL,2
+A,räumlich geblockt,2775,BL,2
+A,räumlich geblockt,2781,BL,1
+A,räumlich geblockt,2782,BL,1
+A,räumlich geblockt,2783,BL,1
+A,räumlich geblockt,2784,BL,1
+A,räumlich geblockt,2785,BL,1
+A,räumlich geblockt,2786,BL,1
+A,räumlich geblockt,2787,BL,1
+A,räumlich geblockt,2788,BL,1
+A,räumlich geblockt,2789,BL,1
+A,räumlich geblockt,2790,BL,1
+A,räumlich geblockt,2791,BL,1
+A,räumlich geblockt,2792,BL,1
+A,räumlich geblockt,2793,BL,1
+A,räumlich geblockt,2821,BL,4
+A,räumlich geblockt,2822,BL,4
+A,räumlich geblockt,2823,BL,5
+A,räumlich geblockt,2824,BL,4
+A,räumlich geblockt,2825,BL,4
+A,räumlich geblockt,2826,BL,4
+A,räumlich geblockt,2827,BL,4
+A,räumlich geblockt,2828,BL,4
+A,räumlich geblockt,2829,BL,4
+A,räumlich geblockt,2830,BL,3
+A,räumlich geblockt,2831,BL,4
+A,räumlich geblockt,2832,BL,5
+A,räumlich geblockt,2833,BL,5
+A,räumlich geblockt,2834,BL,3
+A,räumlich geblockt,2841,BL,5
+A,räumlich geblockt,2842,BL,5
+A,räumlich geblockt,2843,BL,3
+A,räumlich geblockt,2844,BL,4
+A,räumlich geblockt,2845,BL,5
+A,räumlich geblockt,2846,BL,5
+A,räumlich geblockt,2847,BL,5
+A,räumlich geblockt,2848,BL,4
+A,räumlich geblockt,2849,BL,5
+A,räumlich geblockt,2850,BL,3
+A,räumlich geblockt,2851,BL,5
+A,räumlich geblockt,2852,BL,3
+A,räumlich geblockt,2853,BL,4
+A,räumlich geblockt,2854,BL,4
+A,räumlich geblockt,2855,BL,5
+A,räumlich geblockt,2856,BL,5
+A,räumlich geblockt,2857,BL,4
+A,räumlich geblockt,2858,BL,5
+A,räumlich geblockt,2859,BL,5
+A,räumlich geblockt,2860,BL,5
+A,räumlich geblockt,2861,BL,5
+A,räumlich geblockt,2862,BL,5
+A,räumlich geblockt,2863,BL,5
+A,räumlich geblockt,2864,BL,5
+A,räumlich geblockt,2865,BL,5
+A,räumlich geblockt,2866,BL,4
+A,räumlich geblockt,2867,BL,5
+A,räumlich geblockt,2868,BL,5
+A,räumlich geblockt,2869,BL,5
+A,räumlich geblockt,2881,BL,3
+A,räumlich geblockt,2882,BL,3
+A,räumlich geblockt,2883,BL,3
+A,räumlich geblockt,2884,BL,3
+A,räumlich geblockt,2885,BL,3
+A,räumlich geblockt,2886,BL,3
+A,räumlich geblockt,2887,BL,3
+A,räumlich geblockt,2888,BL,3
+A,räumlich geblockt,2889,BL,3
+A,räumlich geblockt,2890,BL,3
+A,räumlich geblockt,2891,BL,3
+A,räumlich geblockt,2892,BL,3
+A,räumlich geblockt,2893,BL,3
+A,räumlich geblockt,2894,BL,3
+A,räumlich geblockt,2895,BL,3
+A,räumlich geblockt,3443,SG,2
+A,räumlich geblockt,3441,SG,3
+A,räumlich geblockt,3444,SG,3
+A,räumlich geblockt,3442,SG,3
+A,räumlich geblockt,3203,SG,3
+A,räumlich geblockt,3204,SG,3
+A,räumlich geblockt,3201,SG,3
+A,räumlich geblockt,3202,SG,3
+A,räumlich geblockt,3212,SG,3
+A,räumlich geblockt,3214,SG,3
+A,räumlich geblockt,3213,SG,3
+A,räumlich geblockt,3217,SG,3
+A,räumlich geblockt,3211,SG,3
+A,räumlich geblockt,3218,SG,3
+A,räumlich geblockt,3219,SG,3
+A,räumlich geblockt,3216,SG,3
+A,räumlich geblockt,3215,SG,3
+A,räumlich geblockt,3237,SG,5
+A,räumlich geblockt,3235,SG,5
+A,räumlich geblockt,3236,SG,5
+A,räumlich geblockt,3231,SG,5
+A,räumlich geblockt,3233,SG,5
+A,räumlich geblockt,3232,SG,5
+A,räumlich geblockt,3234,SG,5
+A,räumlich geblockt,3238,SG,5
+A,räumlich geblockt,3255,SG,5
+A,räumlich geblockt,3253,SG,5
+A,räumlich geblockt,3251,SG,5
+A,räumlich geblockt,3252,SG,5
+A,räumlich geblockt,3254,SG,5
+A,räumlich geblockt,3256,SG,5
+A,räumlich geblockt,3274,SG,5
+A,räumlich geblockt,3272,SG,4
+A,räumlich geblockt,3273,SG,4
+A,räumlich geblockt,3271,SG,4
+A,räumlich geblockt,3275,SG,4
+A,räumlich geblockt,3276,SG,4
+A,räumlich geblockt,3296,SG,4
+A,räumlich geblockt,3297,SG,4
+A,räumlich geblockt,3291,SG,4
+A,räumlich geblockt,3294,SG,4
+A,räumlich geblockt,3293,SG,4
+A,räumlich geblockt,3292,SG,4
+A,räumlich geblockt,3298,SG,4
+A,räumlich geblockt,3295,SG,4
+A,räumlich geblockt,3311,SG,1
+A,räumlich geblockt,3316,SG,1
+A,räumlich geblockt,3315,SG,1
+A,räumlich geblockt,3312,SG,1
+A,räumlich geblockt,3313,SG,1
+A,räumlich geblockt,3341,SG,1
+A,räumlich geblockt,3339,SG,1
+A,räumlich geblockt,3338,SG,1
+A,räumlich geblockt,3340,SG,1
+A,räumlich geblockt,3342,SG,1
+A,räumlich geblockt,3359,SG,4
+A,räumlich geblockt,3360,SG,1
+A,räumlich geblockt,3352,SG,1
+A,räumlich geblockt,3379,SG,1
+A,räumlich geblockt,3374,SG,2
+A,räumlich geblockt,3396,SG,2
+A,räumlich geblockt,3395,SG,2
+A,räumlich geblockt,3393,SG,2
+A,räumlich geblockt,3394,SG,2
+A,räumlich geblockt,3392,SG,2
+A,räumlich geblockt,3405,SG,2
+A,räumlich geblockt,3407,SG,2
+A,räumlich geblockt,3408,SG,2
+A,räumlich geblockt,3402,SG,2
+A,räumlich geblockt,3401,SG,2
+A,räumlich geblockt,3426,SG,2
+A,räumlich geblockt,3424,SG,2
+A,räumlich geblockt,3422,SG,2
+A,räumlich geblockt,3423,SG,2
+A,räumlich geblockt,1201,UR,4
+A,räumlich geblockt,1202,UR,2
+A,räumlich geblockt,1203,UR,4
+A,räumlich geblockt,1205,UR,4
+A,räumlich geblockt,1206,UR,4
+A,räumlich geblockt,1207,UR,3
+A,räumlich geblockt,1209,UR,2
+A,räumlich geblockt,1208,UR,2
+A,räumlich geblockt,1210,UR,2
+A,räumlich geblockt,1211,UR,3
+A,räumlich geblockt,1212,UR,1
+A,räumlich geblockt,1213,UR,4
+A,räumlich geblockt,1214,UR,3
+A,räumlich geblockt,1216,UR,4
+A,räumlich geblockt,1217,UR,3
+A,räumlich geblockt,1218,UR,5
+A,räumlich geblockt,1219,UR,5
+A,räumlich geblockt,1220,UR,2
+B (SFA 2022),gruppiert (Gemeinde),1201,UR,5
+B (SFA 2022),gruppiert (Gemeinde),1202,UR,2
+B (SFA 2022),gruppiert (Gemeinde),1203,UR,4
+B (SFA 2022),gruppiert (Gemeinde),1205,UR,5
+B (SFA 2022),gruppiert (Gemeinde),1206,UR,5
+B (SFA 2022),gruppiert (Gemeinde),1207,UR,3
+B (SFA 2022),gruppiert (Gemeinde),1208,UR,3
+B (SFA 2022),gruppiert (Gemeinde),1209,UR,2
+B (SFA 2022),gruppiert (Gemeinde),1210,UR,2
+B (SFA 2022),gruppiert (Gemeinde),1211,UR,1
+B (SFA 2022),gruppiert (Gemeinde),1212,UR,4
+B (SFA 2022),gruppiert (Gemeinde),1213,UR,1
+B (SFA 2022),gruppiert (Gemeinde),1214,UR,1
+B (SFA 2022),gruppiert (Gemeinde),1216,UR,1
+B (SFA 2022),gruppiert (Gemeinde),1217,UR,3
+B (SFA 2022),gruppiert (Gemeinde),1218,UR,3
+B (SFA 2022),gruppiert (Gemeinde),1219,UR,2
+B (SFA 2022),gruppiert (Gemeinde),1220,UR,4
+B (SFA 2022),gruppiert (Gemeinde),2761,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2762,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2763,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2764,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2765,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2766,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2767,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2768,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2770,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2771,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2772,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2773,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2774,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2775,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2781,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2782,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2783,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2784,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2785,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2786,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2787,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2788,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2789,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2790,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2791,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2792,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2793,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2821,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2822,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2823,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2824,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2825,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2826,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2827,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2828,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2829,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2830,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2831,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2832,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2833,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2834,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2841,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2842,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2843,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2844,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2845,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2846,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2847,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2848,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2849,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2850,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2851,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2852,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2853,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2854,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2855,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2856,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2857,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2858,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2859,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2860,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2861,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2862,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2863,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2864,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2865,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2866,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2867,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2868,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2869,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2881,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2882,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2883,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2884,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2885,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2886,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2887,BL,1
+B (SFA 2022),gruppiert (Gemeinde),2888,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2889,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2890,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2891,BL,2
+B (SFA 2022),gruppiert (Gemeinde),2892,BL,3
+B (SFA 2022),gruppiert (Gemeinde),2893,BL,5
+B (SFA 2022),gruppiert (Gemeinde),2894,BL,4
+B (SFA 2022),gruppiert (Gemeinde),2895,BL,1
+B (SFA 2022),gruppiert (Gemeinde),3201,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3202,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3203,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3204,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3211,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3212,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3213,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3214,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3215,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3216,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3217,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3218,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3219,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3231,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3232,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3233,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3234,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3235,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3236,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3237,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3238,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3251,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3252,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3253,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3254,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3255,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3256,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3271,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3272,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3273,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3274,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3275,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3276,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3291,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3292,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3293,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3294,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3295,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3296,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3297,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3298,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3311,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3312,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3313,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3315,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3316,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3338,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3339,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3340,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3341,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3342,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3352,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3359,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3360,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3374,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3379,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3392,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3393,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3394,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3395,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3401,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3402,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3405,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3407,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3408,SG,3
+B (SFA 2022),gruppiert (Gemeinde),3422,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3423,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3424,SG,5
+B (SFA 2022),gruppiert (Gemeinde),3426,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3441,SG,1
+B (SFA 2022),gruppiert (Gemeinde),3442,SG,4
+B (SFA 2022),gruppiert (Gemeinde),3443,SG,2
+B (SFA 2022),gruppiert (Gemeinde),3444,SG,5
+B (SFA 2022),räumlich geblockt,2761,BL,1
+B (SFA 2022),räumlich geblockt,2762,BL,2
+B (SFA 2022),räumlich geblockt,2763,BL,2
+B (SFA 2022),räumlich geblockt,2764,BL,2
+B (SFA 2022),räumlich geblockt,2765,BL,2
+B (SFA 2022),räumlich geblockt,2766,BL,2
+B (SFA 2022),räumlich geblockt,2767,BL,2
+B (SFA 2022),räumlich geblockt,2768,BL,2
+B (SFA 2022),räumlich geblockt,2770,BL,2
+B (SFA 2022),räumlich geblockt,2771,BL,2
+B (SFA 2022),räumlich geblockt,2772,BL,1
+B (SFA 2022),räumlich geblockt,2773,BL,2
+B (SFA 2022),räumlich geblockt,2774,BL,2
+B (SFA 2022),räumlich geblockt,2775,BL,2
+B (SFA 2022),räumlich geblockt,2781,BL,1
+B (SFA 2022),räumlich geblockt,2782,BL,1
+B (SFA 2022),räumlich geblockt,2783,BL,1
+B (SFA 2022),räumlich geblockt,2784,BL,1
+B (SFA 2022),räumlich geblockt,2785,BL,1
+B (SFA 2022),räumlich geblockt,2786,BL,1
+B (SFA 2022),räumlich geblockt,2787,BL,1
+B (SFA 2022),räumlich geblockt,2788,BL,1
+B (SFA 2022),räumlich geblockt,2789,BL,1
+B (SFA 2022),räumlich geblockt,2790,BL,1
+B (SFA 2022),räumlich geblockt,2791,BL,1
+B (SFA 2022),räumlich geblockt,2792,BL,1
+B (SFA 2022),räumlich geblockt,2793,BL,1
+B (SFA 2022),räumlich geblockt,2821,BL,4
+B (SFA 2022),räumlich geblockt,2822,BL,4
+B (SFA 2022),räumlich geblockt,2823,BL,5
+B (SFA 2022),räumlich geblockt,2824,BL,4
+B (SFA 2022),räumlich geblockt,2825,BL,4
+B (SFA 2022),räumlich geblockt,2826,BL,4
+B (SFA 2022),räumlich geblockt,2827,BL,4
+B (SFA 2022),räumlich geblockt,2828,BL,4
+B (SFA 2022),räumlich geblockt,2829,BL,4
+B (SFA 2022),räumlich geblockt,2830,BL,3
+B (SFA 2022),räumlich geblockt,2831,BL,4
+B (SFA 2022),räumlich geblockt,2832,BL,5
+B (SFA 2022),räumlich geblockt,2833,BL,5
+B (SFA 2022),räumlich geblockt,2834,BL,3
+B (SFA 2022),räumlich geblockt,2841,BL,5
+B (SFA 2022),räumlich geblockt,2842,BL,5
+B (SFA 2022),räumlich geblockt,2843,BL,3
+B (SFA 2022),räumlich geblockt,2844,BL,4
+B (SFA 2022),räumlich geblockt,2845,BL,5
+B (SFA 2022),räumlich geblockt,2846,BL,5
+B (SFA 2022),räumlich geblockt,2847,BL,5
+B (SFA 2022),räumlich geblockt,2848,BL,4
+B (SFA 2022),räumlich geblockt,2849,BL,5
+B (SFA 2022),räumlich geblockt,2850,BL,3
+B (SFA 2022),räumlich geblockt,2851,BL,5
+B (SFA 2022),räumlich geblockt,2852,BL,3
+B (SFA 2022),räumlich geblockt,2853,BL,4
+B (SFA 2022),räumlich geblockt,2854,BL,4
+B (SFA 2022),räumlich geblockt,2855,BL,5
+B (SFA 2022),räumlich geblockt,2856,BL,5
+B (SFA 2022),räumlich geblockt,2857,BL,4
+B (SFA 2022),räumlich geblockt,2858,BL,5
+B (SFA 2022),räumlich geblockt,2859,BL,5
+B (SFA 2022),räumlich geblockt,2860,BL,5
+B (SFA 2022),räumlich geblockt,2861,BL,5
+B (SFA 2022),räumlich geblockt,2862,BL,5
+B (SFA 2022),räumlich geblockt,2863,BL,5
+B (SFA 2022),räumlich geblockt,2864,BL,5
+B (SFA 2022),räumlich geblockt,2865,BL,5
+B (SFA 2022),räumlich geblockt,2866,BL,4
+B (SFA 2022),räumlich geblockt,2867,BL,5
+B (SFA 2022),räumlich geblockt,2868,BL,5
+B (SFA 2022),räumlich geblockt,2869,BL,5
+B (SFA 2022),räumlich geblockt,2881,BL,3
+B (SFA 2022),räumlich geblockt,2882,BL,3
+B (SFA 2022),räumlich geblockt,2883,BL,3
+B (SFA 2022),räumlich geblockt,2884,BL,3
+B (SFA 2022),räumlich geblockt,2885,BL,3
+B (SFA 2022),räumlich geblockt,2886,BL,3
+B (SFA 2022),räumlich geblockt,2887,BL,3
+B (SFA 2022),räumlich geblockt,2888,BL,3
+B (SFA 2022),räumlich geblockt,2889,BL,3
+B (SFA 2022),räumlich geblockt,2890,BL,3
+B (SFA 2022),räumlich geblockt,2891,BL,3
+B (SFA 2022),räumlich geblockt,2892,BL,3
+B (SFA 2022),räumlich geblockt,2893,BL,3
+B (SFA 2022),räumlich geblockt,2894,BL,3
+B (SFA 2022),räumlich geblockt,2895,BL,3
+B (SFA 2022),räumlich geblockt,3201,SG,3
+B (SFA 2022),räumlich geblockt,3202,SG,3
+B (SFA 2022),räumlich geblockt,3203,SG,3
+B (SFA 2022),räumlich geblockt,3204,SG,3
+B (SFA 2022),räumlich geblockt,3211,SG,3
+B (SFA 2022),räumlich geblockt,3212,SG,3
+B (SFA 2022),räumlich geblockt,3213,SG,3
+B (SFA 2022),räumlich geblockt,3214,SG,3
+B (SFA 2022),räumlich geblockt,3215,SG,3
+B (SFA 2022),räumlich geblockt,3216,SG,3
+B (SFA 2022),räumlich geblockt,3217,SG,3
+B (SFA 2022),räumlich geblockt,3218,SG,3
+B (SFA 2022),räumlich geblockt,3219,SG,3
+B (SFA 2022),räumlich geblockt,3231,SG,5
+B (SFA 2022),räumlich geblockt,3232,SG,5
+B (SFA 2022),räumlich geblockt,3233,SG,5
+B (SFA 2022),räumlich geblockt,3234,SG,5
+B (SFA 2022),räumlich geblockt,3235,SG,5
+B (SFA 2022),räumlich geblockt,3236,SG,5
+B (SFA 2022),räumlich geblockt,3237,SG,5
+B (SFA 2022),räumlich geblockt,3238,SG,5
+B (SFA 2022),räumlich geblockt,3251,SG,5
+B (SFA 2022),räumlich geblockt,3252,SG,5
+B (SFA 2022),räumlich geblockt,3253,SG,5
+B (SFA 2022),räumlich geblockt,3254,SG,5
+B (SFA 2022),räumlich geblockt,3255,SG,5
+B (SFA 2022),räumlich geblockt,3256,SG,5
+B (SFA 2022),räumlich geblockt,3271,SG,4
+B (SFA 2022),räumlich geblockt,3272,SG,4
+B (SFA 2022),räumlich geblockt,3273,SG,4
+B (SFA 2022),räumlich geblockt,3274,SG,5
+B (SFA 2022),räumlich geblockt,3275,SG,4
+B (SFA 2022),räumlich geblockt,3276,SG,4
+B (SFA 2022),räumlich geblockt,3291,SG,4
+B (SFA 2022),räumlich geblockt,3292,SG,4
+B (SFA 2022),räumlich geblockt,3293,SG,4
+B (SFA 2022),räumlich geblockt,3294,SG,4
+B (SFA 2022),räumlich geblockt,3295,SG,4
+B (SFA 2022),räumlich geblockt,3296,SG,4
+B (SFA 2022),räumlich geblockt,3297,SG,4
+B (SFA 2022),räumlich geblockt,3298,SG,4
+B (SFA 2022),räumlich geblockt,3311,SG,1
+B (SFA 2022),räumlich geblockt,3312,SG,1
+B (SFA 2022),räumlich geblockt,3313,SG,1
+B (SFA 2022),räumlich geblockt,3315,SG,1
+B (SFA 2022),räumlich geblockt,3316,SG,1
+B (SFA 2022),räumlich geblockt,3338,SG,1
+B (SFA 2022),räumlich geblockt,3339,SG,1
+B (SFA 2022),räumlich geblockt,3340,SG,1
+B (SFA 2022),räumlich geblockt,3341,SG,1
+B (SFA 2022),räumlich geblockt,3342,SG,1
+B (SFA 2022),räumlich geblockt,3352,SG,1
+B (SFA 2022),räumlich geblockt,3359,SG,4
+B (SFA 2022),räumlich geblockt,3360,SG,1
+B (SFA 2022),räumlich geblockt,3374,SG,2
+B (SFA 2022),räumlich geblockt,3379,SG,1
+B (SFA 2022),räumlich geblockt,3392,SG,2
+B (SFA 2022),räumlich geblockt,3393,SG,2
+B (SFA 2022),räumlich geblockt,3394,SG,2
+B (SFA 2022),räumlich geblockt,3395,SG,2
+B (SFA 2022),räumlich geblockt,3401,SG,2
+B (SFA 2022),räumlich geblockt,3402,SG,2
+B (SFA 2022),räumlich geblockt,3405,SG,2
+B (SFA 2022),räumlich geblockt,3407,SG,2
+B (SFA 2022),räumlich geblockt,3408,SG,2
+B (SFA 2022),räumlich geblockt,3422,SG,2
+B (SFA 2022),räumlich geblockt,3423,SG,2
+B (SFA 2022),räumlich geblockt,3424,SG,2
+B (SFA 2022),räumlich geblockt,3426,SG,2
+B (SFA 2022),räumlich geblockt,3441,SG,3
+B (SFA 2022),räumlich geblockt,3442,SG,3
+B (SFA 2022),räumlich geblockt,3443,SG,2
+B (SFA 2022),räumlich geblockt,3444,SG,3
+B (SFA 2022),räumlich geblockt,1201,UR,4
+B (SFA 2022),räumlich geblockt,1202,UR,2
+B (SFA 2022),räumlich geblockt,1203,UR,4
+B (SFA 2022),räumlich geblockt,1205,UR,4
+B (SFA 2022),räumlich geblockt,1206,UR,4
+B (SFA 2022),räumlich geblockt,1207,UR,3
+B (SFA 2022),räumlich geblockt,1208,UR,2
+B (SFA 2022),räumlich geblockt,1209,UR,2
+B (SFA 2022),räumlich geblockt,1210,UR,2
+B (SFA 2022),räumlich geblockt,1211,UR,3
+B (SFA 2022),räumlich geblockt,1212,UR,1
+B (SFA 2022),räumlich geblockt,1213,UR,4
+B (SFA 2022),räumlich geblockt,1214,UR,3
+B (SFA 2022),räumlich geblockt,1216,UR,4
+B (SFA 2022),räumlich geblockt,1217,UR,3
+B (SFA 2022),räumlich geblockt,1218,UR,5
+B (SFA 2022),räumlich geblockt,1219,UR,5
+B (SFA 2022),räumlich geblockt,1220,UR,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2761,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2762,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2763,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2764,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2765,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2766,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2767,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2768,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2770,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2771,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2772,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2773,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2774,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2775,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2781,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2782,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2783,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2784,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2785,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2786,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2787,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2788,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2789,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2790,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2791,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2792,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2793,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2821,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2822,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2823,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2824,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2825,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2826,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2827,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2828,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2829,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2830,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2831,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2832,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2833,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2834,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2841,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2842,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2843,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2844,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2845,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2846,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2847,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2848,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2849,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2850,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2851,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2852,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2853,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2854,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2855,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2856,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2857,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2858,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2859,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2860,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2861,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2862,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2863,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2864,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2865,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2866,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2867,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2868,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2869,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2881,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2882,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2883,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2884,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2885,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2886,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2887,BL,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2888,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2889,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2890,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2891,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2892,BL,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2893,BL,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2894,BL,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),2895,BL,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3201,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3202,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3203,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3204,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3211,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3212,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3213,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3214,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3215,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3216,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3217,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3218,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3219,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3231,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3232,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3233,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3234,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3235,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3236,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3237,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3238,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3251,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3252,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3253,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3254,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3255,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3256,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3271,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3272,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3273,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3274,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3275,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3276,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3291,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3292,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3293,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3294,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3295,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3296,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3297,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3298,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3311,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3312,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3313,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3315,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3316,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3338,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3339,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3340,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3341,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3342,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3352,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3359,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3360,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3374,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3379,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3392,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3393,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3394,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3395,SG,3
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3401,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3402,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3405,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3407,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3408,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3422,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3423,SG,2
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3424,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3426,SG,4
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3441,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3442,SG,5
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3443,SG,1
+B sekundär (Nettoschuld),gruppiert (Gemeinde),3444,SG,1

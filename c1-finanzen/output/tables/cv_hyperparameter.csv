@@ -1,0 +1,331 @@
+untersuchung,validierung,spezifikation,modell,fold,n_train,n_test,hyperparameter
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Nullmodell,1,1308,334,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,lm,1,1308,334,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Random Forest,1,1308,334,mtry=2; min.node.size=40; inner_MSE=61.84
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,GAM,1,1308,334,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,XGBoost,1,1308,334,eta=0.03; max_depth=2; nrounds=200; inner_MSE=59.63
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Nullmodell,1,1308,334,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,lm,1,1308,334,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Random Forest,1,1308,334,mtry=2; min.node.size=40; inner_MSE=61.17
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,GAM,1,1308,334,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,XGBoost,1,1308,334,eta=0.03; max_depth=2; nrounds=200; inner_MSE=59.61
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Nullmodell,2,1311,331,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,lm,2,1311,331,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Random Forest,2,1311,331,mtry=2; min.node.size=40; inner_MSE=65.12
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,GAM,2,1311,331,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,XGBoost,2,1311,331,eta=0.03; max_depth=2; nrounds=50; inner_MSE=63.80
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Nullmodell,2,1311,331,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,lm,2,1311,331,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Random Forest,2,1311,331,mtry=2; min.node.size=40; inner_MSE=65.95
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,GAM,2,1311,331,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,XGBoost,2,1311,331,eta=0.03; max_depth=3; nrounds=50; inner_MSE=64.22
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Nullmodell,3,1308,334,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,lm,3,1308,334,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Random Forest,3,1308,334,mtry=2; min.node.size=40; inner_MSE=73.19
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,GAM,3,1308,334,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,XGBoost,3,1308,334,eta=0.03; max_depth=2; nrounds=100; inner_MSE=71.52
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Nullmodell,3,1308,334,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,lm,3,1308,334,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Random Forest,3,1308,334,mtry=2; min.node.size=40; inner_MSE=73.03
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,GAM,3,1308,334,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,XGBoost,3,1308,334,eta=0.03; max_depth=2; nrounds=100; inner_MSE=72.18
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Nullmodell,4,1317,325,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,lm,4,1317,325,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Random Forest,4,1317,325,mtry=2; min.node.size=40; inner_MSE=58.77
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,GAM,4,1317,325,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,XGBoost,4,1317,325,eta=0.03; max_depth=2; nrounds=200; inner_MSE=57.97
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Nullmodell,4,1317,325,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,lm,4,1317,325,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Random Forest,4,1317,325,mtry=2; min.node.size=40; inner_MSE=60.16
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,GAM,4,1317,325,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,XGBoost,4,1317,325,eta=0.03; max_depth=2; nrounds=100; inner_MSE=58.76
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Nullmodell,5,1324,318,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,lm,5,1324,318,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,Random Forest,5,1324,318,mtry=2; min.node.size=40; inner_MSE=69.10
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,GAM,5,1324,318,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),basis,XGBoost,5,1324,318,eta=0.03; max_depth=2; nrounds=200; inner_MSE=67.79
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Nullmodell,5,1324,318,Mittelwert Training
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,lm,5,1324,318,OLS
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,Random Forest,5,1324,318,mtry=2; min.node.size=40; inner_MSE=69.14
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,GAM,5,1324,318,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,gruppiert (Gemeinde),erweitert,XGBoost,5,1324,318,eta=0.03; max_depth=3; nrounds=50; inner_MSE=68.01
+A: Bevölkerungswachstum,räumlich geblockt,basis,Nullmodell,1,1375,267,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,basis,lm,1,1375,267,OLS
+A: Bevölkerungswachstum,räumlich geblockt,basis,Random Forest,1,1375,267,mtry=2; min.node.size=40; inner_MSE=64.62
+A: Bevölkerungswachstum,räumlich geblockt,basis,GAM,1,1375,267,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,basis,XGBoost,1,1375,267,eta=0.03; max_depth=3; nrounds=50; inner_MSE=62.91
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Nullmodell,1,1375,267,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,lm,1,1375,267,OLS
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Random Forest,1,1375,267,mtry=2; min.node.size=40; inner_MSE=64.05
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,GAM,1,1375,267,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,XGBoost,1,1375,267,eta=0.03; max_depth=2; nrounds=100; inner_MSE=63.41
+A: Bevölkerungswachstum,räumlich geblockt,basis,Nullmodell,2,1345,297,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,basis,lm,2,1345,297,OLS
+A: Bevölkerungswachstum,räumlich geblockt,basis,Random Forest,2,1345,297,mtry=2; min.node.size=40; inner_MSE=67.22
+A: Bevölkerungswachstum,räumlich geblockt,basis,GAM,2,1345,297,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,basis,XGBoost,2,1345,297,eta=0.03; max_depth=2; nrounds=200; inner_MSE=65.68
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Nullmodell,2,1345,297,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,lm,2,1345,297,OLS
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Random Forest,2,1345,297,mtry=2; min.node.size=40; inner_MSE=67.38
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,GAM,2,1345,297,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,XGBoost,2,1345,297,eta=0.03; max_depth=3; nrounds=50; inner_MSE=66.01
+A: Bevölkerungswachstum,räumlich geblockt,basis,Nullmodell,3,1269,373,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,basis,lm,3,1269,373,OLS
+A: Bevölkerungswachstum,räumlich geblockt,basis,Random Forest,3,1269,373,mtry=2; min.node.size=40; inner_MSE=65.39
+A: Bevölkerungswachstum,räumlich geblockt,basis,GAM,3,1269,373,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,basis,XGBoost,3,1269,373,eta=0.03; max_depth=2; nrounds=400; inner_MSE=64.43
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Nullmodell,3,1269,373,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,lm,3,1269,373,OLS
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Random Forest,3,1269,373,mtry=2; min.node.size=40; inner_MSE=65.89
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,GAM,3,1269,373,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,XGBoost,3,1269,373,eta=0.10; max_depth=2; nrounds=50; inner_MSE=65.57
+A: Bevölkerungswachstum,räumlich geblockt,basis,Nullmodell,4,1313,329,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,basis,lm,4,1313,329,OLS
+A: Bevölkerungswachstum,räumlich geblockt,basis,Random Forest,4,1313,329,mtry=2; min.node.size=40; inner_MSE=65.53
+A: Bevölkerungswachstum,räumlich geblockt,basis,GAM,4,1313,329,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,basis,XGBoost,4,1313,329,eta=0.03; max_depth=2; nrounds=200; inner_MSE=64.42
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Nullmodell,4,1313,329,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,lm,4,1313,329,OLS
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Random Forest,4,1313,329,mtry=2; min.node.size=40; inner_MSE=66.17
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,GAM,4,1313,329,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,XGBoost,4,1313,329,eta=0.10; max_depth=2; nrounds=50; inner_MSE=65.71
+A: Bevölkerungswachstum,räumlich geblockt,basis,Nullmodell,5,1266,376,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,basis,lm,5,1266,376,OLS
+A: Bevölkerungswachstum,räumlich geblockt,basis,Random Forest,5,1266,376,mtry=2; min.node.size=40; inner_MSE=63.52
+A: Bevölkerungswachstum,räumlich geblockt,basis,GAM,5,1266,376,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,basis,XGBoost,5,1266,376,eta=0.03; max_depth=2; nrounds=400; inner_MSE=61.72
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Nullmodell,5,1266,376,Mittelwert Training
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,lm,5,1266,376,OLS
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,Random Forest,5,1266,376,mtry=2; min.node.size=40; inner_MSE=64.40
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,GAM,5,1266,376,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,räumlich geblockt,erweitert,XGBoost,5,1266,376,eta=0.03; max_depth=2; nrounds=100; inner_MSE=64.28
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,Nullmodell,2023,1111,177,Mittelwert Training
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,lm,2023,1111,177,OLS
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,Random Forest,2023,1111,177,mtry=2; min.node.size=40; inner_MSE=66.48
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,GAM,2023,1111,177,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,XGBoost,2023,1111,177,eta=0.03; max_depth=2; nrounds=50; inner_MSE=65.52
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,Nullmodell,2023,1111,177,Mittelwert Training
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,lm,2023,1111,177,OLS
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,Random Forest,2023,1111,177,mtry=2; min.node.size=40; inner_MSE=66.59
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,GAM,2023,1111,177,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,XGBoost,2023,1111,177,eta=0.03; max_depth=2; nrounds=50; inner_MSE=65.88
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,Nullmodell,2024,1288,177,Mittelwert Training
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,lm,2024,1288,177,OLS
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,Random Forest,2024,1288,177,mtry=2; min.node.size=40; inner_MSE=64.96
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,GAM,2024,1288,177,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,XGBoost,2024,1288,177,eta=0.03; max_depth=2; nrounds=50; inner_MSE=64.28
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,Nullmodell,2024,1288,177,Mittelwert Training
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,lm,2024,1288,177,OLS
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,Random Forest,2024,1288,177,mtry=2; min.node.size=40; inner_MSE=65.24
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,GAM,2024,1288,177,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,XGBoost,2024,1288,177,eta=0.03; max_depth=2; nrounds=50; inner_MSE=64.39
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,Nullmodell,2025,1465,177,Mittelwert Training
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,lm,2025,1465,177,OLS
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,Random Forest,2025,1465,177,mtry=2; min.node.size=40; inner_MSE=66.05
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,GAM,2025,1465,177,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,zeitlich vorwärts,basis,XGBoost,2025,1465,177,eta=0.03; max_depth=2; nrounds=100; inner_MSE=64.94
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,Nullmodell,2025,1465,177,Mittelwert Training
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,lm,2025,1465,177,OLS
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,Random Forest,2025,1465,177,mtry=2; min.node.size=40; inner_MSE=66.57
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,GAM,2025,1465,177,k=5; REML; select=TRUE
+A: Bevölkerungswachstum,zeitlich vorwärts,erweitert,XGBoost,2025,1465,177,eta=0.03; max_depth=2; nrounds=100; inner_MSE=65.44
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Nullmodell,1,140,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,lm,1,140,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Random Forest,1,140,36,mtry=2; min.node.size=12; inner_MSE=57.74
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,GAM,1,140,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,XGBoost,1,140,36,eta=0.03; max_depth=2; nrounds=50; inner_MSE=54.42
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Nullmodell,1,140,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,lm,1,140,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Random Forest,1,140,36,mtry=2; min.node.size=12; inner_MSE=57.07
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,GAM,1,140,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,XGBoost,1,140,36,eta=0.03; max_depth=2; nrounds=50; inner_MSE=53.55
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Nullmodell,2,140,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,lm,2,140,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Random Forest,2,140,36,mtry=2; min.node.size=12; inner_MSE=45.91
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,GAM,2,140,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,XGBoost,2,140,36,eta=0.03; max_depth=2; nrounds=50; inner_MSE=43.26
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Nullmodell,2,140,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,lm,2,140,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Random Forest,2,140,36,mtry=2; min.node.size=12; inner_MSE=48.46
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,GAM,2,140,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,XGBoost,2,140,36,eta=0.03; max_depth=2; nrounds=50; inner_MSE=45.09
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Nullmodell,3,140,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,lm,3,140,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Random Forest,3,140,36,mtry=2; min.node.size=12; inner_MSE=53.47
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,GAM,3,140,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,XGBoost,3,140,36,eta=0.03; max_depth=3; nrounds=50; inner_MSE=49.29
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Nullmodell,3,140,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,lm,3,140,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Random Forest,3,140,36,mtry=2; min.node.size=12; inner_MSE=54.73
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,GAM,3,140,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,XGBoost,3,140,36,eta=0.03; max_depth=3; nrounds=50; inner_MSE=49.92
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Nullmodell,4,142,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,lm,4,142,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Random Forest,4,142,34,mtry=2; min.node.size=6; inner_MSE=52.02
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,GAM,4,142,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,XGBoost,4,142,34,eta=0.10; max_depth=2; nrounds=50; inner_MSE=48.08
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Nullmodell,4,142,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,lm,4,142,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Random Forest,4,142,34,mtry=2; min.node.size=3; inner_MSE=50.14
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,GAM,4,142,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,XGBoost,4,142,34,eta=0.03; max_depth=2; nrounds=100; inner_MSE=47.92
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Nullmodell,5,142,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,lm,5,142,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,Random Forest,5,142,34,mtry=2; min.node.size=12; inner_MSE=57.66
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,GAM,5,142,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),basis,XGBoost,5,142,34,eta=0.03; max_depth=2; nrounds=50; inner_MSE=52.75
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Nullmodell,5,142,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,lm,5,142,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,Random Forest,5,142,34,mtry=2; min.node.size=12; inner_MSE=54.93
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,GAM,5,142,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),gruppiert (Gemeinde),erweitert,XGBoost,5,142,34,eta=0.03; max_depth=3; nrounds=50; inner_MSE=51.97
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Nullmodell,1,147,29,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,lm,1,147,29,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Random Forest,1,147,29,mtry=2; min.node.size=12; inner_MSE=47.80
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,GAM,1,147,29,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,XGBoost,1,147,29,eta=0.03; max_depth=2; nrounds=50; inner_MSE=45.65
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Nullmodell,1,147,29,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,lm,1,147,29,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Random Forest,1,147,29,mtry=2; min.node.size=12; inner_MSE=47.87
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,GAM,1,147,29,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,XGBoost,1,147,29,eta=0.03; max_depth=3; nrounds=50; inner_MSE=44.38
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Nullmodell,2,144,32,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,lm,2,144,32,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Random Forest,2,144,32,mtry=2; min.node.size=12; inner_MSE=56.95
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,GAM,2,144,32,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,XGBoost,2,144,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=53.28
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Nullmodell,2,144,32,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,lm,2,144,32,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Random Forest,2,144,32,mtry=3; min.node.size=12; inner_MSE=55.72
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,GAM,2,144,32,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,XGBoost,2,144,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=53.33
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Nullmodell,3,136,40,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,lm,3,136,40,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Random Forest,3,136,40,mtry=2; min.node.size=12; inner_MSE=53.66
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,GAM,3,136,40,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,XGBoost,3,136,40,eta=0.03; max_depth=2; nrounds=50; inner_MSE=50.67
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Nullmodell,3,136,40,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,lm,3,136,40,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Random Forest,3,136,40,mtry=2; min.node.size=12; inner_MSE=49.75
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,GAM,3,136,40,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,XGBoost,3,136,40,eta=0.03; max_depth=2; nrounds=50; inner_MSE=48.21
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Nullmodell,4,141,35,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,lm,4,141,35,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Random Forest,4,141,35,mtry=3; min.node.size=3; inner_MSE=46.14
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,GAM,4,141,35,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,XGBoost,4,141,35,eta=0.03; max_depth=2; nrounds=50; inner_MSE=43.87
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Nullmodell,4,141,35,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,lm,4,141,35,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Random Forest,4,141,35,mtry=2; min.node.size=12; inner_MSE=45.47
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,GAM,4,141,35,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,XGBoost,4,141,35,eta=0.03; max_depth=2; nrounds=50; inner_MSE=43.00
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Nullmodell,5,136,40,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,lm,5,136,40,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,Random Forest,5,136,40,mtry=2; min.node.size=3; inner_MSE=55.57
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,GAM,5,136,40,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,basis,XGBoost,5,136,40,eta=0.03; max_depth=2; nrounds=50; inner_MSE=52.84
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Nullmodell,5,136,40,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,lm,5,136,40,OLS
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,Random Forest,5,136,40,mtry=2; min.node.size=12; inner_MSE=55.33
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,GAM,5,136,40,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),räumlich geblockt,erweitert,XGBoost,5,136,40,eta=0.03; max_depth=2; nrounds=100; inner_MSE=51.81
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Nullmodell,1,139,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,lm,1,139,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Random Forest,1,139,36,mtry=2; min.node.size=12; inner_MSE=33.37
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,GAM,1,139,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,XGBoost,1,139,36,eta=0.03; max_depth=3; nrounds=50; inner_MSE=33.75
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Nullmodell,1,139,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,lm,1,139,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Random Forest,1,139,36,mtry=2; min.node.size=12; inner_MSE=33.22
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,GAM,1,139,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,XGBoost,1,139,36,eta=0.03; max_depth=3; nrounds=50; inner_MSE=33.67
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Nullmodell,2,139,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,lm,2,139,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Random Forest,2,139,36,mtry=2; min.node.size=3; inner_MSE=31.73
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,GAM,2,139,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,XGBoost,2,139,36,eta=0.03; max_depth=2; nrounds=50; inner_MSE=31.08
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Nullmodell,2,139,36,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,lm,2,139,36,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Random Forest,2,139,36,mtry=2; min.node.size=12; inner_MSE=31.92
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,GAM,2,139,36,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,XGBoost,2,139,36,eta=0.03; max_depth=3; nrounds=50; inner_MSE=30.96
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Nullmodell,3,140,35,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,lm,3,140,35,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Random Forest,3,140,35,mtry=2; min.node.size=12; inner_MSE=32.27
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,GAM,3,140,35,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,XGBoost,3,140,35,eta=0.03; max_depth=2; nrounds=50; inner_MSE=32.05
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Nullmodell,3,140,35,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,lm,3,140,35,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Random Forest,3,140,35,mtry=2; min.node.size=12; inner_MSE=33.36
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,GAM,3,140,35,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,XGBoost,3,140,35,eta=0.03; max_depth=2; nrounds=50; inner_MSE=32.85
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Nullmodell,4,141,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,lm,4,141,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Random Forest,4,141,34,mtry=2; min.node.size=3; inner_MSE=32.77
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,GAM,4,141,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,XGBoost,4,141,34,eta=0.03; max_depth=2; nrounds=100; inner_MSE=32.18
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Nullmodell,4,141,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,lm,4,141,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Random Forest,4,141,34,mtry=2; min.node.size=6; inner_MSE=32.78
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,GAM,4,141,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,XGBoost,4,141,34,eta=0.03; max_depth=3; nrounds=200; inner_MSE=31.96
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Nullmodell,5,141,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,lm,5,141,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,Random Forest,5,141,34,mtry=2; min.node.size=3; inner_MSE=35.88
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,GAM,5,141,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",basis,XGBoost,5,141,34,eta=0.03; max_depth=2; nrounds=50; inner_MSE=32.50
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Nullmodell,5,141,34,Mittelwert Training
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,lm,5,141,34,OLS
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,Random Forest,5,141,34,mtry=2; min.node.size=6; inner_MSE=35.24
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,GAM,5,141,34,k=4; REML; select=TRUE
+B: Bauzonenbeanspruchung (SFA 2022),"gruppiert (Gemeinde), SFA-Mittel 2021-23",erweitert,XGBoost,5,141,34,eta=0.03; max_depth=2; nrounds=50; inner_MSE=32.41
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Nullmodell,1,126,32,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,lm,1,126,32,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Random Forest,1,126,32,mtry=2; min.node.size=12; inner_MSE=13290500.56
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,GAM,1,126,32,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,XGBoost,1,126,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=11663187.45
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Nullmodell,1,126,32,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,lm,1,126,32,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Random Forest,1,126,32,mtry=2; min.node.size=12; inner_MSE=12884383.25
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,GAM,1,126,32,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,XGBoost,1,126,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=11264735.56
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Nullmodell,2,126,32,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,lm,2,126,32,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Random Forest,2,126,32,mtry=2; min.node.size=12; inner_MSE=11054278.51
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,GAM,2,126,32,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,XGBoost,2,126,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=11141753.15
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Nullmodell,2,126,32,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,lm,2,126,32,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Random Forest,2,126,32,mtry=2; min.node.size=12; inner_MSE=11753209.27
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,GAM,2,126,32,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,XGBoost,2,126,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=11762115.49
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Nullmodell,3,126,32,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,lm,3,126,32,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Random Forest,3,126,32,mtry=2; min.node.size=12; inner_MSE=13092345.81
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,GAM,3,126,32,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,XGBoost,3,126,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=12154374.29
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Nullmodell,3,126,32,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,lm,3,126,32,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Random Forest,3,126,32,mtry=2; min.node.size=12; inner_MSE=13420289.15
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,GAM,3,126,32,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,XGBoost,3,126,32,eta=0.03; max_depth=2; nrounds=50; inner_MSE=12459348.59
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Nullmodell,4,127,31,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,lm,4,127,31,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Random Forest,4,127,31,mtry=2; min.node.size=6; inner_MSE=10913545.52
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,GAM,4,127,31,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,XGBoost,4,127,31,eta=0.03; max_depth=2; nrounds=50; inner_MSE=10697172.56
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Nullmodell,4,127,31,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,lm,4,127,31,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Random Forest,4,127,31,mtry=2; min.node.size=3; inner_MSE=11280185.72
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,GAM,4,127,31,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,XGBoost,4,127,31,eta=0.03; max_depth=2; nrounds=50; inner_MSE=10948905.69
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Nullmodell,5,127,31,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,lm,5,127,31,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,Random Forest,5,127,31,mtry=2; min.node.size=12; inner_MSE=12200930.91
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,GAM,5,127,31,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",basis,XGBoost,5,127,31,eta=0.03; max_depth=2; nrounds=50; inner_MSE=11604339.29
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Nullmodell,5,127,31,Mittelwert Training
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,lm,5,127,31,OLS
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,Random Forest,5,127,31,mtry=2; min.node.size=12; inner_MSE=11744251.95
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,GAM,5,127,31,k=4; REML; select=TRUE
+B sekundär: Nettoschuld je EW,"gruppiert (Gemeinde), Nettoschuld je EW",erweitert,XGBoost,5,127,31,eta=0.03; max_depth=2; nrounds=50; inner_MSE=11423355.24

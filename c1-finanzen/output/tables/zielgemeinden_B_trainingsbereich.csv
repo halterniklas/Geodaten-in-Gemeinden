@@ -1,0 +1,4 @@
+ziel_label,bfs_nr,mahalanobis_d2,mahalanobis_schwelle_97_5,in_min_max_bauzone_m2_je_ew,in_5_95_bauzone_m2_je_ew,in_min_max_log_pop,in_5_95_log_pop,in_min_max_anteil_u20,in_5_95_anteil_u20,in_min_max_anteil_65p,in_5_95_anteil_65p,in_min_max_wachstum5,in_5_95_wachstum5,alle_in_min_max,bewertung
+Seelisberg UR,1215,9.108211409354922,17.700627938003958,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,"im Trainingsbereich, aber am Rand (ausserhalb 5–95 %)"
+Münchenstein BL,2769,3.5641991003629796,17.700627938003958,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,im Trainingsbereich
+Wil SG,3427,4.515929714721655,17.700627938003958,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,"im Trainingsbereich, aber am Rand (ausserhalb 5–95 %)"

@@ -1,0 +1,253 @@
+---
+title: "C1 – Finanzielle Ausgangslage und Tragfähigkeit von Gemeinden"
+subtitle: "Bevölkerungswachstum, Bauzonenbeanspruchung und Selbstfinanzierungsanteil in SG, BL und UR"
+lang: de
+format:
+  html:
+    toc: true
+    toc-title: "Inhalt"
+    number-sections: true
+    embed-resources: true
+    theme: cosmo
+    fig-width: 8
+    fig-height: 5
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+suppressPackageStartupMessages({library(dplyr); library(readr); library(knitr)})
+root <- normalizePath("..")
+tab <- function(n) read_csv(file.path(root, "output/tables", paste0(n, ".csv")), show_col_types = FALSE)
+fig <- function(n) file.path(root, "output/figures", n)
+f1 <- function(x, d = 2) formatC(x, format = "f", digits = d, decimal.mark = ",", big.mark = "’")
+fp <- function(p) ifelse(p < 0.001, "< 0,001", f1(p, 3))
+
+cvz  <- tab("cv_zusammenfassung")
+inkr <- tab("cv_inkrement_bootstrap")
+lmA  <- tab("inferenz_A_lm_gepoolt")
+fe   <- tab("inferenz_A_panel_fixed_effects")
+gamA <- tab("inferenz_A_gam")
+lmB  <- tab("inferenz_B_lm_gepoolt")
+gamB <- tab("inferenz_B_gam")
+mA   <- tab("diagnostik_A_moran"); mB <- tab("diagnostik_B_moran")
+bpA  <- tab("diagnostik_A_breusch_pagan")
+zu   <- tab("zielgemeinden_uebersicht")
+zb   <- tab("zielgemeinden_B_einordnung")
+dep  <- tab("inventur_finanzabdeckung_kanton")
+
+cv_get <- function(unt, val, spez, mod, col)
+  cvz[[col]][startsWith(cvz$untersuchung, unt) & cvz$validierung == val & cvz$spezifikation == spez & cvz$modell == mod][1]
+ink_get <- function(unt, val, mod, col)
+  inkr[[col]][startsWith(inkr$untersuchung, unt) & inkr$validierung == val & inkr$modell == mod][1]
+
+wA <- lmA |> filter(modell == "A Basis + Wachstum (gepoolt)", term == "wachstum5")
+feA <- fe |> filter(term == "wachstum5")
+bz <- lmB |> filter(term == "bauzone_m2_je_ew")
+```
+
+# Zusammenfassung
+
+**Frage.** Erklärt das Bevölkerungswachstum (A) bzw. die Bauzonenbeanspruchung (B) den Selbstfinanzierungsanteil (SFA) von Gemeinden – über das hinaus, was Grösse, Altersstruktur, Kanton (und Jahr) ohnehin erklären? Der Bericht ist **prädiktiv und beschreibend, nicht kausal**.
+
+**Ergebnis in Kürze.**
+
+- **Datenbasis:** `r sum(dep$gemeindejahre)` Gemeindejahre mit Finanzdaten aus drei Kantonen vor dem Modellfilter (modellfähig: SG ab 2019, BL ab 2015, UR ab 2014). Das Analysepanel für A umfasst `r cv_get("A", "gruppiert (Gemeinde)", "basis", "lm", "n_oof")` Gemeindejahre; die Bauzonen-Querschnittsanalyse B (Stand 2022) `r cv_get("B:", "gruppiert (Gemeinde)", "basis", "lm", "n_oof")` Gemeinden.
+- **A (Wachstum):** Der Koeffizient von `wachstum5` ist klein und statistisch nicht von null unterscheidbar (lm: `r f1(wA$schaetzer)` Prozentpunkte SFA je Prozentpunkt Wachstum, 95 %-KI [`r f1(wA$ci_lo)`; `r f1(wA$ci_hi)`], p = `r fp(wA$p_wert)`; Panel mit Gemeinde- und Jahreseffekten: p = `r fp(feA$p_wert)`). Die Aufnahme von Wachstum verbessert den out-of-fold-Fehler **nicht** (lm, gruppierte CV: ΔMSE = `r f1(ink_get("A", "gruppiert (Gemeinde)", "lm", "delta_mse"), 2)`, wobei positiv = Verbesserung).
+- **B (Bauzonen):** Bauzonenfläche je Einwohner hat im linearen Modell keinen signifikanten Zusammenhang mit dem SFA (Koeffizient `r f1(bz$schaetzer[1], 4)`, p = `r fp(bz$p_wert[1])`). Das GAM zeigt einen schwachen nichtlinearen Hinweis (Glättungsterm p = `r fp(gamB$p_wert[gamB$term == "s(bauzone_m2_je_ew)"])`), der in der Kreuzvalidierung aber nicht robust ist (Bootstrap-KI für ΔMSE schliesst 0 ein).
+- **Vorhersagegüte insgesamt gering:** Out-of-fold-R² liegt für den SFA bei höchstens rund `r f1(100*cv_get("A", "gruppiert (Gemeinde)", "basis", "lm", "r2_oof_gesamt"), 0)` % (A) bzw. nahe null (B). Der SFA ist mit den verfügbaren Strukturvariablen kaum vorhersagbar; die stärksten Muster sind Jahreseffekte (z. B. Rechnungsjahr 2016 und 2024 mit tieferen Werten) und Unterschiede zwischen Kantonen.
+- **Räumliche Autokorrelation** der Residuen ist nicht nachweisbar (Moran’s I A: `r f1(mA$morans_i, 3)`, p = `r f1(mA$p_permutation)`; B: `r f1(mB$morans_i, 3)`, p = `r f1(mB$p_permutation)`).
+- **Zielgemeinden:** Wil SG und Münchenstein BL liegen nahe an den Modellvorhersagen; **Seelisberg UR** weicht stark nach oben ab (SFA 2025 = 41,6 % gegenüber ~10 % vorhergesagt) und ist ein Ausreisser, den die Modelle nicht erklären.
+
+# Fragestellung und Abgrenzung
+
+Dies ist die Ebene **C1** (finanzielle Ausgangslage und Tragfähigkeit) einer räumlichen Gemeindestrategie. Untersucht werden zwei Fragen:
+
+- **A:** Erklärt das fünfjährige Bevölkerungswachstum `100·((Pop_t/Pop_{t-5})^(1/5) − 1)` den SFA? Kontrollen: log. Einwohnerzahl, Anteil unter 20, Anteil 65 und älter, Kanton, Jahr.
+- **B:** Hängt die Bauzonenfläche je Einwohner (ARE-Bauzonenstatistik 2022) mit dem SFA zusammen? Sekundäre Zielgrösse: Nettoschuld je Einwohner (nur SG und BL, separat modelliert).
+
+**Abgrenzung.** Alle Aussagen sind **Assoziationen** innerhalb des beobachteten Datenbereichs. Kausale Effekte (z. B. «mehr Wachstum führt zu höherem SFA») werden nicht geschätzt: Es fehlen Instrumente bzw. ein Design, und wichtige Einflussgrössen (Steuerfuss, Investitionszyklen, Einmaleffekte, Finanzausgleich) sind nicht einheitlich verfügbar.
+
+**Zielgemeinden** (Wil SG, 3427; Münchenstein BL, 2769; Seelisberg UR, 1215) werden von Training, Tuning und Validierung **vollständig ausgeschlossen** und nur als Anwendungsfälle ausgewertet.
+
+# Dateninventur
+
+Die Dateninventur steht vor jeder Modellierung (`output/tables/inventur_*.csv`, `data/raw/quellenprotokoll.csv` mit Abrufdatum und Prüfsumme). Es wurden **keine Werte erfunden und keine stillen Ersatzgrössen** verwendet.
+
+```{r inv}
+kable(dep, col.names = c("Kanton", "Gemeinden", "Jahr von", "Jahr bis", "Gemeindejahre", "SFA", "Nettoschuld", "Steuergrösse"),
+      caption = "Abdeckung der Finanzdaten je Kanton (vor Modellfilter)")
+```
+
+| Variable | Quelle | Bemerkung |
+|---|---|---|
+| Bevölkerung, Altersgruppen | BFS STATPOP (PxWeb `px-x-0102010000_101`) | Gebietsstand 2025 rückwirkend |
+| SG: SFA | Kanton SG, RMSG-Kennzahlen | ab 2019 vollständig |
+| BL: SFA, Nettoschuld | data.bl.ch (Datensätze 10640/10650) | aus HRM2-Konten nach Finanzhandbuch BL berechnet |
+| UR: SFA | Finanzkontrolle UR, Gemeindefinanzstatistik (PDF) | ab 2014; nur Nettoschuld II |
+| Bauzonen | ARE Bauzonenstatistik 2022 | Gebietsstand 1.1.2022 |
+| Gemeindegrenzen, Zentroide | BFS gg25 | Verknüpfung über BFS-Nummer |
+
+Methodische Brüche und Einschränkungen sind in `inventur_methodische_brueche.csv` dokumentiert; die wichtigsten:
+
+```{r brueche}
+b <- tab("inventur_methodische_brueche")
+kable(b[, c("kanton", "thema", "behandlung")], col.names = c("Kanton", "Thema", "Behandlung"))
+```
+
+**Nicht verfügbar** (und deshalb nicht verwendet): ein einheitlicher Steuerkraftindex über alle drei Kantone, Fiskalertrag je Gemeinde für UR, eine Luucy-Datenabfrage sowie die Bauzonenstatistik 2012/2017 im Gebietsstand der Finanzdaten für eine Zeitreihenanalyse. Die Bauzonenanalyse ist daher bewusst ein **konsistenter Querschnitt 2022**. Die Seiten baselland.ch und statistik.bl.ch sind durch einen Bot-Schutz geschützt; dieser wurde nicht umgangen, die BL-Daten stammen vollständig aus dem offenen Portal data.bl.ch.
+
+# Methodik
+
+**Verknüpfung.** Alle Daten über BFS-Gemeindenummer und Jahr; Gebietsstand 2025. Fusionierte Gemeinden ohne Gebietsstand-Entsprechung (Hemberg, Oberhelfenschwil, Bauen u. a.) sind ausgeschlossen (`inventur_nicht_verknuepfte_gemeinden.csv`).
+
+**Modelle** (identische Folds): Nullmodell (Trainingsmittel), lineares Modell, Random Forest (`ranger`), GAM (`mgcv`, REML mit Selektionsstrafe) und `xgboost`. Hyperparameter werden nur auf den Trainingsdaten der jeweiligen äusseren Falte getunt (innere gruppierte 3-fach-CV).
+
+**Validierung (geschachtelt).**
+
+- Äussere **5-fach-CV, gruppiert nach Gemeinde**: Alle Jahre einer Gemeinde liegen im selben Fold (kein Leck zwischen Gemeindejahren).
+- **Räumlich geblockte CV:** Blöcke aus k-means der LV95-Zentroide je Kanton.
+- **Zeitlich vorwärts:** expandierendes Fenster, Testjahre 2023–2025.
+- Vorverarbeitung (Skalierung, Dummy-Kodierung) wird je Fold nur auf den Trainingsdaten angepasst.
+
+**Metriken:** R² = 1 − SSE/SST (relativ zum Mittel der Testfalte, **darf negativ sein**), RMSE, MAE, MSE; zusätzlich der Skill relativ zum Nullmodell. Der Zusatznutzen einer Variable (erweitert vs. Basis) wird mit einem Cluster-Bootstrap über Gemeinden (B = 2000) auf ΔMSE beurteilt.
+
+**Inferenz:** lm mit Kanton- und Jahreseffekten und **clusterrobusten Standardfehlern** (Gemeinde, HC1, df = G − 1); im Querschnitt HC3. Panel-Modell mit Gemeinde- und Jahreseffekten. Für das GAM werden approximative p-Werte der Glättungsterme berichtet. **Für Random Forest und XGBoost werden keine p-Werte angegeben.**
+
+**Diagnostik:** Residuen, Breusch–Pagan, VIF, Moran’s I (kNN, k = 5, Permutationstest).
+
+**MaxEnt – geprüft und ausgeschlossen.** MaxEnt ist ein Presence-Background-Verfahren für Vorkommensdaten. Der SFA ist eine kontinuierliche Messgrösse ohne Präsenz/Absenz und ohne Hintergrundstichprobe; eine Umformulierung würde die Frage ändern und keine interpretierbaren Wahrscheinlichkeiten liefern.
+
+**Klassifikation.** Auf Wunsch wurde keine Klassifikation gerechnet. **AUC, Kappa und MaxKappa sind deshalb nicht anwendbar.** Als parametrische Referenz für eine allfällige binäre Fragestellung (z. B. «SFA ≥ 100 %») wäre eine logistische Regression der natürliche Ausgangspunkt.
+
+# Deskriptive Befunde
+
+![Karte der Untersuchungsgemeinden (Zielgemeinden hervorgehoben).](`r fig("karte_1.png")`)
+
+![SFA im Zeitverlauf: Median und Streuung je Kanton.](`r fig("zeitreihe_sfa.png")`)
+
+Der SFA schwankt stark zwischen Gemeinden und Jahren (Standardabweichung ca. 8 Prozentpunkte im Panel). Gemeinsame Jahresausschläge (etwa 2016 und 2024) deuten auf kantonsweite Effekte wie Rechnungsumstellungen, Ausgleichszahlungen oder Konjunktur hin; diese werden mit Jahreseffekten kontrolliert, aber nicht erklärt.
+
+# Untersuchung A: Bevölkerungswachstum und SFA
+
+![SFA gegen fünfjähriges Bevölkerungswachstum.](`r fig("streu_A_wachstum_sfa.png")`)
+
+```{r A_cv}
+x <- cvz |> filter(startsWith(untersuchung, "A"), modell %in% c("Nullmodell", "lm", "GAM", "Random Forest", "XGBoost"))
+x |> transmute(Validierung = validierung, Spezifikation = spezifikation, Modell = modell,
+               `R² (Mittel)` = f1(r2_mittel, 3), RMSE = f1(rmse_mittel), MAE = f1(mae_mittel), MSE = f1(mse_mittel),
+               `Skill vs. Null` = f1(skill_vs_null, 3)) |>
+  kable(caption = "A: Out-of-fold-Güte (Mittel über Folds); n = Gemeindejahre im Analysepanel")
+```
+
+![Modellvergleich (RMSE).](`r fig("modellvergleich_rmse.png")`)
+
+**Lesart.** Die Modelle erreichen allenfalls einen R² von wenigen Prozent und schlagen das Nullmodell nur knapp. Das lineare Basismodell ist so gut wie die flexiblen Verfahren; Random Forest und XGBoost bieten keinen Vorteil. In der zeitlich vorwärts gerichteten Validierung ist das Nullmodell schlechter (R² < 0), weil sich das Niveau der Testjahre vom Trainingsmittel unterscheidet; dort helfen Kantons- und Strukturvariablen etwas.
+
+```{r A_ink}
+inkr |> filter(startsWith(untersuchung, "A"), modell != "Nullmodell") |>
+  transmute(Validierung = validierung, Modell = modell, `ΔMSE` = f1(delta_mse, 3), `KI untere` = f1(ci_lo, 3),
+            `KI obere` = f1(ci_hi, 3), `Anteil Bootstrap > 0` = f1(anteil_bootstrap_positiv, 2)) |>
+  kable(caption = "A: Zusatznutzen von Wachstum (ΔMSE = MSE Basis − MSE erweitert; positiv = Wachstum verbessert die Vorhersage)")
+```
+
+**Inferenz.** Im gepoolten lm mit clusterrobusten Standardfehlern beträgt der Koeffizient von `wachstum5` `r f1(wA$schaetzer)` (95 %-KI [`r f1(wA$ci_lo)`; `r f1(wA$ci_hi)`], p = `r fp(wA$p_wert)`). Im Panel mit Gemeinde- und Jahreseffekten (within-Variation) ist er `r f1(feA$schaetzer)` (p = `r fp(feA$p_wert)`; Zuwachs an R² within: `r f1(feA$r2_within_zuwachs_ueber_basis, 4)`). Im GAM ist der Glättungsterm von Wachstum nicht signifikant (p = `r fp(gamA$p_wert[gamA$term == "s(wachstum5)"])`).
+
+![GAM-Effekte (A).](`r fig("gam_effekte_A.png")`)
+
+![PDP und ALE für das Wachstum (A).](`r fig("pdp_ale_A_wachstum.png")`)
+
+**Diagnostik.** Der Breusch–Pagan-Test zeigt deutliche Heteroskedastizität (p `r fp(bpA$p_wert)`), weshalb robuste Standardfehler verwendet werden. VIF-Werte liegen unter 3 (keine problematische Kollinearität). Moran’s I der gemeindeweise gemittelten Residuen: `r f1(mA$morans_i, 3)` (p = `r f1(mA$p_permutation)`).
+
+![Residuen gegen angepasste Werte.](`r fig("residuen_fitted.png")`)
+
+**Fazit A.** Es gibt **keinen belastbaren Hinweis**, dass Bevölkerungswachstum den SFA über die Kontrollvariablen hinaus erklärt – weder prädiktiv noch inferenziell. Der signifikante negative Koeffizient des Anteils unter 20 Jahren (lm: p `r fp(lmA$p_wert[lmA$modell == "A Basis (gepoolt)" & lmA$term == "anteil_u20"])`) ist ein Hinweis auf höhere laufende Belastungen in Gemeinden mit vielen Kindern (Schule), aber keine Kausalaussage.
+
+# Untersuchung B: Bauzonenbeanspruchung und SFA
+
+![SFA gegen Bauzonenfläche je Einwohner (2022).](`r fig("streu_B_bauzonen_sfa.png")`)
+
+```{r B_cv}
+cvz |> filter(startsWith(untersuchung, "B:"), modell %in% c("Nullmodell", "lm", "GAM", "Random Forest", "XGBoost")) |>
+  transmute(Validierung = validierung, Spezifikation = spezifikation, Modell = modell,
+            `R² (Mittel)` = f1(r2_mittel, 3), RMSE = f1(rmse_mittel), MAE = f1(mae_mittel), MSE = f1(mse_mittel),
+            `Skill vs. Null` = f1(skill_vs_null, 3)) |>
+  kable(caption = "B: Out-of-fold-Güte (SFA 2022 und Robustheit mit SFA-Mittel 2021–23)")
+```
+
+Bei nur `r cv_get("B:", "gruppiert (Gemeinde)", "basis", "lm", "n_oof")` Gemeinden sind alle Modelle im Mittel kaum besser als das Nullmodell; viele R²-Werte sind negativ. Der Zusatznutzen der Bauzonenvariable ist unsicher:
+
+```{r B_ink}
+inkr |> filter(startsWith(untersuchung, "B"), modell != "Nullmodell") |>
+  transmute(Untersuchung = ifelse(grepl("sekundär", untersuchung), "Nettoschuld", "SFA"), Validierung = validierung, Modell = modell,
+            `ΔMSE` = f1(delta_mse, 3), `KI untere` = f1(ci_lo, 3), `KI obere` = f1(ci_hi, 3)) |>
+  kable(caption = "B: Zusatznutzen der Bauzonenfläche je Einwohner (positiv = Verbesserung)")
+```
+
+**Inferenz.** lm (HC3): Koeffizient der Bauzonenfläche je Einwohner `r f1(bz$schaetzer[1], 4)` (95 %-KI [`r f1(bz$ci_lo[1], 4)`; `r f1(bz$ci_hi[1], 4)`], p = `r fp(bz$p_wert[1])`). GAM: schwacher nichtlinearer Hinweis (p = `r fp(gamB$p_wert[gamB$term == "s(bauzone_m2_je_ew)"])`, edf = `r f1(gamB$edf[gamB$term == "s(bauzone_m2_je_ew)"])`), dessen Form von wenigen Gemeinden mit sehr grossen Bauzonen getragen wird. Bei der **Nettoschuld je Einwohner** (SG, BL) ist die Bauzonenfläche ebenfalls nicht signifikant.
+
+![GAM-Effekte (B).](`r fig("gam_effekte_B.png")`)
+
+![PDP und ALE für Bauzonenfläche je Einwohner (B).](`r fig("pdp_ale_B_bauzonen.png")`)
+
+**Fazit B.** Ein stabiler Zusammenhang zwischen Bauzonenbeanspruchung und SFA lässt sich mit diesem Datensatz **nicht belegen**. Ein Mangel an Evidenz ist nicht der Beleg für Abwesenheit: Die Stichprobe ist klein, nur ein Jahr, die Bauzonenstatistik und die Finanzdaten stammen aus verschiedenen Quellen und Definitionen.
+
+# Anwendung auf die Zielgemeinden
+
+```{r ziel}
+zu |> filter(modell %in% c("lm", "GAM", "Random Forest", "XGBoost")) |>
+  transmute(Fall = untersuchung, Gemeinde = ziel_label, Modell = modell, Beobachtet = f1(beobachtet, 1),
+            Vorhersage = f1(vorhersage, 1), Residuum = f1(residuum, 1)) |>
+  kable(caption = "Zielgemeinden: Beobachtung und Vorhersage (Modelle ohne die Zielgemeinden trainiert)")
+```
+
+```{r ziel_b}
+zb |> transmute(Gemeinde = ziel_label, `Bauzonen m²/EW` = f1(bauzone_m2_je_ew, 0), `Perzentil Bauzonen (Kanton)` = f1(perz_bauzonen_kanton, 0),
+                `SFA 2022` = f1(sfa_2022, 1), `Perzentil SFA (Kanton)` = f1(perz_sfa_kanton, 0)) |>
+  kable(caption = "Einordnung der Zielgemeinden im kantonalen Vergleich (2022)")
+```
+
+- **Wil SG:** Vorhersagen nahe der Beobachtung. Die Gemeinde liegt in der Grösse (log. Einwohnerzahl) am Rand des Trainingsbereichs (ausserhalb 5–95 %, innerhalb Min–Max); die Vorhersagen sind daher etwas weniger verlässlich.
+- **Münchenstein BL:** tiefer SFA 2025 (2,4 %) als vorhergesagt (ca. 5–6 %); die Beobachtung liegt aber innerhalb des 95 %-Prognoseintervalls. Mittlere Bauzonenbeanspruchung (ca. 31. Perzentil in BL).
+- **Seelisberg UR:** SFA 2025 von 41,6 % (2022: 21,3 %) liegt weit über allen Vorhersagen; auch das Prognoseintervall wird verfehlt. Die Gemeinde hat sehr grosse Bauzonen je Einwohner (ca. 89. Perzentil in UR) und einen ausserhalb von 5–95 % liegenden Altersaufbau; mit 18 Vergleichsgemeinden in UR ist die Einordnung schwach abgestützt. **Der Ausreisser ist durch Modelle nicht erklärbar** und dürfte auf Einmal- oder Sondereffekte zurückgehen, die in den Daten nicht sichtbar sind.
+
+# Bedeutung für die Gemeindestrategie
+
+**Was sich aus den Ergebnissen ableiten lässt**
+
+- Wachstum und Bauzonenbeanspruchung sind **für sich genommen keine verlässlichen Frühindikatoren** für die Selbstfinanzierung. Eine Strategie sollte sich nicht auf die Annahme stützen, Wachstum «bezahle sich» in der Gemeinderechnung.
+- Der SFA ist stark von kantonsweiten Jahreseffekten und Gemeindespezifika geprägt; ein Vergleich über Jahre ist ohne Normierung (Kanton, Jahr) wenig aussagekräftig.
+- Die Einordnung einer Gemeinde im kantonalen Perzentilvergleich (Tabelle oben) ist als Orientierung brauchbar.
+
+**Was sich nicht ableiten lässt**
+
+- Keine kausalen Aussagen: weder «Wachstum erhöht den SFA» noch «Bauzonenreserven belasten die Finanzen».
+- Keine Prognose für einzelne Gemeinden mit hoher Sicherheit; die Prognoseintervalle sind breit (rund ±15 Prozentpunkte).
+- Keine Aussage zu Gemeinden ausserhalb SG/BL/UR oder ausserhalb des beobachteten Wertebereichs.
+
+# Grenzen und Hindernisse
+
+- **Zeitfenster und Brüche:** SG erst ab 2019; mögliche Definitionsänderung des SFA in SG (Version 1.2 der RMSG-Kennzahlen); Rechnungsumstellung UR.
+- **Datenzugang:** baselland.ch/statistik.bl.ch durch Bot-Schutz nicht erreichbar (nicht umgangen); SG-Detailberechnungen (PDF) unlesbar – XLSX verwendet; keine Luucy-Abfrage.
+- **Fehlende Variablen:** kein einheitlicher Steuerkraftindex; für UR keine Steuerkraft und nur Nettoschuld II; deshalb Nettoschuld ohne UR und Steuer nur in kantonalen Sensitivitätsmodellen.
+- **Querschnitt B:** nur Bauzonen 2022, kleine Fallzahl, Gebietsstand-Differenzen (Fusionen ausgeschlossen).
+- **Bevölkerung rückwirkend im Gebietsstand 2025:** Wachstum fusionierter Gemeinden ist ein Konstrukt.
+- **Heteroskedastizität und Ausreisser** (v. a. Seelisberg) beeinflussen RMSE/R²; die Ergebnisse sind deshalb nicht robust gegen einzelne Gemeinden.
+- **Nicht angewendet:** Klassifikation (AUC/Kappa/MaxKappa nicht anwendbar), MaxEnt (ausgeschlossen, s. o.).
+- **Multiples Testen:** Es werden viele Modelle und Validierungsvarianten berichtet; vereinzelte «signifikante» Befunde (z. B. B-GAM) sind vorsichtig zu lesen.
+
+# Reproduzierbarkeit
+
+- Alle Schritte als R-Skripte in `R/` (`run_all.R` führt alles aus); fester Seed `20261026`.
+- Rohdaten bleiben unverändert in `data/raw/`; `data/raw/quellenprotokoll.csv` enthält URL, Abrufdatum, Grösse und Prüfsumme.
+- Fold-Zuordnungen und Out-of-fold-Vorhersagen: `output/models/`.
+- Tabellen als CSV: `output/tables/`; Abbildungen: `output/figures/`.
+
+```{r si}
+pk <- c("dplyr", "tidyr", "readr", "readxl", "ggplot2", "sf", "ranger", "mgcv", "xgboost", "sandwich", "lmtest", "spdep", "pdftools")
+data.frame(Paket = c("R", pk),
+           Version = c(as.character(getRversion()), vapply(pk, function(p) tryCatch(as.character(packageVersion(p)), error = function(e) "–"), ""))) |>
+  kable(caption = "Paketversionen dieses Laufs")
+```

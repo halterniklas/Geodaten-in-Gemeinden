@@ -1,0 +1,6 @@
+.Rproj.user/
+.Rhistory
+.RData
+report/bericht_files/
+report/*.knit.md
+renv/library/

@@ -1,0 +1,4 @@
+untersuchung,validierung,test_jahr,trainingsjahre
+A,zeitlich vorwärts,2023,alle Jahre < 2023
+A,zeitlich vorwärts,2024,alle Jahre < 2024
+A,zeitlich vorwärts,2025,alle Jahre < 2025

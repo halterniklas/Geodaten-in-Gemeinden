@@ -1,4 +1,4 @@
-name: C1 Datenquellen sondieren
+name: C1 Daten beschaffen (Sondierung und Rohdaten)
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
       - c1-finanzen/tools/probe2.py
       - c1-finanzen/tools/probe3.sh
       - c1-finanzen/tools/fetch4.py
-      - .github/workflows/c1-probe.yml
+      - .github/workflows/c1-daten.yml
 
 permissions:
   contents: write
