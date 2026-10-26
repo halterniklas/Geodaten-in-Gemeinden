@@ -6,6 +6,7 @@ on:
     branches: [c1-data-fetch]
     paths:
       - c1-finanzen/tools/probe.py
+      - c1-finanzen/tools/probe2.py
       - .github/workflows/c1-probe.yml
 
 permissions:
@@ -21,10 +22,12 @@ jobs:
           python-version: "3.12"
       - name: Quellen sondieren
         run: python3 c1-finanzen/tools/probe.py c1-finanzen/data/raw/_probe
+      - name: Rohdaten laden (Stufe 2)
+        run: python3 c1-finanzen/tools/probe2.py c1-finanzen/data/raw/_probe c1-finanzen/data/raw/download
       - name: Ergebnis committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add c1-finanzen/data/raw/_probe
+          git add c1-finanzen/data/raw
           git diff --cached --quiet || git commit -m "C1: Quellensondierung"
           git push origin HEAD:${GITHUB_REF_NAME}
