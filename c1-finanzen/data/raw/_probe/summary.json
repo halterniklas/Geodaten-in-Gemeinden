@@ -1,0 +1,222 @@
+{
+ "retrieved": "2026-10-26T14:53:55.477021Z",
+ "pages": {
+  "are_bauzonen": {
+   "url": "https://www.are.admin.ch/de/bauzonenstatistik-schweiz",
+   "status": 200,
+   "content_type": "text/html;charset=utf-8",
+   "bytes": 197587,
+   "file_links": [
+    "https://www.are.admin.ch/_nuxt/builds/meta/4a2876d5-ad9d-4d0a-a0b4-3babb2c9ecce.json",
+    "https://www.are.admin.ch/dam/de/sd-web/3lK47686QIeu/Bauzonenstatistik_Schweiz_2012.zip",
+    "https://www.are.admin.ch/dam/de/sd-web/7cEPibyb2l-3/bauzonenstatistik_schweiz_2022_gemeinden.xlsx",
+    "https://www.are.admin.ch/dam/de/sd-web/7lugJ64jJSgn/bzs-steckbrief.pdf",
+    "https://www.are.admin.ch/dam/de/sd-web/AS4q88PlZYXF/bzs_2022.pdf",
+    "https://www.are.admin.ch/dam/de/sd-web/FySgz51GACK6/bauzonen_zonesabatir_cantons.zip",
+    "https://www.are.admin.ch/dam/de/sd-web/iLHkdaGp7qi3/Bauzonenstatistik_Schweiz_2017.zip",
+    "https://www.are.admin.ch/dam/de/sd-web/kVraixdxhy64/bzs_infografik_2022.pdf",
+    "https://www.are.admin.ch/dam/de/sd-web/lTUT9gVTUx4y/bauzonenstatistik_schweiz_2022_raumgliederung.xlsx",
+    "https://www.are.admin.ch/dam/de/sd-web/uPugMgFnGj0m/bauzonenstatistik_schweiz_2022_resultate.xlsx"
+   ]
+  },
+  "kgk_bauzonen": {
+   "url": "https://www.kgk-cgc.ch/geodaten/geodaten-bauzonen-schweiz",
+   "status": 200,
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 36381,
+   "file_links": []
+  },
+  "sg_gemeindefinanzen": {
+   "url": "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen.html",
+   "status": 200,
+   "content_type": "text/html",
+   "bytes": 140713,
+   "file_links": [
+    "https://www.sg.ch/apps/core/docroot/images/design/sgch/favicon/manifest.json",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202014%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202015%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202016%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202017%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202018%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202019%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202020%20Gesamtliste.pdf",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202021%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202022%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202023%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202024%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202025%20Gesamtliste.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202026%20Gesamtliste%20Stand%2020250924.xlsx",
+    "https://www.sg.ch/content/dam/sgch/politik-verwaltung/gemeinden/gemeindenfinanzen/finanzausgleichsbeitr%C3%A4ge/FAG%202027%20Gesamtliste%20Stand%2020260928.xlsx",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_228014448/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download.ocFile/Detailberechnungen%20Kennzahlen%20RMSG.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_228014448/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_237847518.ocFile/Kennzahlenberechnung%20RMSG%20(Version%201.2).xlsx",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_396006679/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download.ocFile/Kennzahlen%20neues%20Rechnungslegungsmodell%20der%20St.Galler%20Gemeinden.xlsx",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1344425806/AccordionListPar/sgch_accordion_396006679/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_131465241.ocFile/%C3%9Cbersichtstabelle%20zu%20den%20Finanzkennzahlen%20der%20St.Galler%20Gemeinden.xlsx",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download.ocFile/FAG-Tool%20f%C3%BCr%20Finanzplanung.xlsx",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1343866986.ocFile/Informationen%20zum%20Finanzausgleich,%20Rechnungsabschluss%202020%20und%20Budget%202021.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_2121859635.ocFile/Finanzausgleich,%20Jahresrechnung%202025%20und%20Budget%202026.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_315618663.ocFile/Informationen%20zum%20Finanzausgleich,%20Rechnungsabschluss%202023%20und%20Budget%202024.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_335320135.ocFile/Informationen%20zum%20Finanzausgleich,%20Rechnungsabschluss%202021%20und%20Budget%202022.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_463859542.ocFile/Informationen%20zum%20Finanzausgleich,%20Rechnungsabschluss%202024%20und%20Budget%202025.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_accordion_list_1875472425/AccordionListPar/sgch_accordion_194215691/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_968263866.ocFile/Informationen%20zum%20Finanzausgleich,%20Rechnungsabschluss%202022%20und%20Budget%202023.pdf",
+    "https://www.sg.ch/politik-verwaltung/gemeinden/gemeindefinanzen/_jcr_content/Par/sgch_downloadlist/DownloadListPar/sgch_download.ocFile/Kurz%C3%BCbersicht%20innerkantonaler%20Finanzausgleich.pdf"
+   ]
+  },
+  "sg_stada2": {
+   "url": "https://stada2.sg.ch/",
+   "status": 200,
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 16647,
+   "file_links": [
+    "https://stada2.sg.ch/media/docs/agb.pdf",
+    "https://stada2.sg.ch/media/docs/agb_2018-08-03.pdf",
+    "https://stada2.sg.ch/media/docs/hilfe.pdf"
+   ]
+  },
+  "bl_statistik": {
+   "url": "https://statistik.bl.ch/",
+   "status": 0,
+   "content_type": "",
+   "bytes": 153,
+   "file_links": []
+  },
+  "ur_publikation": {
+   "url": "https://www.ur.ch/publikationen/6680",
+   "status": 200,
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 88922,
+   "file_links": []
+  },
+  "bfs_statpop": {
+   "url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/stand-entwicklung/bevoelkerung.html",
+   "status": 404,
+   "content_type": "",
+   "bytes": 25,
+   "file_links": []
+  },
+  "bfs_gemeindeverzeichnis": {
+   "url": "https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html",
+   "status": 200,
+   "content_type": "text/html;charset=utf-8",
+   "bytes": 3000000,
+   "file_links": []
+  },
+  "swisstopo_swissboundaries": {
+   "url": "https://www.swisstopo.admin.ch/de/landschaftsmodell-swissboundaries3d",
+   "status": 200,
+   "content_type": "text/html;charset=utf-8",
+   "bytes": 318313,
+   "file_links": [
+    "https://www.swisstopo.admin.ch/_nuxt/builds/meta/4a2876d5-ad9d-4d0a-a0b4-3babb2c9ecce.json",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/1ue59AoreVUj/swissboundaries3d-release2023-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/8JnajYNPw9B0/swissboundaries3d-release2011-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/8MrSSW4PQcUM/2026-01%20sBOUND%20ProdInfo-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/C132i94Qrzo2/swissboundaries3d-release2018-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/GatZCn3GD5L7/swissBOUNDARIES3D_Release2026-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/H9eT5ljdvltO/swissboundaries3d-release2021-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/HcllI5MBmcpF/swissboundaries3d-release202107-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/HtLofJIwzBPA/swissboundaries3d-release2015-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/PsBZcAFVty6d/swissboundaries3d-release202104-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/RQDyPHUCLEvg/swissboundaries3d-release2017-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/THSPTdZoj5DI/swissboundaries3d-release2019-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/fztrtyr2ZxaY/swissboundaries3d-release2013-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/kh-2aJaIhU5x/swissBOUNDARIES3D%20Release2025-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/lmJmWkC0DdnW/swissboundaries3d-release2016-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/mCFZoqm1UnVL/swissBOUNDARIES3D%20Release202504-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/mSQ1sPF6FCrU/swissboundaries3d-release202205-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/nJR36HzMz5ao/swissboundaries3d-release2014-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/pjJ7KQwxt5V8/swissBOUNDARIES3D%20Release2024-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/qG1uczqzlm0Q/swissboundaries3d-release2012-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/rHd0i1eija9E/swissboundaries3d-release2020-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/uPulzB-iFL5H/swissboundaries3d-release2010-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/vp6TLAuv5d6N/swissboundaries3d-release2022-DE.pdf",
+    "https://www.swisstopo.admin.ch/dam/de/sd-web/yoW3DCzq2FYZ/swissboundaries3d-release202010-DE.pdf"
+   ]
+  }
+ },
+ "apis": {
+  "ckan_bauzonen": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_show?id=bauzonenstatistik-schweiz",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 20601
+  },
+  "ckan_statpop_2010_2024": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_show?id=standige-und-nichtstandige-wohnbevolkerung-nach-institutionellen-gliederungen-staatsa-2010-2024",
+   "status": 404,
+   "content_type": "",
+   "bytes": 25
+  },
+  "ckan_search_finanzen_sg": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_search?q=gemeindefinanzen&rows=50",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 559123
+  },
+  "ckan_search_finanzen_bl": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_search?q=finanzen+gemeinden+basel-landschaft&rows=50",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 766662
+  },
+  "ckan_search_selbstfinanzierung": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_search?q=selbstfinanzierung&rows=50",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 57722
+  },
+  "ckan_search_steuerkraft": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_search?q=steuerkraft&rows=50",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 86972
+  },
+  "ckan_search_gemeindegrenzen": {
+   "url": "https://ckan.opendata.swiss/api/3/action/package_search?q=generalisierte+gemeindegrenzen&rows=20",
+   "status": 200,
+   "content_type": "application/json;charset=utf-8",
+   "bytes": 234815
+  },
+  "bfs_pxweb_root": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 38101
+  },
+  "bfs_pxweb_bev": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_101",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 233
+  },
+  "bfs_pxweb_bev_alt": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0102010000_201",
+   "status": 400,
+   "content_type": "",
+   "bytes": 27
+  },
+  "bfs_pxweb_fin": {
+   "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1803010000_101",
+   "status": 400,
+   "content_type": "",
+   "bytes": 27
+  },
+  "stat_bl_api": {
+   "url": "https://statistik.bl.ch/api/3/action/package_search?q=finanzen",
+   "status": 0,
+   "content_type": "",
+   "bytes": 153
+  },
+  "opendata_bl": {
+   "url": "https://opendata.bl.ch/api/explore/v2.1/catalog/datasets?limit=100&where=search(%22Gemeindefinanzen%22)",
+   "status": 403,
+   "content_type": "",
+   "bytes": 25
+  },
+  "opendata_sg": {
+   "url": "https://daten.sg.ch/api/explore/v2.1/catalog/datasets?limit=100&where=search(%22Finanz%22)",
+   "status": 200,
+   "content_type": "application/json; charset=utf-8",
+   "bytes": 364169
+  }
+ }
+}
